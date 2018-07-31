@@ -19,7 +19,6 @@
         private string contrasena;
         private bool isRunning;
         private bool isHabilitado;
-
         #endregion
 
         #region Propiedades
@@ -34,7 +33,6 @@
             get { return this.contrasena; }
             set { SetValue(ref this.contrasena, value); }
         }
-
         public bool IsRunning /*Todas las propiedades que inicien con Is son booleanas*/
         {
             /*la información del get y del set, se obtienen de la clase BaseViewModel
@@ -82,6 +80,7 @@
         {
             if (string.IsNullOrEmpty(this.Email))
             {
+                //metodo para mandar un mensaje tipo Toast
                 await Application.Current.MainPage.DisplayAlert(
                     "Falta Información", "Debe ingresar un Email valido", "Aceptar");
                 return;
@@ -116,12 +115,7 @@
             //comando para llamar a otra pagina dentro de la app
             MainViewModel.GetInstance().PaginaPrincipal = new PaginaPrincipalViewModel();
             await Application.Current.MainPage.Navigation.PushAsync(new PaginaPrincipalPage());
-
-            /*
-             * este comando sirve para mandar  mensajes, es parecido al Toast de Android Studio
-            await Application.Current.MainPage.DisplayAlert(
-                   "Información Correcta", "Ya te habias tardado en hacer algo bien", "Aceptar");
-            */
+                      
         }
         #endregion
     }
