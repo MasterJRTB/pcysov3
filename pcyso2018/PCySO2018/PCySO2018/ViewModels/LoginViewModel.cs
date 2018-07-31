@@ -1,7 +1,7 @@
 ﻿namespace PCySO2018.ViewModels
 {
     using GalaSoft.MvvmLight.Command;
-    using PCySO.Services;
+    using Services;
     using System.Windows.Input;
     using Views;
     using Xamarin.Forms;
