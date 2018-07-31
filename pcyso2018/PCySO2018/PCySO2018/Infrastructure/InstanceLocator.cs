@@ -22,11 +22,6 @@ namespace PCySO2018.Infrastructure
         #endregion
 
 
-        //public InstanceLocator()
-        //{
-        //    InitializeComponent();
-        //}
-
         //public InstanceLocator(IContainer container)
         //{
         //    container.Add(this);
