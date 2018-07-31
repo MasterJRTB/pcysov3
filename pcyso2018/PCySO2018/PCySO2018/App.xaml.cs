@@ -8,14 +8,17 @@ namespace PCySO2018
     
     public partial class App : Application
 	{
-		public App ()
+        #region Constructores
+        public App ()
 		{
 			InitializeComponent();
 
-			MainPage = new LoginPage();
+			this.MainPage = new NavigationPage(new LoginPage());
 		}
+        #endregion
 
-		protected override void OnStart ()
+        #region Metodos
+        protected override void OnStart ()
 		{
 			// Handle when your app starts
 		}
@@ -29,5 +32,6 @@ namespace PCySO2018
 		{
 			// Handle when your app resumes
 		}
-	}
+        #endregion
+    }
 }
