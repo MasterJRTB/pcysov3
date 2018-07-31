@@ -5,11 +5,11 @@ namespace PCySO2018.ViewModels
     public class MainViewModel : Component
     {
         #region ViewModels
-        //public LoginViewModel Login
-        //{
-        //    get;
-        //    set;
-        //}
+        public LoginViewModel Login
+        {
+            get;
+            set;
+        }
 
         //public PaginaPrincipalViewModel PaginaPrincipal
         //{
@@ -19,11 +19,11 @@ namespace PCySO2018.ViewModels
         #endregion
 
         #region Contructores
-        //public MainViewModel()
-        //{
-        //    instance = this;
-        //    this.Login = new LoginViewModel();
-        //}
+        public MainViewModel()
+        {
+            instance = this;
+            this.Login = new LoginViewModel();
+        }
         #endregion
 
         #region Singleton
