@@ -5,6 +5,7 @@ namespace PCySO2018.ViewModels
     public class MainViewModel : Component
     {
         #region ViewModels
+        //se refieren las paginas
         public LoginViewModel Login
         {
             get;
