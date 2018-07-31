@@ -95,15 +95,18 @@
             this.IsRunning = true;
             this.IsHabilitado = false;
 
-            if (this.Email != "rbasto23@gmail.com" || this.Contrasena != "1234")
-            {
-                this.IsRunning = false;
-                this.IsHabilitado = true;
-                await Application.Current.MainPage.DisplayAlert(
-                    "Difiere la Información", "Email o Contraseña Incorrecta", "Aceptar");
-                this.Contrasena = string.Empty;
-                return;
-            }
+            this.Email = "rbasto23@gmail.com";
+            this.Contrasena = "1234";
+
+            //if (this.Email != "rbasto23@gmail.com" || this.Contrasena != "1234")
+            //{
+            //    this.IsRunning = false;
+            //    this.IsHabilitado = true;
+            //    await Application.Current.MainPage.DisplayAlert(
+            //        "Difiere la Información", "Email o Contraseña Incorrecta", "Aceptar");
+            //    this.Contrasena = string.Empty;
+            //    return;
+            //}
 
             this.IsRunning = false;
             this.IsHabilitado = true;

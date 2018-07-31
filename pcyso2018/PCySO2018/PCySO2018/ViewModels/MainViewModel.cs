@@ -12,11 +12,11 @@ namespace PCySO2018.ViewModels
             set;
         }
 
-        //public PaginaPrincipalViewModel PaginaPrincipal
-        //{
-        //    get;
-        //    set;
-        //}
+        public PaginaPrincipalViewModel PaginaPrincipal
+        {
+            get;
+            set;
+        }
         #endregion
 
         #region Contructores
