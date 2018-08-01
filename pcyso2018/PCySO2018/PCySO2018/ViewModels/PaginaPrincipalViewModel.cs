@@ -1,69 +1,90 @@
 ﻿namespace PCySO2018.ViewModels
 {
-    using Java.Lang;
+    using GalaSoft.MvvmLight.Command;
+    using PCySO2018.Services;
     using System.Collections;
     using System.Collections.Generic;
-    //using static Android.Util.EventLogTags;
+    using System.Collections.ObjectModel;
+    using System.Windows.Input;
+    //using static System.Net.Mime.MediaTypeNames;
+    using Xamarin.Forms;
 
     public class PaginaPrincipalViewModel : BaseViewModel
     {
 
         #region Atributos
-        ////private ObservableCollection<PaginaPrincipalViewModel> paginaPrincipal
+        private ObservableCollection<PaginaPrincipalViewModel> paginaPrincipal;
         public string Number { get; internal set; }
         public string Nombre { get; internal set; }
         public string Description { get; internal set; }
         public string Descripcion{ get; internal set;}
         public IEnumerable _elementos { get; internal set; }
+        private bool isRefreshing;
         #endregion
 
         #region Propiedades
-        //public ObservableCollection<PaginaPrincipalViewModel> PaginaPrincipal
-        //{
-        //    get { return this.paginaPrincipal; }
-        //    set { SetValue(ref this.paginaPrincipal, value); }
-        //}
+        public ObservableCollection<PaginaPrincipalViewModel> PaginaPrincipal
+        {
+            get { return this.paginaPrincipal; }
+            set { SetValue(ref this.paginaPrincipal, value); }
+        }
+        public bool IsRefreshing
+        {
+            get { return this.isRefreshing; }
+            set { SetValue(ref this.isRefreshing, value); }
+        }
         #endregion
 
         #region Constructores
-        //public PaginaPrincipalViewModel()
-        //{
-        //    this.apiService = new ApiService();
-        //    this.LoadPaginaPrincipal();
-        //}
+        public PaginaPrincipalViewModel()
+        {
+            this.apiService = new ApiService();
+            this.LoadPaginaPrincipal();
+        }
         #endregion
 
         #region Metodos
-        //private async void LoadPaginaPrincipal()
-        //{
-        //    var connection = await this.apiService.CheckConnection();
-        //    if (!connection.IsSuccess)
-        //    {
-        //        await Application.Current.MainPage.DisplayAlert(
-        //            "Error",
-        //            connection.Message,
-        //            "Aceptar");
-        //        await Application.Current.MainPage.Navigation.PopAsync();
-        //        return;
-        //    }
-
-
-        //if (!response.IsSuccess)
-        //{
-        //    await Application.Current.MainPage.DisplayAlert(
-        //        "Error",
-        //        response.Message,
-        //        "Aceptar");
-        //    await Application.Current.MainPage.Navigation.PopAsync();
-        //    return;
-        //}
-        //var response = await this.apiService.GetList<PaginaPrincipal>("", "", "");
-        //throw new NotImplementedException();
-        //}
+        private async void LoadPaginaPrincipal()
+        {
+            this.IsRefreshing = true;
+            var connection = await this.apiService.CheckConnection();
+            if (!connection.IsSuccess)
+            {
+                this.IsRefreshing = false;
+                await Application.Current.MainPage.DisplayAlert(
+                    "Error",
+                    connection.Message,
+                    "Aceptar");
+                await Application.Current.MainPage.Navigation.PopAsync();
+                return;
+            }
+            //if (!response.IsSuccess)
+            //{
+            //    await Application.Current.MainPage.DisplayAlert(
+            //        "Error",
+            //        response.Message,
+            //        "Aceptar");
+            //    await Application.Current.MainPage.Navigation.PopAsync();
+            //    return;
+            //}
+            this.IsRefreshing = false;
+        }
         #endregion
 
         #region Servicios
-        //private ApiService apiService;
+        private ApiService apiService;
+        #endregion
+
+        #region Comandos
+        public ICommand RefreshingCommand
+        {
+            get
+            {
+                return new RelayCommand(LoadPaginaPrincipal);
+            }
+            
+        }
+
         #endregion
     }
 

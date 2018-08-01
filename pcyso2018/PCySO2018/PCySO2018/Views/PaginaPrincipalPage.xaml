@@ -8,10 +8,46 @@
     <StackLayout
         BindingContext="{Binding PaginaPrincipal}"
         Padding="5">
-        <ListView
-            x:Name="General">
-            
-        </ListView>
+        
+          <ListView
+              HasUnevenRows="True"
+              IsPullToRefreshEnabled="True"
+              IsRefreshing="{Binding IsRefreshing, Mode=TwoWay}"
+              RefreshCommand="{Binding RefreshCommand}"
+              x:Name="General">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                      <Grid>
+                          <Grid.ColumnDefinitions>
+                              <ColumnDefinition Width="*" />
+                              <ColumnDefinition Width="auto" />
+                          </Grid.ColumnDefinitions>
+                          <StackLayout
+                              Grid.Column="0"
+                              VerticalOptions="Center">
+                              <Label
+                                  FontAttributes="Bold"
+                                  FontSize="Medium"
+                                  Text="{Binding Nombre}"
+                                  TextColor="Black">
+                              </Label>
+                                <Label
+                                  Text="{Binding Descripcion}"
+                                  TextColor="Black">
+                                </Label>
+                            </StackLayout>
+                            <Image
+                              Grid.Column="1"
+                              HorizontalOptions="End"
+                              VerticalOptions="Center"
+                              Source="checkronmini">
+                             </Image>
+                        </Grid>
+                    </ViewCell>    
+                </DataTemplate>
+            </ListView.ItemTemplate>
+          </ListView>
         
     </StackLayout>
 </ContentPage>

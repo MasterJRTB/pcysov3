@@ -19,6 +19,7 @@
         private string contrasena;
         private bool isRunning;
         private bool isHabilitado;
+        
         #endregion
 
         #region Propiedades
@@ -53,6 +54,8 @@
             get { return this.isHabilitado; }
             set { SetValue(ref this.isHabilitado, value); }
         }
+
+        
         #endregion
 
         #region Constructores

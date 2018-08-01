@@ -177,4 +177,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\fondoapp1a.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\checkronmini.png" />
+  </ItemGroup>
 </Project>
