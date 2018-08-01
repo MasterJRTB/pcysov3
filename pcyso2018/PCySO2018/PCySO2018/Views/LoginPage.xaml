@@ -8,7 +8,8 @@
     <ContentPage.Content>
 
         <ScrollView
-            BindingContext="{Binding Login}">
+            BindingContext="{Binding Login}"
+            BackgroundColor="Transparent">
 
             <!--el Padding puede delimitarse con: "Izquierda, Superior, Derecha, Inferior", nunca se definen 3,
                 deberan definirse 1, 2 ó 4 coordenadas-->

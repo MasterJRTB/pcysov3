@@ -174,4 +174,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\sesion.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\fondoapp1a.png" />
+  </ItemGroup>
 </Project>

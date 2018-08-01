@@ -5,13 +5,5 @@
              BindingContext="{Binding Main, Source={StaticResource Locator} }"
              Title="Página Principal">
 
-    <ContentPage.Content>
-        <StackLayout
-            BindingContext="{Binding PaginaPrincipal}"
-            Padding="5">
-            <ListView>
-
-            </ListView>
-        </StackLayout>
-    </ContentPage.Content>
+    
 </ContentPage>
