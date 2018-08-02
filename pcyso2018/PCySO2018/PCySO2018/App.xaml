@@ -5,8 +5,6 @@
              x:Class="PCySO2018.App">
     
 	<Application.Resources>
-        <ResourceDictionary>
-            <infra:InstanceLocator x:Key="Locator"/>
-        </ResourceDictionary>
+        
     </Application.Resources>
 </Application>

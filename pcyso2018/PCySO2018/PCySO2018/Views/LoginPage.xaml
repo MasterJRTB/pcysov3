@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PCySO2018.Views.LoginPage" 
-             BindingContext="{Binding Main, Source={StaticResource Locator} }"
+             x:Class="PCySO2018.Views.LoginPage"
              Title="- Bienvenido - Wellcome - Bienvenu -">
 
     <ContentPage.Content>
@@ -15,14 +14,7 @@
                 deberan definirse 1, 2 ó 4 coordenadas-->
             <StackLayout
                 Padding="5">
-                <!--<Label
-                FontAttributes="Bold"
-                FontSize="Large"
-                HorizontalOptions="Center"
-                Text="PCySO">
-                </Label>-->
-
-                <Image
+               <Image
                 Source="sesion"
                 WidthRequest="200">
                 </Image>
@@ -94,7 +86,7 @@
                     </Switch>
                 </StackLayout>
                 <!--Termina sección para la recordar usuario (email) y contraseña-->
-                
+
                 <Label
                     HorizontalOptions="Center"
                     Text="¿Olvidó su contraseña?"
@@ -129,9 +121,9 @@
                     </Button>
                 </StackLayout>
                 <!--Termina sección para los botones de registro e iniciar-->
-                
+
                 <!--Inicia sección para agregar las imagenes de las redes sociales-->
-                 <StackLayout
+                <StackLayout
                     HorizontalOptions="Center"
                     Orientation="Horizontal"
                     VerticalOptions="EndAndExpand">
@@ -152,11 +144,11 @@
                     </Image>
                 </StackLayout>
                 <!--Termina sección para agregar las imagenes de las redes sociales-->
-                
+
             </StackLayout>
-            
+
         </ScrollView>
-        
+
     </ContentPage.Content>
-    
+
 </ContentPage>

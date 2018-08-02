@@ -1,9 +1,8 @@
 ﻿namespace PCySO2018.ViewModels
 {
     using GalaSoft.MvvmLight.Command;
-    using Services;
+    //using Services;
     using System.Windows.Input;
-    using Views;
     using Xamarin.Forms;
 
     public class LoginViewModel : BaseViewModel
@@ -11,7 +10,7 @@
     {
 
         #region Services
-        private ApiService apiService;
+        //private ApiService apiService;
         #endregion
 
         #region Variables
@@ -19,7 +18,7 @@
         private string contrasena;
         private bool isRunning;
         private bool isHabilitado;
-        
+
         #endregion
 
         #region Propiedades
@@ -55,18 +54,18 @@
             set { SetValue(ref this.isHabilitado, value); }
         }
 
-        
+
         #endregion
 
         #region Constructores
-        public LoginViewModel()
-        {
-            this.apiService = new ApiService();
+        //public LoginViewModel()
+        //{
+        //    this.apiService = new ApiService();
 
-            this.IsRecordado = true;
-            this.IsHabilitado = true;
+        //    this.IsRecordado = true;
+        //    this.IsHabilitado = true;
 
-        }
+        //}
         #endregion
 
         #region Comandos
@@ -98,8 +97,8 @@
             this.IsRunning = true;
             this.IsHabilitado = false;
 
-            this.Email = "rbasto23@gmail.com";
-            this.Contrasena = "1234";
+            //this.Email = "rbasto23@gmail.com";
+            //this.Contrasena = "1234";
 
             //if (this.Email != "rbasto23@gmail.com" || this.Contrasena != "1234")
             //{
@@ -119,9 +118,9 @@
             this.contrasena = string.Empty;
 
             //comando para llamar a otra pagina dentro de la app
-            MainViewModel.GetInstance().PaginaPrincipal = new PaginaPrincipalViewModel();
-            await Application.Current.MainPage.Navigation.PushAsync(new PaginaPrincipalPage());
-                      
+            //MainViewModel.GetInstance().PaginaPrincipal = new PaginaPrincipalViewModel();
+            //await Application.Current.MainPage.Navigation.PushAsync(new PaginaPrincipalPage());
+
         }
         #endregion
     }
