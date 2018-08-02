@@ -18,7 +18,7 @@
                    Padding="5">
                <Image
                 Source="sesion"
-                WidthRequest="200">
+                WidthRequest="175">
                 </Image>
 
                 
@@ -36,12 +36,15 @@
                     <Label
                     Grid.Row="0"
                     Grid.Column="0"
+                    TextColor="White"
+                    FontAttributes="Bold"    
                     Text="E-Mail"
                     VerticalOptions="Center">
                     </Label>
                     <Entry
                     Grid.Row="0"
                     Grid.Column="1"
+                    TextColor="White"    
                     Keyboard="Email"
                     Text="{Binding Email, Mode=TwoWay}"
                     Placeholder="Ingresa tu E-Mail"
@@ -51,12 +54,15 @@
                     <Label
                     Grid.Row="1"
                     Grid.Column="0"
+                    TextColor="White"
+                    FontAttributes="Bold"
                     Text="Contraseña"
                     VerticalOptions="Center">
                     </Label>
                     <Entry
                     Grid.Row="1"
                     Grid.Column="1"
+                    TextColor="White"    
                     IsPassword="True"
                     Text="{Binding Contrasena, Mode=TwoWay}"
                     Placeholder="Ingresa tu Contraseña"
@@ -70,7 +76,8 @@
             
                 <ActivityIndicator
                     IsRunning="{Binding IsRunning, Mode=TwoWay}"
-                    VerticalOptions="CenterAndExpand">
+                    VerticalOptions="CenterAndExpand"
+                    HeightRequest="12">
                 </ActivityIndicator>
                 
             <!--Termina sección para la animacion en espera
@@ -100,7 +107,7 @@
                 <Label
                     HorizontalOptions="Center"
                     Text="¿Olvidó su contraseña?"
-                    TextColor="Blue"
+                    TextColor="GreenYellow"
                     VerticalOptions="CenterAndExpand">
                 </Label>
 
@@ -111,7 +118,7 @@
                     Margin="40,0"
                     Orientation="Horizontal"
                     VerticalOptions="CenterAndExpand">
-                    <Button
+                   <Button
                     BackgroundColor="Navy"
                     BorderRadius="23"
                     Command="{Binding LoginCommand}"
@@ -120,9 +127,9 @@
                     IsEnabled="{Binding IsHabilitado, Mode=TwoWay}"
                     Text="Iniciar"
                     TextColor="White">
-                    </Button>
+                   </Button>
 
-                    <Button
+                   <Button
                     BackgroundColor="Purple"
                     BorderRadius="23"
                     HeightRequest="46"
@@ -130,8 +137,8 @@
                     IsEnabled="{Binding IsHabilitado, Mode=TwoWay}"
                     Text="Registrar"
                     TextColor="White">
-                    </Button>
-                </StackLayout>
+                   </Button>
+                    </StackLayout>
                 
             <!--Termina sección para los botones de registro e iniciar
 
@@ -162,7 +169,9 @@
             </StackLayout>
            </ScrollView>
         </Grid>
-            
+
+        
+
     </ContentPage.Content>
 
 </ContentPage>

@@ -1,7 +1,8 @@
 ﻿namespace PCySO2018.ViewModels
 {
     using GalaSoft.MvvmLight.Command;
-    //using Services;
+    using PCySO2018.Services;
+    using PCySO2018.Views;
     using System.Windows.Input;
     using Xamarin.Forms;
 
@@ -10,7 +11,7 @@
     {
 
         #region Services
-        //private ApiService apiService;
+        private ApiService apiService;
         #endregion
 
         #region Variables
@@ -33,11 +34,12 @@
             get { return this.contrasena; }
             set { SetValue(ref this.contrasena, value); }
         }
+
         public bool IsRunning /*Todas las propiedades que inicien con Is son booleanas*/
         {
-            /*la información del get y del set, se obtienen de la clase BaseViewModel
-            Esta clase BaseViewModel, se debe de crear en cada proyecto cuando se va a utilizar
-            el mismo pedazo de codigo en varias secciones de una clase*/
+            //    /*la información del get y del set, se obtienen de la clase BaseViewModel
+            //    Esta clase BaseViewModel, se debe de crear en cada proyecto cuando se va a utilizar
+            //    el mismo pedazo de codigo en varias secciones de una clase*/
             get { return this.isRunning; }
             set { SetValue(ref this.isRunning, value); }
         }
@@ -58,14 +60,14 @@
         #endregion
 
         #region Constructores
-        //public LoginViewModel()
-        //{
-        //    this.apiService = new ApiService();
+        public LoginViewModel()
+        {
+            this.apiService = new ApiService();
 
-        //    this.IsRecordado = true;
-        //    this.IsHabilitado = true;
+            this.IsRecordado = true;
+            this.IsHabilitado = true;
 
-        //}
+        }
         #endregion
 
         #region Comandos
@@ -97,31 +99,24 @@
             this.IsRunning = true;
             this.IsHabilitado = false;
 
-            //this.Email = "rbasto23@gmail.com";
-            //this.Contrasena = "1234";
+            this.Email = "rbasto23@gmail.com";
+            this.Contrasena = "1234";
 
-            //if (this.Email != "rbasto23@gmail.com" || this.Contrasena != "1234")
-            //{
-            //    this.IsRunning = false;
-            //    this.IsHabilitado = true;
-            //    await Application.Current.MainPage.DisplayAlert(
-            //        "Difiere la Información", "Email o Contraseña Incorrecta", "Aceptar");
-            //    this.Contrasena = string.Empty;
-            //    return;
-            //}
 
             this.IsRunning = false;
             this.IsHabilitado = true;
 
             //comando sirve para limpiar los textedit (entry)
             this.Email = string.Empty;
-            this.contrasena = string.Empty;
+            this.Contrasena = string.Empty;
+
 
             //comando para llamar a otra pagina dentro de la app
-            //MainViewModel.GetInstance().PaginaPrincipal = new PaginaPrincipalViewModel();
-            //await Application.Current.MainPage.Navigation.PushAsync(new PaginaPrincipalPage());
 
+            MainViewModel.GetInstance().PaginaPrincipal = new PaginaPrincipalViewModel();
+            await Application.Current.MainPage.Navigation.PushAsync(new Views.PaginaPrincipalViewModel());
+
+            #endregion
         }
-        #endregion
     }
 }
