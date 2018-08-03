@@ -2,7 +2,6 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PCySO2018.Views.LoginPage"
-             BindingContext="{Binding Main, Source={StaticResource Locator} }"
              Title="- Bienvenido - Wellcome - Bienvenu -">
 
     <ContentPage.Content>
@@ -75,11 +74,11 @@
 
             Inicia sección para la animacion en espera-->
             
-                <ActivityIndicator
+                <!--<ActivityIndicator
                     IsRunning="{Binding IsRunning, Mode=TwoWay}"
                     VerticalOptions="CenterAndExpand"
                     HeightRequest="12">
-                </ActivityIndicator>
+                </ActivityIndicator>-->
                 
             <!--Termina sección para la animacion en espera
 
@@ -122,10 +121,9 @@
                    <Button
                     BackgroundColor="Navy"
                     BorderRadius="23"
-                    Command="{Binding LoginCommand}"
                     HeightRequest="46"
                     HorizontalOptions="FillAndExpand"
-                    IsEnabled="{Binding IsHabilitado, Mode=TwoWay}"
+                    IsEnabled="True"
                     Text="Iniciar"
                     TextColor="White">
                    </Button>
@@ -135,7 +133,7 @@
                     BorderRadius="23"
                     HeightRequest="46"
                     HorizontalOptions="FillAndExpand"
-                    IsEnabled="{Binding IsHabilitado, Mode=TwoWay}"
+                    IsEnabled="True"
                     Text="Registrar"
                     TextColor="White">
                    </Button>
@@ -171,7 +169,32 @@
            </ScrollView>
         </Grid>
 
-        
+        <!--<StackLayout
+                    Margin="40,0"
+                    Orientation="Horizontal"
+                    VerticalOptions="CenterAndExpand">
+            <Button
+                    BackgroundColor="Navy"
+                    BorderRadius="23"
+                    Command="{Binding LoginCommand}"
+                    HeightRequest="46"
+                    HorizontalOptions="FillAndExpand"
+                    IsEnabled="{Binding IsHabilitado, Mode=TwoWay}"
+                    Text="Iniciar"
+                    TextColor="White">
+            </Button>
+
+            <Button
+                    BackgroundColor="Purple"
+                    BorderRadius="23"
+                    HeightRequest="46"
+                    HorizontalOptions="FillAndExpand"
+                    IsEnabled="{Binding IsHabilitado, Mode=TwoWay}"
+                    Text="Registrar"
+                    TextColor="White">
+            </Button>
+        </StackLayout>-->
+
 
     </ContentPage.Content>
 
