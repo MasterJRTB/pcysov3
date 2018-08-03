@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PCySO2018.Views.HumanosPage"
-             Title="- Recursos Humanos - Human Resources -">
+             x:Class="PCySO2018.Views.MaterialesPage"
+             Title="- Recursos Materiales - Material Resources -">
     
     <ContentPage.Content>
         <Grid>
@@ -39,7 +39,7 @@
                             TextColor="White"
                             FontAttributes="Bold"  
                             FontSize="20" 
-                            Text="Trabajador"
+                            Text="Extintor"
                             VerticalOptions="CenterAndExpand"
                             >
                     </Label>
@@ -62,7 +62,7 @@
                             TextColor="White"
                             FontAttributes="Bold"  
                             FontSize="20" 
-                            Text="Contratista"
+                            Text="Bitácora de Extintor"
                             VerticalOptions="CenterAndExpand">
                     </Label>
                     <Image
@@ -84,7 +84,7 @@
                             TextColor="White"
                             FontAttributes="Bold"  
                             FontSize="20" 
-                            Text="Proveedor"
+                            Text="Centro de Trabajo"
                             VerticalOptions="CenterAndExpand">
                     </Label>
                     <Image
