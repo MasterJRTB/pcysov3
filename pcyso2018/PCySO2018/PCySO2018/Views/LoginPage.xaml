@@ -9,6 +9,7 @@
             <!--<Image Source="fondoapp1a" Aspect="AspectFill"/>-->
             <Image Source="checkronmini" Aspect="AspectFill"/>
             <BoxView Color="Green" Opacity="0.18"/>
+            
             <ScrollView
                 BindingContext="{Binding Login}"
                 BackgroundColor="Transparent">

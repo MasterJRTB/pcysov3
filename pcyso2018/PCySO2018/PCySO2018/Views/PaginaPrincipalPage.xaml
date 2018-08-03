@@ -8,12 +8,14 @@
             <!--<Image Source="fondoapp1a" Aspect="AspectFill"/>-->
             <Image Source="checkronmini" Aspect="AspectFill"/>
             <BoxView Color="Green" Opacity="0.18"/>
-            
-                <!--el Padding puede delimitarse con: "Izquierda, Superior, Derecha, Inferior", nunca se definen 3,
-                deberan definirse 1, 2 ó 4 coordenadas-->
+             
+            <ScrollView
+                BindingContext="{Binding PaginaPrincipal}"
+                BackgroundColor="Transparent">
+
                 <StackLayout
                    Padding="5">
-                    
+
                     <!--Inicia sección para entrar con el usuario (email) y contraseña-->
                     <Grid
                       Margin="10,0"
@@ -30,70 +32,76 @@
                             Text="Recursos Humanos"
                             VerticalOptions="Center">
                         </Label>
+                        <Image
+                             Grid.Row="0"
+                             Grid.Column="1"
+                             Source="checkronmini"/>
+                        <BoxView 
+                             Grid.Row="0"
+                             Grid.Column="1"
+                             Color="White" 
+                             Opacity="0.18"/>
+
+
                         <Label
                              Grid.Row="1"
                              Grid.Column="0"
                              Text="Recursos Materiales"
                              VerticalOptions="Center">
                         </Label>
+                        <Image
+                             Grid.Row="1"
+                             Grid.Column="1"
+                             Source="checkronmini"
+                             WidthRequest="175"/>
+                        <BoxView 
+                             Grid.Row="1"
+                             Grid.Column="1"
+                             Color="White" 
+                             Opacity="0.18"/>
+
                         <Label
                             Grid.Row="2"
                             Grid.Column="0"
                             Text="Unidad Médica"
                             VerticalOptions="Center">
                         </Label>
+                        <Image
+                             Grid.Row="2"
+                             Grid.Column="1"
+                             Source="checkronmini"
+                             WidthRequest="175"/>
+                        <BoxView 
+                             Grid.Row="2"
+                             Grid.Column="1"
+                             Color="White" 
+                             Opacity="0.18"/>
+
                         <Label
                              Grid.Row="3"
                              Grid.Column="0"
                              Text="Ayuda"
                              VerticalOptions="Center">
                         </Label>
+                        <Image
+                             Grid.Row="3"
+                             Grid.Column="1"
+                             Source="checkronmini"
+                             WidthRequest="175"/>
+                        <BoxView 
+                             Grid.Row="3"
+                             Grid.Column="1"
+                             Color="White" 
+                             Opacity="0.18"/>
 
-                    <Button
+                        <Button
                         Grid.Row="0"
                         Grid.Column="1"
                         Image="checkronmini"
                         Command="RecursosHumanosPage"/>
-                    <!--<Image
-                             Grid.Row="0"
-                             Grid.Column="1"
-                             Source="checkronmini"/>-->
-                    <BoxView 
-                             Grid.Row="0"
-                             Grid.Column="1"
-                             Color="White" 
-                             Opacity="0.18"/>
-                    <Image
-                             Grid.Row="1"
-                             Grid.Column="1"
-                             Source="checkronmini"/>
-                    <BoxView 
-                             Grid.Row="1"
-                             Grid.Column="1"
-                             Color="White" 
-                             Opacity="0.18"/>
-                    <Image
-                             Grid.Row="2"
-                             Grid.Column="1"
-                             Source="checkronmini"/>
-                    <BoxView 
-                             Grid.Row="2"
-                             Grid.Column="1"
-                             Color="White" 
-                             Opacity="0.18"/>
-                    <Image
-                             Grid.Row="3"
-                             Grid.Column="1"
-                             Source="checkronmini"/>
-                    <BoxView 
-                             Grid.Row="3"
-                             Grid.Column="1"
-                             Color="White" 
-                             Opacity="0.18"/>
-                </Grid>
-
-                    <!--Termina sección para entrar con el usuario (email) y contraseña -->
+                    </Grid>
                 </StackLayout>
+            </ScrollView>
         </Grid>
     </ContentPage.Content>
 </ContentPage>
