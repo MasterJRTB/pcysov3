@@ -192,4 +192,19 @@
   <ItemGroup>
     <BundleResource Include="Resources\luartexto2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\textoayuda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\textopaginaprincipal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\textorecursoshumanos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\textorecursosmateriales.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\textounidadmedica.png" />
+  </ItemGroup>
 </Project>

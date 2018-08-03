@@ -3,11 +3,125 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PCySO2018.Views.HumanosPage"
              Title="- Recursos Humanos - Human Resources -">
+    
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid>
+            <Image Source="checkronmini" Aspect="AspectFill"/>
+            <StackLayout
+                    Padding="0,2"
+                    HorizontalOptions="Center"
+                    Orientation="Horizontal"
+                    VerticalOptions="End">
+
+                <Image 
+                    Source="luartexto"
+                    WidthRequest="235">
+                </Image>
+            <BoxView Color="Green" Opacity="0.18"/>
+
+            <StackLayout
+                   Padding="10">
+                <Image
+                     Source="textorecursoshumanos"
+                     WidthRequest="175">
+                </Image>
+                <Grid
+                    Margin="10,50"
+                    VerticalOptions="Start">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            TextColor="White"
+                            FontAttributes="Bold"  
+                            FontSize="20" 
+                            Text="Trabajador"
+                            VerticalOptions="CenterAndExpand"
+                            >
+                    </Label>
+                    <Image
+                             Grid.Row="0"
+                             Grid.Column="1"
+                             Source="checkronmini"
+                             WidthRequest="25"
+                             VerticalOptions="CenterAndExpand"/>
+                    <BoxView 
+                             Grid.Row="0"
+                             Grid.Column="1"
+                             Color="White" 
+                             Opacity="0.18">
+                    </BoxView>
+
+                    <Label
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            TextColor="White"
+                            FontAttributes="Bold"  
+                            FontSize="20" 
+                            Text="Contratista"
+                            VerticalOptions="CenterAndExpand">
+                    </Label>
+                    <Image
+                             Grid.Row="1"
+                             Grid.Column="1"
+                             Source="checkronmini"
+                             WidthRequest="25"
+                             VerticalOptions="CenterAndExpand"/>
+                    <BoxView 
+                             Grid.Row="1"
+                             Grid.Column="1"
+                             Color="White" 
+                             Opacity="0.18">
+                    </BoxView>
+
+                    <Label
+                            Grid.Row="2"
+                            Grid.Column="0"
+                            TextColor="White"
+                            FontAttributes="Bold"  
+                            FontSize="20" 
+                            Text="Proveedor"
+                            VerticalOptions="CenterAndExpand">
+                    </Label>
+                    <Image
+                             Grid.Row="2"
+                             Grid.Column="1"
+                             Source="checkronmini"
+                             WidthRequest="25"
+                             VerticalOptions="CenterAndExpand"/>
+                    <BoxView 
+                             Grid.Row="2"
+                             Grid.Column="1"
+                             Color="White" 
+                             Opacity="0.18">
+                    </BoxView>
+
+                    <!--<Label
+                            Grid.Row="3"
+                            Grid.Column="0"
+                            TextColor="White"
+                            FontAttributes="Bold"  
+                            FontSize="20" 
+                            Text="Usuario"
+                            VerticalOptions="CenterAndExpand">
+                    </Label>
+                    <Image
+                             Grid.Row="3"
+                             Grid.Column="1"
+                             Source="checkronmini"
+                             WidthRequest="25"
+                             VerticalOptions="CenterAndExpand"/>
+                    <BoxView 
+                             Grid.Row="3"
+                             Grid.Column="1"
+                             Color="White" 
+                             Opacity="0.18">
+                    </BoxView>-->
+                </Grid>
+            </StackLayout>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

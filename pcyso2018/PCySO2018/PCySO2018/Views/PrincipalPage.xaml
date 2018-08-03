@@ -21,7 +21,7 @@
             <StackLayout
                    Padding="10">
                 <Image
-                     Source="paginaprincipal"
+                     Source="textopaginaprincipal"
                      WidthRequest="175">
                 </Image>
                 <Grid
