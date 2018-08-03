@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PCySO2018.Views.PaginaPrincipalPage">
+             x:Class="PCySO2018.Views.PaginaPrincipalPage"
+             BindingContext="{Binding Main, Source={StaticResource Locator} }"
+             Title="Página Principal">
     <ContentPage.Content>
          <Grid>
             <!--<Image Source="fondoapp1a" Aspect="AspectFill"/>-->

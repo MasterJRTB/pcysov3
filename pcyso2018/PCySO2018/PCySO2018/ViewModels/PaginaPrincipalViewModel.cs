@@ -1,58 +1,54 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-
-namespace PCySO2018.Views
+﻿namespace PCySO2018.Views
 {
-    #region Atributos
-    //public string Nombre { get; internal set; }
-    //public string Descripcion { get; internal set; }
-    //public IEnumerable _elementos { get; internal set; }
-    private bool isRefreshing;
-    #endregion
+    using System.Collections.ObjectModel;
+    using PCySO2018.ViewModels;
+    using Services;
+    using Xamarin.Forms;
 
-    public class ListaElmentos
+
+    public class PaginaPrincipalViewModel : BaseViewModel
     {
-        public List<PaginaPrincipalViewModel> _elementos
+
+        #region Atributos
+        private ObservableCollection<PaginaPrincipalViewModel> paginaPrincipal;
+        #endregion
+
+        #region Propiedades
+        public ObservableCollection<PaginaPrincipalViewModel> PaginaPrincipal
         {
-            get;
-            set;
+            get { return this.paginaPrincipal; }
+            set { SetValue(ref this.paginaPrincipal, value); }
         }
-       
-        public static object ItemsSource { get; internal set; }
+        #endregion
 
-        public ListaElmentos()
+        #region Constructores
+        public PaginaPrincipalViewModel()
         {
-            _elementos = new List<PaginaPrincipalViewModel>();
-            LoadElements();
+            this.apiService = new ApiService();
+            this.LoadPaginaPrincipal();
         }
+        #endregion
 
-        public void LoadElements()
+        #region Metodos
+        private async void LoadPaginaPrincipal()
         {
-            _elementos.Add(new PaginaPrincipalViewModel
+            var connection = await this.apiService.CheckConnection();
+            if (!connection.IsSuccess)
             {
-                Nombre = "Recursos Humanos",
-                Descripcion = "En este módulo se lleva el control de: Trabajador, Contratista, Proveedor"
-            });
+                await Application.Current.MainPage.DisplayAlert(
+                    "Error",
+                    connection.Message,
+                    "Aceptar");
+                await Application.Current.MainPage.Navigation.PopAsync();
+                return;
+            }
 
-            _elementos.Add(new PaginaPrincipalViewModel
-            {
-                Nombre = "Recursos Materiales",
-                Descripcion = "En este módulo se lleva el control de: Extintor, Bitacora Extintor, Inmueble"
-            });
+            
+        #endregion
 
-            _elementos.Add(new PaginaPrincipalViewModel
-            {
-                Nombre = "Unidad Médica",
-                Descripcion = "En este módulo se lleva el control de: Antecedentes, Atención, Incapacidad del Trabajador"
-            });
-
-            _elementos.Add(new PaginaPrincipalViewModel
-            {
-                Nombre = "Ayuda",
-                Descripcion = "Este módulo sirve como referencia básica"
-            });
-
-        }
+        #region Servicios
+        private ApiService apiService;
+        #endregion
     }
 }
 

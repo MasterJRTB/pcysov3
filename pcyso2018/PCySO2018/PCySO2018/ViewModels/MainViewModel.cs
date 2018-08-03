@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using PCySO2018.Views;
+using System.ComponentModel;
 
 namespace PCySO2018.ViewModels
 {
@@ -43,7 +44,5 @@ namespace PCySO2018.ViewModels
         #endregion
     }
 
-    public class PaginaPrincipalViewModel
-    {
-    }
 }
+    

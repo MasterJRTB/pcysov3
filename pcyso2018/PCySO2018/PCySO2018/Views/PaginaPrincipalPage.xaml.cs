@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace PCySO2018.Views
@@ -9,6 +10,11 @@ namespace PCySO2018.Views
         public PaginaPrincipalViewModel()
         {
             InitializeComponent();
+        }
+
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
         }
 
         public string Nombre { get; internal set; }

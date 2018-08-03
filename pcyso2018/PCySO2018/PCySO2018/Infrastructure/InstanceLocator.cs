@@ -1,7 +1,6 @@
 ﻿namespace PCySO2018.Infrastructure
 {
     using PCySO2018.ViewModels;
-    using System;
     using System.ComponentModel;
 
     class InstanceLocator : Component
@@ -22,16 +21,16 @@
         #endregion
 
 
-        public InstanceLocator(IContainer container)
-        {
-            container.Add(this);
+        //public InstanceLocator(IContainer container)
+        //{
+        //    container.Add(this);
 
-            InitializeComponent();
-        }
+        //    InitializeComponent();
+        //}
 
-        private void InitializeComponent()
-        {
-            throw new NotImplementedException();
-        }
+        //private void InitializeComponent()
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }
