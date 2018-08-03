@@ -114,7 +114,7 @@
             //comando para llamar a otra pagina dentro de la app
 
             MainViewModel.GetInstance().PaginaPrincipal = new PaginaPrincipalViewModel();
-            await Application.Current.MainPage.Navigation.PushAsync(new Views.PaginaPrincipalViewModel());
+            await Application.Current.MainPage.Navigation.PushAsync(new PaginaPrincipalPage());
 
             #endregion
         }
