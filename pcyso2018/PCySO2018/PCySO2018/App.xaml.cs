@@ -13,7 +13,7 @@ namespace PCySO2018
 		{
 			InitializeComponent();
 
-			this.MainPage = new NavigationPage(new PaginaPrincipalPage());
+			this.MainPage = new NavigationPage(new PrincipalPage());
 		}
         #endregion
 

@@ -183,4 +183,13 @@
   <ItemGroup>
     <BundleResource Include="Resources\checkronmini.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\paginaprincipal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\luartexto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\luartexto2.png" />
+  </ItemGroup>
 </Project>
