@@ -2,11 +2,21 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PCySO2018.Views.PrincipalPage"
-             Title="- Principal -">
+             Title="- Principal - Homepage -">
     <ContentPage.Content>
         <Grid>
             <Image Source="checkronmini" Aspect="AspectFill"/>
-            
+            <StackLayout
+                    Padding="0,2"
+                    HorizontalOptions="Center"
+                    Orientation="Horizontal"
+                    VerticalOptions="End">
+
+                <Image 
+                    Source="luartexto"
+                    WidthRequest="235">
+                </Image>
+            </StackLayout>
             <BoxView Color="Green" Opacity="0.18"/>
             <StackLayout
                    Padding="10">
@@ -115,16 +125,7 @@
 
                     
                 </Grid>
-                <StackLayout
-                    HorizontalOptions="Center"
-                    Orientation="Horizontal"
-                    VerticalOptions="End">
-
-                    <Image 
-                    Source="luartexto"
-                    WidthRequest="200">
-                    </Image>
-                </StackLayout>
+               
             </StackLayout>
         </Grid>
     </ContentPage.Content>
