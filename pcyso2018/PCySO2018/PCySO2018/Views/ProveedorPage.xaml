@@ -22,7 +22,7 @@
             <StackLayout
                    Padding="10">
                 <Image
-                     Source="textoayuda"
+                     Source="textorhproveedor"
                      WidthRequest="200">
                 </Image>
             </StackLayout>
