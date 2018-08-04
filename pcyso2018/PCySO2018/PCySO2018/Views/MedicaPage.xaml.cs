@@ -15,6 +15,28 @@ namespace PCySO2018.Views
 		public MedicaPage ()
 		{
 			InitializeComponent ();
+            btnantecedentes.Clicked += Btnantecedentes_Clicked;
+            btnatencion.Clicked += Btnatencion_Clicked;
+            btnincapacidad.Clicked += Btnincapacidad_Clicked;
 		}
-	}
+
+        
+        private void Btnantecedentes_Clicked(object sender, EventArgs e)
+        {
+            //throw new NotImplementedException();
+            ((NavigationPage)this.Parent).PushAsync(new AntecedentesPage());
+        }
+        private void Btnatencion_Clicked(object sender, EventArgs e)
+        {
+            //throw new NotImplementedException();
+            ((NavigationPage)this.Parent).PushAsync(new AtencionPage());
+        }
+        private void Btnincapacidad_Clicked(object sender, EventArgs e)
+        {
+            //throw new NotImplementedException();
+            ((NavigationPage)this.Parent).PushAsync(new IncapacidadPage());
+        }
+
+
+    }
 }

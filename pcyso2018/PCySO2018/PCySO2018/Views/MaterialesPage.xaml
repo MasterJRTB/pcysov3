@@ -44,6 +44,7 @@
                             >
                     </Label>
                     <Button
+                        x:Name="btnextintor"
                         Grid.Row="0"
                         Grid.Column="1"
                         BackgroundColor="ForestGreen"
@@ -62,6 +63,7 @@
                             VerticalOptions="CenterAndExpand">
                     </Label>
                     <Button
+                        x:Name="btnbitacora"
                         Grid.Row="1"
                         Grid.Column="1"
                         BackgroundColor="ForestGreen"
@@ -80,6 +82,7 @@
                             VerticalOptions="CenterAndExpand">
                     </Label>
                     <Button
+                        x:Name="btninmueble"
                         Grid.Row="2"
                         Grid.Column="1"
                         BackgroundColor="ForestGreen"

@@ -39,11 +39,12 @@
                             TextColor="White"
                             FontAttributes="Bold"  
                             FontSize="20" 
-                            Text="Antecedentes Médicos del Trabajador"
+                            Text="Antecedentes Médicos"
                             VerticalOptions="CenterAndExpand"
                             >
                     </Label>
                     <Button
+                        x:Name="btnantecedentes"
                         Grid.Row="0"
                         Grid.Column="1"
                         BackgroundColor="ForestGreen"
@@ -62,6 +63,7 @@
                             VerticalOptions="CenterAndExpand">
                     </Label>
                     <Button
+                        x:Name="btnatencion"
                         Grid.Row="1"
                         Grid.Column="1"
                         BackgroundColor="ForestGreen"
@@ -80,6 +82,7 @@
                             VerticalOptions="CenterAndExpand">
                     </Label>
                     <Button
+                        x:Name="btnincapacidad"
                         Grid.Row="2"
                         Grid.Column="1"
                         BackgroundColor="ForestGreen"

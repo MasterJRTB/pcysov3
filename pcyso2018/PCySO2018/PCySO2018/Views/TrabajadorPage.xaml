@@ -3,28 +3,132 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PCySO2018.Views.TrabajadorPage"
              Title="- - - - - PCySO - - - - -">
-    
+
     <ContentPage.Content>
         <Grid>
-            <Image Source="checkronmini" Aspect="AspectFill"/>
-            <StackLayout
+                <Image Source="checkronmini" Aspect="AspectFill"/>
+                <StackLayout
                     Padding="0,2"
                     HorizontalOptions="Center"
                     Orientation="Horizontal"
                     VerticalOptions="End">
 
-                <Image 
+                    <Image 
                     Source="luartexto"
                     WidthRequest="235">
-                </Image>
-            </StackLayout>
-            <BoxView Color="ForestGreen" Opacity="0.18"/>
-            <StackLayout
+                    </Image>
+                </StackLayout>
+                <BoxView Color="ForestGreen" Opacity="0.18"/>
+
+                <StackLayout
                    Padding="10">
-                <Image
-                     Source="textorhtrabajador"
+                    <Image
+                     Source="textorhtrabjador"
                      WidthRequest="200">
-                </Image>
+                    </Image>
+                </StackLayout>
+                <ScrollView>
+                    <Grid
+                    Margin="10,75"
+                    VerticalOptions="Start">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="2*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        x:Name="nomTrabajador"
+                        TextColor="Yellow"
+                        FontSize="Large"
+                        Text="Nombre"/>
+                        <Entry 
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        Placeholder="Nombre"/>
+
+                        <Label
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        x:Name="tipTrabajador"
+                        TextColor="Yellow"
+                        FontSize="Large"
+                        Text="Tipo"/>
+                        <Entry 
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        Placeholder="Tipo de contrato"/>
+
+                    </Grid>
+                </ScrollView>
+                <!-- sección botones Nuevo, Guardar, Buscar, Actualizar, Borrar-->
+            <StackLayout
+                        HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="EndAndExpand">
+
+                        <Button
+                           BackgroundColor="Navy"
+                           BorderRadius="23"
+                           HeightRequest="46"
+                           HorizontalOptions="Fill"
+                           IsEnabled="True"
+                           Text="Nuevo"
+                           TextColor="White">
+                        </Button>
+
+                        <Button
+                           BackgroundColor="Navy"
+                           BorderRadius="23"
+                           HeightRequest="46"
+                           HorizontalOptions="Fill"
+                           IsEnabled="True"
+                           Text="Agregar"
+                           TextColor="White">
+                        </Button>
+
+                        <Button
+                           BackgroundColor="Navy"
+                           BorderRadius="23"
+                           HeightRequest="46"
+                           HorizontalOptions="Fill"
+                           IsEnabled="True"
+                           Text="Listar"
+                           TextColor="White">
+                        </Button>
+                <StackLayout 
+                     HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="EndAndExpand">
+                        <Button
+                            BackgroundColor="Purple"
+                            BorderRadius="23"
+                            HeightRequest="46"
+                            HorizontalOptions="Fill"
+                            IsEnabled="True"
+                            Text="Buscar"
+                            TextColor="White">
+                        </Button>
+
+                        <Button
+                            BackgroundColor="Purple"
+                            BorderRadius="23"
+                            HeightRequest="46"
+                            HorizontalOptions="Fill"
+                            IsEnabled="True"
+                            Text="Actualizar"
+                            TextColor="White">
+                        </Button>
+
+                        <Button
+                           BackgroundColor="Purple"
+                           BorderRadius="23"
+                           HeightRequest="46"
+                           HorizontalOptions="Fill"
+                           IsEnabled="True"
+                           Text="Eliminar"
+                           TextColor="White">
+                        </Button>
+                </StackLayout>
             </StackLayout>
         </Grid>
     </ContentPage.Content>
