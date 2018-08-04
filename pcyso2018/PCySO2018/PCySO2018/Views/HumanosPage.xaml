@@ -44,6 +44,7 @@
                             >
                     </Label>
                     <Button
+                        x:Name="btnTrabajador"
                         Grid.Row="0"
                         Grid.Column="1"
                         BackgroundColor="ForestGreen"
@@ -62,6 +63,7 @@
                             VerticalOptions="CenterAndExpand">
                     </Label>
                     <Button
+                        x:Name="btnContratista"
                         Grid.Row="1"
                         Grid.Column="1"
                         BackgroundColor="ForestGreen"
@@ -80,7 +82,8 @@
                             VerticalOptions="CenterAndExpand">
                     </Label>
                     <Button
-                        Grid.Row="0"
+                        x:Name="btnProveedor"
+                        Grid.Row="2"
                         Grid.Column="1"
                         BackgroundColor="ForestGreen"
                         Image="checkronmini4"
@@ -98,6 +101,7 @@
                             VerticalOptions="CenterAndExpand">
                     </Label>
                     <Button
+                        x:Name="btnUsuario"
                         Grid.Row="3"
                         Grid.Column="1"
                         BackgroundColor="ForestGreen"
