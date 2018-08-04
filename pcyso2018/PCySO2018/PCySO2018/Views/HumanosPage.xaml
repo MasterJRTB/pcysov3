@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PCySO2018.Views.HumanosPage"
-             Title="- Recursos Humanos - Human Resources -">
+             Title="- - - - - PCySO - - - - -">
     
     <ContentPage.Content>
         <Grid>
@@ -24,7 +24,7 @@
                    Padding="10">
                 <Image
                      Source="textorecursoshumanos"
-                     WidthRequest="175">
+                     WidthRequest="200">
                 </Image>
                 <Grid
                     Margin="10,50"
@@ -43,19 +43,15 @@
                             VerticalOptions="CenterAndExpand"
                             >
                     </Label>
-                    <Image
-                             Grid.Row="0"
-                             Grid.Column="1"
-                             Source="checkronmini"
-                             WidthRequest="25"
-                             VerticalOptions="CenterAndExpand"/>
-                    <BoxView 
-                             Grid.Row="0"
-                             Grid.Column="1"
-                             Color="White" 
-                             Opacity="0.18">
-                    </BoxView>
-
+                    <Button
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        BackgroundColor="ForestGreen"
+                        Image="checkronmini4"
+                        BorderRadius="23"
+                        WidthRequest="4"
+                        VerticalOptions="CenterAndExpand"/>
+                    
                     <Label
                             Grid.Row="1"
                             Grid.Column="0"
@@ -65,62 +61,50 @@
                             Text="Contratista"
                             VerticalOptions="CenterAndExpand">
                     </Label>
-                    <Image
-                             Grid.Row="1"
-                             Grid.Column="1"
-                             Source="checkronmini"
-                             WidthRequest="25"
-                             VerticalOptions="CenterAndExpand"/>
-                    <BoxView 
-                             Grid.Row="1"
-                             Grid.Column="1"
-                             Color="White" 
-                             Opacity="0.18">
-                    </BoxView>
+                    <Button
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        BackgroundColor="ForestGreen"
+                        Image="checkronmini4"
+                        BorderRadius="23"
+                        WidthRequest="4"
+                        VerticalOptions="CenterAndExpand"/>
 
                     <Label
                             Grid.Row="2"
                             Grid.Column="0"
-                            TextColor="White"
+                            TextColor="Black"
                             FontAttributes="Bold"  
                             FontSize="20" 
                             Text="Proveedor"
                             VerticalOptions="CenterAndExpand">
                     </Label>
-                    <Image
-                             Grid.Row="2"
-                             Grid.Column="1"
-                             Source="checkronmini"
-                             WidthRequest="25"
-                             VerticalOptions="CenterAndExpand"/>
-                    <BoxView 
-                             Grid.Row="2"
-                             Grid.Column="1"
-                             Color="White" 
-                             Opacity="0.18">
-                    </BoxView>
+                    <Button
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        BackgroundColor="ForestGreen"
+                        Image="checkronmini4"
+                        BorderRadius="23"
+                        WidthRequest="4"
+                        VerticalOptions="CenterAndExpand"/>
 
                     <!--<Label
                             Grid.Row="3"
                             Grid.Column="0"
-                            TextColor="White"
+                            TextColor="Black"
                             FontAttributes="Bold"  
                             FontSize="20" 
                             Text="Usuario"
                             VerticalOptions="CenterAndExpand">
                     </Label>
-                    <Image
-                             Grid.Row="3"
-                             Grid.Column="1"
-                             Source="checkronmini"
-                             WidthRequest="25"
-                             VerticalOptions="CenterAndExpand"/>
-                    <BoxView 
-                             Grid.Row="3"
-                             Grid.Column="1"
-                             Color="White" 
-                             Opacity="0.18">
-                    </BoxView>-->
+                    <Button
+                        Grid.Row="3"
+                        Grid.Column="1"
+                        BackgroundColor="ForestGreen"
+                        Image="checkronmini4"
+                        BorderRadius="23"
+                        WidthRequest="4"
+                        VerticalOptions="CenterAndExpand"/>-->
                 </Grid>
             </StackLayout>
         </Grid>

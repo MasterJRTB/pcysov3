@@ -207,4 +207,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\textounidadmedica.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\checkronmini4.png" />
+  </ItemGroup>
 </Project>
