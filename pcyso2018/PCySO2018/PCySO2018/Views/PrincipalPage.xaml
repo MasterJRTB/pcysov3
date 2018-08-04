@@ -45,6 +45,7 @@
                             >
                     </Label>
                     <Button
+                        x:Name="btnrh"
                         Grid.Row="0"
                         Grid.Column="1"
                         BackgroundColor="ForestGreen"
@@ -63,6 +64,7 @@
                             VerticalOptions="CenterAndExpand">
                     </Label>
                     <Button
+                        x:Name="btnrm"
                         Grid.Row="1"
                         Grid.Column="1"
                         BackgroundColor="ForestGreen"
@@ -81,6 +83,7 @@
                             VerticalOptions="CenterAndExpand">
                     </Label>
                     <Button
+                        x:Name="btnum"
                         Grid.Row="2"
                         Grid.Column="1"
                         BackgroundColor="ForestGreen"
@@ -99,6 +102,7 @@
                             VerticalOptions="CenterAndExpand">
                     </Label>
                     <Button
+                        x:Name="btnayu"
                         Grid.Row="3"
                         Grid.Column="1"
                         BackgroundColor="ForestGreen"
