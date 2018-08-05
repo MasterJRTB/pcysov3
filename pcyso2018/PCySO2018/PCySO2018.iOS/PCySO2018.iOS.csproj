@@ -211,33 +211,33 @@
     <BundleResource Include="Resources\checkronmini4.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\textoumincapacidad.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\textorhcontratista.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\textorhproveedor.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\textorhtrabjador.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\textormbitacoraextintor.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\textormextintor.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\textorminmueble.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\textoumantecedentes.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\textoumatencion.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\checkronminiverde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cuadroincapacidad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cuadroinmueble.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cuadroproveedor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cuadrotrabajador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cuadroantecedentes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cuadroatencion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cuadrocontratista.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cuadroextintor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cuadroextintorbitacora.png" />
   </ItemGroup>
 </Project>

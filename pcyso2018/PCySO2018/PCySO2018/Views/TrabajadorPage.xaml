@@ -6,7 +6,7 @@
 
     <ContentPage.Content>
         <Grid>
-                <Image Source="checkronminiverde" Aspect="AspectFill"/>
+            <Image Source="cuadrotrabajador" Aspect="AspectFill"/>
                 <StackLayout
                     Padding="0,2,0,2"
                     HorizontalOptions="Center"
@@ -22,10 +22,10 @@
 
                 <StackLayout
                    Padding="10">
-                    <Image
-                     Source="textorhtrabjador"
+                    <!--<Image
+                     Source="cuadrotrabajador"
                      WidthRequest="200">
-                    </Image>
+                    </Image>-->
                 </StackLayout>
                 <ScrollView>
                     <Grid
@@ -40,72 +40,78 @@
                         Grid.Row="0"
                         Grid.Column="0"
                         x:Name="nomTrabajador"
-                        TextColor="Black"
+                        TextColor="White"
                         FontSize="Large"
                         Text="Nombre"/>
                         <Entry 
                         Grid.Row="0"
                         Grid.Column="1"
+                        TextColor="White"
                         Placeholder="Nombre"/>
 
                         <Label
                         Grid.Row="1"
                         Grid.Column="0"
                         x:Name="tipTrabajador"
-                        TextColor="Black"
+                        TextColor="White"
                         FontSize="Large"
                         Text="Tipo"/>
                         <Entry 
                         Grid.Row="1"
                         Grid.Column="1"
+                        TextColor="White"
                         Placeholder="Tipo de contrato"/>
 
                     <Label
                         Grid.Row="2"
                         Grid.Column="0"
                         x:Name="ctTrabajador"
-                        TextColor="Black"
+                        TextColor="White"
                         FontSize="Large"
                         Text="Centro de Trabajo"/>
                     <Entry 
                         Grid.Row="2"
                         Grid.Column="1"
+                        TextColor="White"
                         Placeholder="Nombre Centro de Trabajo"/>
 
                     <Label
                         Grid.Row="3"
                         Grid.Column="0"
                         x:Name="depTrabajador"
-                        TextColor="Black"
+                        TextColor="White"
                         FontSize="Large"
                         Text="Departamento"/>
                     <Entry 
                         Grid.Row="3"
                         Grid.Column="1"
+                        TextColor="White"
                         Placeholder="Departamento / Área"/>
 
                     <Label
                         Grid.Row="4"
                         Grid.Column="0"
                         x:Name="pueTrabajador"
-                        TextColor="Black"
+                        TextColor="White"
                         FontSize="Large"
                         Text="Puesto"/>
                     <Entry 
                         Grid.Row="4"
                         Grid.Column="1"
+                        TextColor="White"
                         Placeholder="Puesto de trabajo"/>
 
                     <Label
                         Grid.Row="5"
                         Grid.Column="0"
                         x:Name="horTrabajador"
-                        TextColor="Black"
+                        TextColor="White"
                         FontSize="Large"
                         Text="Horario"/>
                     <Entry 
                         Grid.Row="5"
                         Grid.Column="1"
+                        TextColor="White"
                         Placeholder="Horario de Trabajo"/>
                         
                 </Grid>
