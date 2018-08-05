@@ -237,4 +237,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\textoumatencion.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\checkronminiverde.png" />
+  </ItemGroup>
 </Project>

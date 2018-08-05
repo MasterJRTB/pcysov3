@@ -176,5 +176,8 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\textoumatencion.png" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\checkronminiverde.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
