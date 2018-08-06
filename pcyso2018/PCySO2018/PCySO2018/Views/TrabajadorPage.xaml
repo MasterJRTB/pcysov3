@@ -30,13 +30,6 @@
                 </StackLayout>
                 <BoxView Color="ForestGreen" Opacity="0.18"/>
 
-                <!--<StackLayout
-                   Padding="10">
-                    <Image
-                     Source="textotrabjador"
-                     WidthRequest="200">
-                    </Image>
-                </StackLayout>-->
                 <ScrollView>
                     <Grid
                     Margin="10,70"
@@ -184,6 +177,34 @@
                     <Label
                         Grid.Row="9"
                         Grid.Column="0"
+                        x:Name="faTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Text="Fecha de Ingreso"/>
+                    <DatePicker 
+                        Grid.Row="9"
+                        Grid.Column="1"
+                        TextColor="White"/>
+
+                    <Label
+                        Grid.Row="10"
+                        Grid.Column="0"
+                        x:Name="nssTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Text="Seguro Social"/>
+                    <Entry 
+                        Grid.Row="10"
+                        Grid.Column="1"
+                        TextColor="White"
+                        PlaceholderColor="WhiteSmoke"
+                        Placeholder="Número del Seguro Social"/>
+                        
+                    <Label
+                        Grid.Row="11"
+                        Grid.Column="0"
                         Grid.ColumnSpan="2"
                         x:Name="espaTrabajador"
                         TextColor="White"
@@ -192,7 +213,7 @@
                         FontAttributes="Bold"
                         Text=""/>
                     <Label
-                        Grid.Row="10"
+                        Grid.Row="12"
                         Grid.Column="0"
                         Grid.ColumnSpan="2"
                         x:Name="jefeTrabajador"
@@ -201,7 +222,147 @@
                         HorizontalOptions="Center"
                         FontAttributes="Bold"
                         Text="Datos del Supervisor / Jefe"/>
-                    
+
+                    <Label
+                        Grid.Row="13"
+                        Grid.Column="0"
+                        x:Name="nombjefeTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Text="Nombre"/>
+                    <Entry 
+                        Grid.Row="13"
+                        Grid.Column="1"
+                        TextColor="White"
+                        PlaceholderColor="WhiteSmoke"
+                        Placeholder="Nombre completo"/>
+
+                    <Label
+                        Grid.Row="14"
+                        Grid.Column="0"
+                        x:Name="teljefeTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Text="Teléfono"/>
+                    <Entry 
+                        Grid.Row="14"
+                        Grid.Column="1"
+                        TextColor="White"
+                        PlaceholderColor="WhiteSmoke"
+                        Placeholder="Teléfono de Oficina"/>
+
+                    <Label
+                        Grid.Row="15"
+                        Grid.Column="0"
+                        x:Name="telextjefeTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Text="Extensión"/>
+                    <Entry 
+                        Grid.Row="15"
+                        Grid.Column="1"
+                        TextColor="White"
+                        PlaceholderColor="WhiteSmoke"
+                        Placeholder="Ext."/>
+
+                    <Label
+                        Grid.Row="16"
+                        Grid.Column="0"
+                        x:Name="corrjefeTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Text="E-Mail"/>
+                    <Entry 
+                        Grid.Row="16"
+                        Grid.Column="1"
+                        TextColor="White"
+                        PlaceholderColor="WhiteSmoke"
+                        Placeholder="Correo Electrónico"/>
+
+                    <Label
+                        Grid.Row="17"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="2"
+                        x:Name="espacTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        HorizontalOptions="Center"
+                        FontAttributes="Bold"
+                        Text=""/>
+                    <Label
+                        Grid.Row="18"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="2"
+                        x:Name="contactoTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        HorizontalOptions="Center"
+                        FontAttributes="Bold"
+                        Text="Datos del Contacto / Emergencia"/>
+
+                    <Label
+                        Grid.Row="19"
+                        Grid.Column="0"
+                        x:Name="nomcontacTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Text="Nombre"/>
+                    <Entry 
+                        Grid.Row="19"
+                        Grid.Column="1"
+                        TextColor="White"
+                        PlaceholderColor="WhiteSmoke"
+                        Placeholder="Nombre Completo"/>
+
+                    <Label
+                        Grid.Row="20"
+                        Grid.Column="0"
+                        x:Name="parecontacTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Text="Parentesco"/>
+                    <Entry 
+                        Grid.Row="20"
+                        Grid.Column="1"
+                        TextColor="White"
+                        PlaceholderColor="WhiteSmoke"
+                        Placeholder="Parentesco"/>
+
+                    <Label
+                        Grid.Row="21"
+                        Grid.Column="0"
+                        x:Name="telcontacTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Text="Teléfono"/>
+                    <Entry 
+                        Grid.Row="21"
+                        Grid.Column="1"
+                        TextColor="White"
+                        PlaceholderColor="WhiteSmoke"
+                        Placeholder="Teléfono"/>
+
+                    <Label
+                        Grid.Row="22"
+                        Grid.Column="0"
+                        x:Name="celcontacTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Text="Celular"/>
+                    <Entry 
+                        Grid.Row="22"
+                        Grid.Column="1"
+                        TextColor="White"
+                        PlaceholderColor="WhiteSmoke"
+                        Placeholder="Celular"/>
                 </Grid>
                 </ScrollView>
                 <!-- sección botones Nuevo, Guardar, Buscar, Actualizar, Borrar-->
