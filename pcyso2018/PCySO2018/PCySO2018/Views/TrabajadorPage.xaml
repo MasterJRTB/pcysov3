@@ -135,7 +135,73 @@
                         TextColor="White"
                         PlaceholderColor="WhiteSmoke"
                         Placeholder="Horario de Trabajo"/>
-                        
+
+                    <Label
+                        Grid.Row="6"
+                        Grid.Column="0"
+                        x:Name="telofiTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Text="Teléfono"/>
+                    <Entry 
+                        Grid.Row="6"
+                        Grid.Column="1"
+                        TextColor="White"
+                        PlaceholderColor="WhiteSmoke"
+                        Placeholder="Teléfono de Oficina"/>
+
+                    <Label
+                        Grid.Row="7"
+                        Grid.Column="0"
+                        x:Name="extofiTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Text="Extensión"/>
+                    <Entry 
+                        Grid.Row="7"
+                        Grid.Column="1"
+                        TextColor="White"
+                        PlaceholderColor="WhiteSmoke"
+                        Placeholder="Ext."/>
+
+                    <Label
+                        Grid.Row="8"
+                        Grid.Column="0"
+                        x:Name="correoTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Text="E-Mail"/>
+                    <Entry 
+                        Grid.Row="8"
+                        Grid.Column="1"
+                        TextColor="White"
+                        PlaceholderColor="WhiteSmoke"
+                        Placeholder="Correo Electrónico"/>
+
+                    <Label
+                        Grid.Row="9"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="2"
+                        x:Name="espaTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        HorizontalOptions="Center"
+                        FontAttributes="Bold"
+                        Text=""/>
+                    <Label
+                        Grid.Row="10"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="2"
+                        x:Name="jefeTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        HorizontalOptions="Center"
+                        FontAttributes="Bold"
+                        Text="Datos del Supervisor / Jefe"/>
+                    
                 </Grid>
                 </ScrollView>
                 <!-- sección botones Nuevo, Guardar, Buscar, Actualizar, Borrar-->
