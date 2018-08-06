@@ -148,6 +148,7 @@
                         Grid.Column="1"
                         Grid.ColumnSpan="2"
                         TextColor="White"
+                        Keyboard="Numeric"
                         PlaceholderColor="WhiteSmoke"
                         Placeholder="Teléfono de Oficina"/>
 
@@ -164,6 +165,7 @@
                         Grid.Column="1"
                         Grid.ColumnSpan="2"
                         TextColor="White"
+                        Keyboard="Numeric"
                         PlaceholderColor="WhiteSmoke"
                         Placeholder="Ext."/>
 
@@ -209,6 +211,7 @@
                         Grid.Column="1"
                         Grid.ColumnSpan="2"
                         TextColor="White"
+                        Keyboard="Numeric"
                         PlaceholderColor="WhiteSmoke"
                         Placeholder="Número del Seguro Social"/>
                         
@@ -262,6 +265,7 @@
                         Grid.Column="1"
                         Grid.ColumnSpan="2"
                         TextColor="White"
+                        Keyboard="Numeric"
                         PlaceholderColor="WhiteSmoke"
                         Placeholder="Teléfono de Oficina"/>
 
@@ -278,6 +282,7 @@
                         Grid.Column="1"
                         Grid.ColumnSpan="2"
                         TextColor="White"
+                        Keyboard="Numeric"
                         PlaceholderColor="WhiteSmoke"
                         Placeholder="Ext."/>
 
@@ -349,7 +354,7 @@
                         TextColor="White"
                         PlaceholderColor="WhiteSmoke"
                         Placeholder="Parentesco"/>
-
+                    
                     <Label
                         Grid.Row="21"
                         Grid.Column="0"
@@ -363,6 +368,7 @@
                         Grid.Column="1"
                         Grid.ColumnSpan="2"
                         TextColor="White"
+                        Keyboard="Numeric"
                         PlaceholderColor="WhiteSmoke"
                         Placeholder="Teléfono"/>
 
@@ -379,6 +385,7 @@
                         Grid.Column="1"
                         Grid.ColumnSpan="2"
                         TextColor="White"
+                        Keyboard="Numeric"
                         PlaceholderColor="WhiteSmoke"
                         Placeholder="Celular"/>
 
@@ -390,6 +397,7 @@
                            BorderRadius="35"
                            HeightRequest="70"
                            IsEnabled="True"
+                           FontSize="Large"
                            Text="Nuevo"
                            TextColor="White">
                         </Button>
@@ -401,6 +409,7 @@
                            BorderRadius="35"
                            HeightRequest="70"
                            IsEnabled="True"
+                           FontSize="Large"  
                            Text="Agregar"
                            TextColor="White">
                          </Button>
@@ -412,6 +421,7 @@
                            BorderRadius="35"
                            HeightRequest="70"
                            IsEnabled="True"
+                           FontSize="Large"
                            Text="Listar"
                            TextColor="White">
                          </Button>
@@ -423,6 +433,7 @@
                             BorderRadius="35"
                             HeightRequest="70"
                             IsEnabled="True"
+                            FontSize="Large"
                             Text="Buscar"
                             TextColor="White">
                          </Button>
@@ -434,6 +445,7 @@
                             BorderRadius="35"
                             HeightRequest="70"
                             IsEnabled="True"
+                            FontSize="Large" 
                             Text="Actualizar"
                             TextColor="White">
                          </Button>
@@ -445,6 +457,7 @@
                            BorderRadius="35"
                            HeightRequest="70"
                            IsEnabled="True"
+                           FontSize="Large"  
                            Text="Eliminar"
                            TextColor="White">
                          </Button>
