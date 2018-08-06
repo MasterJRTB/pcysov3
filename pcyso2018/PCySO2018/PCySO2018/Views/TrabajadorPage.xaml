@@ -7,7 +7,17 @@
     <ContentPage.Content>
         <Grid>
             <Image Source="cuadrotrabajador" Aspect="AspectFill"/>
-                <StackLayout
+            <StackLayout
+                   Padding="10"
+                   HorizontalOptions="Center"
+                   Orientation="Horizontal"
+                   VerticalOptions="Start">
+                <Image
+                     Source="textorhtrabjador"
+                     WidthRequest="200">
+                </Image>
+            </StackLayout>
+            <StackLayout
                     Padding="0,2,0,2"
                     HorizontalOptions="Center"
                     Orientation="Horizontal"
@@ -20,13 +30,13 @@
                 </StackLayout>
                 <BoxView Color="ForestGreen" Opacity="0.18"/>
 
-                <StackLayout
+                <!--<StackLayout
                    Padding="10">
-                    <!--<Image
-                     Source="cuadrotrabajador"
+                    <Image
+                     Source="textotrabjador"
                      WidthRequest="200">
-                    </Image>-->
-                </StackLayout>
+                    </Image>
+                </StackLayout>-->
                 <ScrollView>
                     <Grid
                     Margin="10,70"
@@ -36,30 +46,34 @@
                             <ColumnDefinition Width="2*"/>
                         </Grid.ColumnDefinitions>
 
-                        <Label
+                    <Label
                         Grid.Row="0"
                         Grid.Column="0"
                         x:Name="nomTrabajador"
                         TextColor="White"
                         FontSize="Large"
+                        FontAttributes="Bold"    
                         Text="Nombre"/>
-                        <Entry 
+                    <Entry 
                         Grid.Row="0"
                         Grid.Column="1"
                         TextColor="White"
+                        PlaceholderColor="WhiteSmoke"
                         Placeholder="Nombre"/>
 
-                        <Label
+                    <Label
                         Grid.Row="1"
                         Grid.Column="0"
                         x:Name="tipTrabajador"
                         TextColor="White"
                         FontSize="Large"
+                        FontAttributes="Bold"
                         Text="Tipo"/>
-                        <Entry 
+                    <Entry 
                         Grid.Row="1"
                         Grid.Column="1"
                         TextColor="White"
+                        PlaceholderColor="WhiteSmoke"
                         Placeholder="Tipo de contrato"/>
 
                     <Label
@@ -68,11 +82,13 @@
                         x:Name="ctTrabajador"
                         TextColor="White"
                         FontSize="Large"
+                        FontAttributes="Bold"
                         Text="Centro de Trabajo"/>
                     <Entry 
                         Grid.Row="2"
                         Grid.Column="1"
                         TextColor="White"
+                        PlaceholderColor="WhiteSmoke"
                         Placeholder="Nombre Centro de Trabajo"/>
 
                     <Label
@@ -81,11 +97,13 @@
                         x:Name="depTrabajador"
                         TextColor="White"
                         FontSize="Large"
+                        FontAttributes="Bold"
                         Text="Departamento"/>
                     <Entry 
                         Grid.Row="3"
                         Grid.Column="1"
                         TextColor="White"
+                        PlaceholderColor="WhiteSmoke"
                         Placeholder="Departamento / Área"/>
 
                     <Label
@@ -94,11 +112,13 @@
                         x:Name="pueTrabajador"
                         TextColor="White"
                         FontSize="Large"
+                        FontAttributes="Bold"
                         Text="Puesto"/>
                     <Entry 
                         Grid.Row="4"
                         Grid.Column="1"
                         TextColor="White"
+                        PlaceholderColor="WhiteSmoke"
                         Placeholder="Puesto de trabajo"/>
 
                     <Label
@@ -107,11 +127,13 @@
                         x:Name="horTrabajador"
                         TextColor="White"
                         FontSize="Large"
+                        FontAttributes="Bold"
                         Text="Horario"/>
                     <Entry 
                         Grid.Row="5"
                         Grid.Column="1"
                         TextColor="White"
+                        PlaceholderColor="WhiteSmoke"
                         Placeholder="Horario de Trabajo"/>
                         
                 </Grid>
@@ -129,7 +151,7 @@
                     <Button
                            Grid.Column="0"
                            Grid.Row="0"
-                           BackgroundColor="Navy"
+                           BackgroundColor="DarkGreen"
                            BorderRadius="35"
                            HeightRequest="70"
                            IsEnabled="True"
@@ -140,7 +162,7 @@
                         <Button
                            Grid.Column="0"
                            Grid.Row="1"
-                           BackgroundColor="Navy"
+                           BackgroundColor="DarkGreen"
                            BorderRadius="35"
                            HeightRequest="70"
                            IsEnabled="True"
@@ -151,7 +173,7 @@
                         <Button
                            Grid.Column="1"
                            Grid.Row="0"
-                           BackgroundColor="Navy"
+                           BackgroundColor="DarkGreen"
                            BorderRadius="35"
                            HeightRequest="70"
                            IsEnabled="True"
@@ -162,7 +184,7 @@
                         <Button
                             Grid.Column="1"
                             Grid.Row="1"
-                            BackgroundColor="Navy"
+                            BackgroundColor="DarkGreen"
                             BorderRadius="35"
                             HeightRequest="70"
                             IsEnabled="True"
@@ -173,7 +195,7 @@
                         <Button
                             Grid.Column="2"
                             Grid.Row="0"
-                            BackgroundColor="Navy"
+                            BackgroundColor="DarkGreen"
                             BorderRadius="35"
                             HeightRequest="70"
                             IsEnabled="True"
@@ -184,7 +206,7 @@
                         <Button
                            Grid.Column="2"
                            Grid.Row="1"
-                           BackgroundColor="Navy"
+                           BackgroundColor="DarkGreen"
                            BorderRadius="35"
                            HeightRequest="70"
                            IsEnabled="True"

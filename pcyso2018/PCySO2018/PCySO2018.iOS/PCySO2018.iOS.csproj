@@ -240,4 +240,31 @@
   <ItemGroup>
     <BundleResource Include="Resources\cuadroextintorbitacora.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\textoumincapacidad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\textorhcontratista.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\textorhproveedor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\textorhtrabjador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\textormbitacoraextintor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\textormextintor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\textorminmueble.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\textoumantecedentes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\textoumatencion.png" />
+  </ItemGroup>
 </Project>
