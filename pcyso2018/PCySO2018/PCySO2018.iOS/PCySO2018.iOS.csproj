@@ -267,4 +267,22 @@
   <ItemGroup>
     <BundleResource Include="Resources\textoumatencion.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\iconoactualizarnaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\iconoagregarnaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\iconobuscarnaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\iconoeliminarnaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\iconolistarnaranja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icononuevonaranja.png" />
+  </ItemGroup>
 </Project>
