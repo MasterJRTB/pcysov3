@@ -397,7 +397,7 @@
                            BorderRadius="35"
                            HeightRequest="70"
                            IsEnabled="True"
-                           FontSize="Large"
+                           FontSize="Large"  
                            Text="Nuevo"
                            TextColor="White">
                         </Button>
