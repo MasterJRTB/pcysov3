@@ -44,38 +44,409 @@ namespace PCySO2018.Models
         {
             if (PropertyChanged != null)
             {
+                PropertyChanged(this, new PropertyChangedEventArgs(propiedad));
             }
         }
 
         [PrimaryKey,AutoIncrement]
-        public int IdTrabajador { get => idTrabajador; set => idTrabajador = value; }
+        public int IdTrabajador
+        {
+            get
+            {
+                return idTrabajador;
+            }
+            set
+            {
+                if (idTrabajador != value)
+                {
+                    idTrabajador = value;
+                    OnPropertyChanged("idTrabajador");
+                }
+                
+            }
+        }
 
-        public string NombreTrabajador { get => nombreTrabajador; set => nombreTrabajador = value; }
-        public string TipoTrabajador { get => tipoTrabajador; set => tipoTrabajador = value; }
-        public string CtTrabajador { get => ctTrabajador; set => ctTrabajador = value; }
-        public string DepaTrabajador { get => depaTrabajador; set => depaTrabajador = value; }
-        public string PueTrabajador { get => pueTrabajador; set => pueTrabajador = value; }
-        public string HorTrabajador { get => horTrabajador; set => horTrabajador = value; }
-        public string TelofiTrabajador { get => telofiTrabajador; set => telofiTrabajador = value; }
-        public string ExttelTrabajador { get => exttelTrabajador; set => exttelTrabajador = value; }
-        public string EmailTrabajador { get => emailTrabajador; set => emailTrabajador = value; }
-        public DateTime FaTrabajador { get => faTrabajador; set => faTrabajador = value; }
-        public string NssTrabajador { get => nssTrabajador; set => nssTrabajador = value; }
-        public string NjTrabajador { get => njTrabajador; set => njTrabajador = value; }
-        public string TjTrabajador { get => tjTrabajador; set => tjTrabajador = value; }
-        public string EtjTrabajador { get => etjTrabajador; set => etjTrabajador = value; }
-        public string EmjTrabajador { get => emjTrabajador; set => emjTrabajador = value; }
-        public string CalTrabajador { get => calTrabajador; set => calTrabajador = value; }
-        public string NeTrabajador { get => neTrabajador; set => neTrabajador = value; }
-        public string NiTrabajador { get => niTrabajador; set => niTrabajador = value; }
-        public string ColTrabajador { get => colTrabajador; set => colTrabajador = value; }
-        public string CpTrabajador { get => cpTrabajador; set => cpTrabajador = value; }
-        public string DmTrabajador { get => dmTrabajador; set => dmTrabajador = value; }
-        public string NceTrabajador { get => nceTrabajador; set => nceTrabajador = value; }
-        public string PareTrabajador { get => pareTrabajador; set => pareTrabajador = value; }
-        public string TceTrabajador { get => tceTrabajador; set => tceTrabajador = value; }
-        public string CelceTrabajador { get => celceTrabajador; set => celceTrabajador = value; }
+        public string NombreTrabajador
+        {
+            get
+            {
+                return nombreTrabajador;
+            }
+            set
+            {
+                if (nombreTrabajador != value)
+                {
+                    nombreTrabajador = value;
+                    OnPropertyChanged("nombreTrabajador");
+                }
+            }
+        }
+        public string TipoTrabajador
+        {
+            get
+            {
+                return tipoTrabajador;
+            }
+            set
+            {
+                if (tipoTrabajador != value)
+                {
+                    tipoTrabajador = value;
+                    OnPropertyChanged("tipoTrabajador");
+                }
+            }
+        }
+        public string CtTrabajador
+        {
+            get
+            {
+                return ctTrabajador;
+            }
+            set
+            {
+                if (ctTrabajador != value)
+                {
+                    ctTrabajador = value;
+                    OnPropertyChanged("ctTrabajador");
+                }
+            }
+        }
+        public string DepaTrabajador
+        {
+            get
+            {
+                return depaTrabajador;
+            }
+            set
+            {
+                if (depaTrabajador != value)
+                {
+                    depaTrabajador = value;
+                    OnPropertyChanged("depaTrabajador");
+                }
+            }
+        }
+        public string PueTrabajador
+        {
+            get
+            {
+                return pueTrabajador;
+            }
+            set
+            {
+                if (pueTrabajador != value)
+                {
+                    pueTrabajador = value;
+                    OnPropertyChanged("puTrabajador");
+                }
+            }
+        }
+        public string HorTrabajador
+        {
+            get
+            {
+                return horTrabajador;
+            }
+            set
+            {
+                if (horTrabajador != value)
+                {
+                    horTrabajador = value;
+                    OnPropertyChanged("horTrabajador");
+                }
+            }
+        }
+        public string TelofiTrabajador
+        {
+            get
+            {
+                return telofiTrabajador;
+            }
+            set
+            {
+                if (telofiTrabajador != value)
+                {
+                    telofiTrabajador = value;
+                    OnPropertyChanged("telofiTrabajador");
+                }
+            }
+        }
+        public string ExttelTrabajador
+        {
+            get
+            {
+                return exttelTrabajador;
+            }
+            set
+            {
+                if (exttelTrabajador != value)
+                {
+                    exttelTrabajador = value;
+                    OnPropertyChanged("exttelTrabajador");
+                }
+            }
+        }
+        public string EmailTrabajador {
+                get
+                {
+                    return emailTrabajador;
+                }
+                set
+                {
+                  if (emailTrabajador != value)
+                  {
+                    emailTrabajador = value;
+                    OnPropertyChanged("emailTrabajador");
+                  }
+                }
+            }
+        public DateTime FaTrabajador
+        {
+            get
+            {
+                return faTrabajador;
+            }
+            set
+            {
+                if (faTrabajador != value)
+                {
+                    faTrabajador = value;
+                    OnPropertyChanged("faTrabajador");
+                }
+            }
+        }
+        public string NssTrabajador
+        {
+            get
+            {
+                return nssTrabajador;
+            }
+            set
+            {
+                if (nssTrabajador != value)
+                {
+                    nssTrabajador = value;
+                    OnPropertyChanged("nssTrabajador");
+                }
+            }
+        }
 
-        
+
+        public string NjTrabajador
+        {
+            get
+            {
+                return njTrabajador;
+            }
+            set
+            {
+                if (njTrabajador != value)
+                {
+                    njTrabajador = value;
+                    OnPropertyChanged("njTrabajador");
+                }
+            }
+        }
+        public string TjTrabajador
+        {
+            get
+            {
+                return tjTrabajador;
+            }
+            set
+            {
+                if (tjTrabajador != value)
+                {
+                    tjTrabajador = value;
+                    OnPropertyChanged("tjTrabajador");
+                }
+                tjTrabajador = value;
+            }
+        }
+        public string EtjTrabajador
+        {
+            get
+            {
+                return etjTrabajador;
+            }
+            set
+            {
+                if (etjTrabajador != value)
+                {
+                    etjTrabajador = value;
+                    OnPropertyChanged("etjTrabajador");
+                }
+           }
+        }
+        public string EmjTrabajador
+        {
+            get
+            {
+                return emjTrabajador;
+            }
+            set
+            {
+                if (emjTrabajador != value)
+                {
+                    emjTrabajador = value;
+                    OnPropertyChanged("emjTrabajador");
+                }
+            }
+        }
+
+
+        public string CalTrabajador {
+                get
+                {
+                    return calTrabajador;
+                }
+                set
+                {
+                  if (calTrabajador != value)
+                  {
+                    calTrabajador = value;
+                    OnPropertyChanged("calTrabajador");
+                  }
+                }
+            }
+        public string NeTrabajador
+        {
+            get
+            {
+                return neTrabajador;
+            }
+            set
+            {
+                if (neTrabajador != value)
+                {
+                    neTrabajador = value;
+                    OnPropertyChanged("neTrabajador");
+                }
+                neTrabajador = value;
+            }
+        }
+        public string NiTrabajador
+        {
+            get
+            {
+                return niTrabajador;
+            }
+            set
+            {
+                if (niTrabajador != value)
+                {
+                    niTrabajador = value;
+                    OnPropertyChanged("niTrabajador");
+                }
+            }
+        }
+        public string ColTrabajador
+        {
+            get
+            {
+                return colTrabajador;
+            }
+            set
+            {
+                if (colTrabajador != value)
+                {
+                    colTrabajador = value;
+                    OnPropertyChanged("colTrabajador");
+                }
+            }
+        }
+        public string CpTrabajador
+        {
+            get
+            {
+                return cpTrabajador;
+            }
+            set
+            {
+                if (cpTrabajador != value)
+                {
+                    cpTrabajador = value;
+                    OnPropertyChanged("cpTrabajador");
+                }
+            }
+        }
+        public string DmTrabajador
+        {
+            get
+            {
+                return dmTrabajador;
+            }
+            set
+            {
+                if (dmTrabajador != value)
+                {
+                    dmTrabajador = value;
+                    OnPropertyChanged("dmTrabajador");
+                }
+            }
+        }
+
+
+        public string NceTrabajador
+        {
+            get
+            {
+                return nceTrabajador;
+            }
+            set
+            {
+                if (nceTrabajador != value)
+                {
+                    nceTrabajador = value;
+                    OnPropertyChanged("nceTrabajador");
+                }
+            }
+        }
+        public string PareTrabajador
+        {
+            get
+            {
+                return pareTrabajador;
+            }
+            set
+            {
+                if (pareTrabajador != value)
+                {
+                    pareTrabajador = value;
+                    OnPropertyChanged("pareTrabajador");
+                }
+            }
+        }
+        public string TceTrabajador
+        {
+            get
+            {
+                return tceTrabajador;
+            }
+            set
+            {
+                if (tceTrabajador != value)
+                {
+                    tceTrabajador = value;
+                    OnPropertyChanged("tceTrabajador");
+                }
+            }
+        }
+        public string CelceTrabajador
+        {
+            get
+            {
+                return celceTrabajador;
+            }
+            set
+            {
+                if (celceTrabajador != value)
+                {
+                    celceTrabajador = value;
+                    OnPropertyChanged("celceTrabajador");
+                }
+            }
+        }
+
     }
 }
