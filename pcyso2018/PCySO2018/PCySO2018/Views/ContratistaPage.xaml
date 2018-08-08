@@ -6,26 +6,7 @@
     
     <ContentPage.Content>
         <Grid>
-            <Image Source="checkronmini" Aspect="AspectFill"/>
-            <StackLayout
-                    Padding="0,2"
-                    HorizontalOptions="Center"
-                    Orientation="Horizontal"
-                    VerticalOptions="End">
-
-                <Image 
-                    Source="luartexto"
-                    WidthRequest="235">
-                </Image>
-            </StackLayout>
-            <BoxView Color="ForestGreen" Opacity="0.18"/>
-            <StackLayout
-                   Padding="10">
-                <Image
-                     Source="textorhcontratista"
-                     WidthRequest="200">
-                </Image>
-            </StackLayout>
+            
         </Grid>
     </ContentPage.Content>
 </ContentPage>

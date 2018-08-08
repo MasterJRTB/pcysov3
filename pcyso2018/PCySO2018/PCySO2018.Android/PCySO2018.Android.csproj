@@ -153,33 +153,6 @@
     <AndroidResource Include="Resources\drawable\checkronminiverde.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\cuadroincapacidad.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\cuadroinmueble.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\cuadroproveedor.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\cuadrotrabajador.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\cuadroantecedentes.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\cuadroatencion.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\cuadrocontratista.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\cuadroextintor.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\cuadroextintorbitacora.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\textoumincapacidad.png" />
   </ItemGroup>
   <ItemGroup>
@@ -207,22 +180,25 @@
     <AndroidResource Include="Resources\drawable\textoumatencion.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\iconoactualizarnaranja.png" />
+    <AndroidResource Include="Resources\drawable\cuadrofondo2018.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\iconoagregarnaranja.png" />
+    <AndroidResource Include="Resources\drawable\iconoactualizar.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\iconobuscarnaranja.png" />
+    <AndroidResource Include="Resources\drawable\iconoagregar.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\iconoeliminarnaranja.png" />
+    <AndroidResource Include="Resources\drawable\iconobuscar.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\iconolistarnaranja.png" />
+    <AndroidResource Include="Resources\drawable\iconoeliminar.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\icononuevonaranja.png" />
+    <AndroidResource Include="Resources\drawable\iconolistar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\iconolimpiarcampos.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

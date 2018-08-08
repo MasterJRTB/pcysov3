@@ -1,20 +1,31 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace PCySO2018.Views
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class TrabajadorPage : ContentPage
-	{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class TrabajadorPage : ContentPage
+    {
+        
 		public TrabajadorPage ()
 		{
 			InitializeComponent ();
-		}
-	}
+            limptrabajador.Clicked += Limptrabajador_Clicked;
+            listtrabajador.Clicked += Listtrabajador_Clicked;
+        }
+
+        private void Limptrabajador_Clicked(object sender, EventArgs e)
+        {
+            //throw new NotImplementedException();
+
+        }
+        private void Listtrabajador_Clicked(object sender, EventArgs e)
+        {
+            //throw new NotImplementedException();
+            ((NavigationPage)this.Parent).PushAsync(new TrabajadorListadoPage());
+        }
+
+        
+    }
 }

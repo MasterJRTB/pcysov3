@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PCySO2018.Views.TrabajadorListadoPage">
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="cuadrofondo2018" Aspect="AspectFill"/>
+            <StackLayout
+                   Padding="10"
+                   HorizontalOptions="Center"
+                   Orientation="Horizontal"
+                   VerticalOptions="Start">
+                <Image
+                     Source="textorhtrabjador"
+                     WidthRequest="200">
+                </Image>
+            </StackLayout>
+            <StackLayout
+                    Padding="0,2,0,2"
+                    HorizontalOptions="Center"
+                    Orientation="Horizontal"
+                    VerticalOptions="End">
+
+                <Image 
+                    Source="luartexto"
+                    WidthRequest="235">
+                </Image>
+            </StackLayout>
+            <BoxView Color="ForestGreen" Opacity="0.18"/>
+            <ListView>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label
+                                  x:Name="lnTrabajador"
+                                  TextColor="WhiteSmoke"
+                                  FontSize="Medium"
+                                  Text="Nombre"/>
+                                <Label
+                                  x:Name="lctTrabajador"
+                                  TextColor="WhiteSmoke"
+                                  FontSize="Medium"
+                                  Text="Centro de Trabajo"/>
+                                <Label
+                                  x:Name="ldTrabajador"
+                                  TextColor="WhiteSmoke"
+                                  FontSize="Medium"
+                                  Text="Departamento"/>
+                                <Label
+                                  x:Name="ltoTrabajador"
+                                  TextColor="WhiteSmoke"
+                                  FontSize="Medium"
+                                  Text="Teléfono de Oficina"/>
+                                <Label
+                                  x:Name="leoTrabajador"
+                                  TextColor="WhiteSmoke"
+                                  FontSize="Medium"
+                                  Text="Extensión"/>
+ 
+                                <!-- ********************************************************** -->
+                                <!--          sección datos del supervisor / jefe               -->
+                                <!-- ********************************************************** -->
+
+                                <Label
+                                  x:Name="lespaTrabajador"
+                                  TextColor="White"
+                                  FontSize="Large"
+                                  HorizontalOptions="Center"
+                                  FontAttributes="Bold"
+                                  Text=""/>
+                                <Label
+                                  x:Name="ljefeTrabajador"
+                                  TextColor="White"
+                                  FontSize="Large"
+                                  HorizontalOptions="Center"
+                                  FontAttributes="Bold"
+                                  Text="Datos del Supervisor / Jefe"/>
+
+                                <Label
+                                  x:Name="lnjTrabajador"
+                                  TextColor="WhiteSmoke"
+                                  FontSize="Medium"
+                                  Text="Nombre"/>
+                                
+                                <Label
+                                  x:Name="ltjTrabajador"
+                                  TextColor="WhiteSmoke"
+                                  FontSize="Medium"
+                                  Text="Teléfono"/>
+                               <Label
+                                  x:Name="ltejTrabajador"
+                                  TextColor="WhiteSmoke"
+                                  FontSize="Medium"
+                                  Text="Extensión"/>
+                          </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

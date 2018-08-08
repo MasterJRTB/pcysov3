@@ -61,6 +61,9 @@
     <EmbeddedResource Update="Views\ProveedorPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\TrabajadorListadoPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\TrabajadorPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -68,7 +71,6 @@
 
   <ItemGroup>
     <Folder Include="Infrastructure\" />
-    <Folder Include="Models\" />
     <Folder Include="Services\" />
   </ItemGroup>
 </Project>
