@@ -40,6 +40,13 @@ namespace PCySO2018.Models
         private string tceTrabajador;
         private string celceTrabajador;
 
+        protected virtual void OnPropertyChanged(string propiedad)
+        {
+            if (PropertyChanged != null)
+            {
+            }
+        }
+
         [PrimaryKey,AutoIncrement]
         public int IdTrabajador { get => idTrabajador; set => idTrabajador = value; }
 
