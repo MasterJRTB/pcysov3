@@ -11,15 +11,9 @@ namespace PCySO2018.Views
 		public TrabajadorPage ()
 		{
 			InitializeComponent ();
-            limptrabajador.Clicked += Limptrabajador_Clicked;
             listtrabajador.Clicked += Listtrabajador_Clicked;
         }
 
-        private void Limptrabajador_Clicked(object sender, EventArgs e)
-        {
-            //throw new NotImplementedException();
-
-        }
         private void Listtrabajador_Clicked(object sender, EventArgs e)
         {
             //throw new NotImplementedException();
