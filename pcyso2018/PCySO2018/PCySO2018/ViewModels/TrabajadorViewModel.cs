@@ -148,10 +148,10 @@
                 CtTrabajador = string.Empty;
                 DepaTrabajador = string.Empty;
                 PueTrabajador = string.Empty;
-                HorTrabajador = string.Empty,
+                HorTrabajador = string.Empty;
                 TelofiTrabajador = string.Empty;
                 ExttelTrabajador = string.Empty;
-                EmailTrabajador = string.Empty,
+                EmailTrabajador = string.Empty;
                 FaTrabajador = DateTime.Now;
                 NssTrabajador = string.Empty;
 
