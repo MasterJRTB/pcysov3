@@ -27,7 +27,7 @@
         {
             using (var contexto = new DataContext())
             {
-                ObservableCollection<TrabajadorModel> modelo = new ObservableCollection<TrabajadorModel>(contexto.ListarTrabajador());
+                ObservableCollection<TrabajadorModel> modelo = new ObservableCollection<TrabajadorModel>(contexto.ConsultarTrabajador());
                 ListadoTrabajador = modelo;
             }
         }

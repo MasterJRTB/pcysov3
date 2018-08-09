@@ -1,13 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:vm1="clr-namespace:PCySO2018.ViewModels"
+             
              x:Class="PCySO2018.Views.TrabajadorListadoPage">
     <ContentPage.Content>
         <StackLayout>
-            <StackLayout.BindingContext>
+            <!--<StackLayout.BindingContext>
+                xmlns:vm1="clr-namespace:PCySO2018.ViewModels"
                 <vm1:TrabajadorViewModel/>
-            </StackLayout.BindingContext>
+            </StackLayout.BindingContext>-->
             <Grid>
                 <Image Source="cuadrofondo2018" Aspect="AspectFill"/>
                 <StackLayout

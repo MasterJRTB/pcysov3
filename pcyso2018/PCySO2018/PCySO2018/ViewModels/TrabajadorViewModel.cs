@@ -171,6 +171,36 @@
                 PareTrabajador = string.Empty;
                 TceTrabajador = string.Empty;
                 CelceTrabajador = string.Empty;
+
+
+                NombreTrabajador = "";
+                TipoTrabajador = "";
+                CtTrabajador = "";
+                DepaTrabajador = "";
+                PueTrabajador = "";
+                HorTrabajador = "";
+                TelofiTrabajador = "";
+                ExttelTrabajador = "";
+                EmailTrabajador = "";
+                FaTrabajador = DateTime.Now;
+                NssTrabajador = "";
+
+                NjTrabajador = "";
+                TjTrabajador = "";
+                EtjTrabajador = "";
+                EmjTrabajador = "";
+
+                CalTrabajador = "";
+                NeTrabajador = "";
+                NiTrabajador = "";
+                ColTrabajador = "";
+                CpTrabajador = "";
+                DmTrabajador = "";
+
+                NceTrabajador = "";
+                PareTrabajador = "";
+                TceTrabajador = "";
+                CelceTrabajador = "";
             }
           );
         }
