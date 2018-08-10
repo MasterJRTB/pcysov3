@@ -39,6 +39,8 @@ namespace PCySO2018
             cnn.Insert(trabajadorModel);
         }
 
+        
+
         public void ActualizarTrabajador(TrabajadorModel trabajadorModel)
         {
             cnn.Update(trabajadorModel);
@@ -49,6 +51,11 @@ namespace PCySO2018
             cnn.Delete(trabajadorModel);
         }
 
+
+        internal IEnumerable<TrabajadorModel> ConsultarTrabajador()
+        {
+            throw new NotImplementedException();
+        }
         public TrabajadorModel ConsultarTrabajador(int id)
         {
            return cnn.Table<TrabajadorModel>().FirstOrDefault(p => p.IdTrabajador == id);

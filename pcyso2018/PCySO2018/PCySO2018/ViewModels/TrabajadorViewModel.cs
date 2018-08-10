@@ -11,6 +11,7 @@
         public ICommand Actualizar { get; private set; }
         public ICommand Eliminar { get; private set; }
         public ICommand Limpiar { get; private set; }
+        
 
         #region Constructores
         public TrabajadorViewModel()
