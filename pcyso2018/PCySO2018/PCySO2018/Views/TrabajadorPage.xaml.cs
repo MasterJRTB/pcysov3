@@ -16,6 +16,7 @@ namespace PCySO2018.Views
 			InitializeComponent ();
             this.BindingContext = new TrabajadorViewModel();
             listtrabajador.Clicked += Listtrabajador_Clicked;
+            
         }
 
         private void Listtrabajador_Clicked(object sender, EventArgs e)

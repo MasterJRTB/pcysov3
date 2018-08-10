@@ -1,12 +1,17 @@
-﻿namespace PCySO2018.ViewModels
+﻿using PCySO2018.Models;
+using System.Collections.ObjectModel;
+
+namespace PCySO2018.ViewModels
 {
-    using PCySO2018.Models;
-    using System.Collections.ObjectModel;
+
 
     public class TrabajadorListadoViewModel : TrabajadorModel
     {
         private ObservableCollection<TrabajadorModel> ListadoTrabajador;
 
+        public TrabajadorListadoViewModel()
+          {
+          }
         public ObservableCollection<TrabajadorModel> ListadoTrabajador1
         {
             get

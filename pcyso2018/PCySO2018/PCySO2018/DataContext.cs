@@ -57,7 +57,7 @@ namespace PCySO2018
            return cnn.Table<TrabajadorModel>().FirstOrDefault(p => p.IdTrabajador == id);
         }
 
-        public List<TrabajadorModel> LimpiarTrabajador()
+        public List<TrabajadorModel> ConsultarTrabajador()
         {
             return cnn.Table<TrabajadorModel>().ToList();
         }
