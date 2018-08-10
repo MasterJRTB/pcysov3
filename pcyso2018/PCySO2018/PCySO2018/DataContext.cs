@@ -52,10 +52,6 @@ namespace PCySO2018
         }
 
 
-        internal IEnumerable<TrabajadorModel> ConsultarTrabajador()
-        {
-            throw new NotImplementedException();
-        }
         public TrabajadorModel ConsultarTrabajador(int id)
         {
            return cnn.Table<TrabajadorModel>().FirstOrDefault(p => p.IdTrabajador == id);
