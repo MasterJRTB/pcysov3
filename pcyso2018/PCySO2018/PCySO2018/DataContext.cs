@@ -33,7 +33,7 @@ namespace PCySO2018
 
         //se debe de crear los procesos CRUD por tabla
 
-        //Tabla Trabajador
+        #region Trabajador
         public void InsertarTrabajador(TrabajadorModel trabajadorModel)
         {
             cnn.Insert(trabajadorModel);
@@ -61,5 +61,6 @@ namespace PCySO2018
         {
             return cnn.Table<TrabajadorModel>().ToList();
         }
+        #endregion
     }
 }

@@ -16,7 +16,6 @@ namespace PCySO2018.Views
 			InitializeComponent ();
             this.BindingContext = new TrabajadorViewModel();
             listtrabajador.Clicked += Listtrabajador_Clicked;
-            busctrabajador.Clicked += Busctrabajador_Clicked; 
         }
 
         
@@ -26,12 +25,6 @@ namespace PCySO2018.Views
             //throw new NotImplementedException();
             ((NavigationPage)this.Parent).PushAsync(new TrabajadorListadoPage());
         }
-        private void Busctrabajador_Clicked(object sender, EventArgs e)
-        {
-            //throw new NotImplementedException();
-            Consultar();
-        }
-
-
+        
     }
 }

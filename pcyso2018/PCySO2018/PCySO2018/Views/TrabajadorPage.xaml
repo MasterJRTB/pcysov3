@@ -45,9 +45,17 @@
                     <!-- ********************************************************** -->
                     <!--        sección datos generales del trabajador              -->
                     <!-- ********************************************************** -->
-                        
+
                     <Label
                         Grid.Row="0"
+                        Grid.Column="0"
+                        x:Name="idTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"    
+                        Text="{Binding IdTrabajador}"/>
+                    <Label
+                        Grid.Row="1"
                         Grid.Column="0"
                         x:Name="nomTrabajador"
                         TextColor="White"
@@ -55,7 +63,7 @@
                         FontAttributes="Bold"    
                         Text="Nombre"/>
                     <Entry 
-                        Grid.Row="0"
+                        Grid.Row="1"
                         Grid.Column="1"
                         Grid.ColumnSpan="2"
                         x:Name="enomtrabajador"
@@ -65,7 +73,7 @@
                         Placeholder="Nombre"/>
 
                     <Label
-                        Grid.Row="1"
+                        Grid.Row="2"
                         Grid.Column="0"
                         x:Name="tipTrabajador"
                         TextColor="White"
@@ -73,7 +81,7 @@
                         FontAttributes="Bold"
                         Text="Tipo"/>
                     <Entry 
-                        Grid.Row="1"
+                        Grid.Row="2"
                         Grid.Column="1"
                         Grid.ColumnSpan="2"
                         x:Name="etiptrabajador"
@@ -83,7 +91,7 @@
                         Placeholder="Tipo de contrato"/>
 
                     <Label
-                        Grid.Row="2"
+                        Grid.Row="3"
                         Grid.Column="0"
                         x:Name="ctTrabajador"
                         TextColor="White"
@@ -91,7 +99,7 @@
                         FontAttributes="Bold"
                         Text="Centro de Trabajo"/>
                     <Entry 
-                        Grid.Row="2"
+                        Grid.Row="3"
                         Grid.Column="1"
                         Grid.ColumnSpan="2"
                         x:Name="ecttrabajador"
@@ -101,7 +109,7 @@
                         Placeholder="Nombre Centro de Trabajo"/>
 
                     <Label
-                        Grid.Row="3"
+                        Grid.Row="4"
                         Grid.Column="0"
                         x:Name="depTrabajador"
                         TextColor="White"
@@ -109,7 +117,7 @@
                         FontAttributes="Bold"
                         Text="Departamento"/>
                     <Entry 
-                        Grid.Row="3"
+                        Grid.Row="4"
                         Grid.Column="1"
                         Grid.ColumnSpan="2"
                         x:Name="edeptrabajador"
@@ -119,7 +127,7 @@
                         Placeholder="Departamento / Área"/>
 
                     <Label
-                        Grid.Row="4"
+                        Grid.Row="5"
                         Grid.Column="0"
                         x:Name="pueTrabajador"
                         TextColor="White"
@@ -127,7 +135,7 @@
                         FontAttributes="Bold"
                         Text="Puesto"/>
                     <Entry 
-                        Grid.Row="4"
+                        Grid.Row="5"
                         Grid.Column="1"
                         Grid.ColumnSpan="2"
                         x:Name="epuetrabajador"
@@ -137,7 +145,7 @@
                         Placeholder="Puesto de trabajo"/>
 
                     <Label
-                        Grid.Row="5"
+                        Grid.Row="6"
                         Grid.Column="0"
                         x:Name="horTrabajador"
                         TextColor="White"
@@ -145,7 +153,7 @@
                         FontAttributes="Bold"
                         Text="Horario"/>
                     <Entry 
-                        Grid.Row="5"
+                        Grid.Row="6"
                         Grid.Column="1"
                         Grid.ColumnSpan="2"
                         x:Name="ehortrabajador"
@@ -155,7 +163,7 @@
                         Placeholder="Horario de Trabajo"/>
 
                     <Label
-                        Grid.Row="6"
+                        Grid.Row="7"
                         Grid.Column="0"
                         x:Name="telofiTrabajador"
                         TextColor="White"
@@ -163,7 +171,7 @@
                         FontAttributes="Bold"
                         Text="Teléfono"/>
                     <Entry 
-                        Grid.Row="6"
+                        Grid.Row="7"
                         Grid.Column="1"
                         Grid.ColumnSpan="2"
                         x:Name="etelofitrabajador"
@@ -174,7 +182,7 @@
                         Placeholder="Teléfono de Oficina"/>
 
                     <Label
-                        Grid.Row="7"
+                        Grid.Row="8"
                         Grid.Column="0"
                         x:Name="extofiTrabajador"
                         TextColor="White"
@@ -182,7 +190,7 @@
                         FontAttributes="Bold"
                         Text="Extensión"/>
                     <Entry 
-                        Grid.Row="7"
+                        Grid.Row="8"
                         Grid.Column="1"
                         Grid.ColumnSpan="2"
                         x:Name="eextofitrabajador"
@@ -193,7 +201,7 @@
                         Placeholder="Ext."/>
 
                     <Label
-                        Grid.Row="8"
+                        Grid.Row="9"
                         Grid.Column="0"
                         x:Name="correoTrabajador"
                         TextColor="White"
@@ -201,7 +209,7 @@
                         FontAttributes="Bold"
                         Text="E-Mail"/>
                     <Entry 
-                        Grid.Row="8"
+                        Grid.Row="9"
                         Grid.Column="1"
                         Grid.ColumnSpan="2"
                         x:Name="ecorreotrabajador"
@@ -211,7 +219,7 @@
                         Placeholder="Correo Electrónico"/>
 
                     <Label
-                        Grid.Row="9"
+                        Grid.Row="10"
                         Grid.Column="0"
                         x:Name="faTrabajador"
                         TextColor="White"
@@ -219,14 +227,14 @@
                         FontAttributes="Bold"
                         Text="Fecha de Ingreso"/>
                     <DatePicker 
-                        Grid.Row="9"
+                        Grid.Row="10"
                         Grid.Column="1"
                         x:Name="efatrabajador"
                         Date="{Binding FaTrabajador}"
                         TextColor="White"/>
 
                     <Label
-                        Grid.Row="10"
+                        Grid.Row="11"
                         Grid.Column="0"
                         x:Name="nssTrabajador"
                         TextColor="White"
@@ -234,7 +242,7 @@
                         FontAttributes="Bold"
                         Text="Seguro Social"/>
                     <Entry 
-                        Grid.Row="10"
+                        Grid.Row="11"
                         Grid.Column="1"
                         Grid.ColumnSpan="2"
                         x:Name="ensstrabajador"
@@ -250,7 +258,7 @@
                     <!-- ********************************************************** -->
 
                     <Label
-                        Grid.Row="11"
+                        Grid.Row="12"
                         Grid.Column="0"
                         Grid.ColumnSpan="3"
                         x:Name="espaTrabajador"
@@ -260,7 +268,7 @@
                         FontAttributes="Bold"
                         Text=""/>
                     <Label
-                        Grid.Row="12"
+                        Grid.Row="13"
                         Grid.Column="0"
                         Grid.ColumnSpan="3"
                         x:Name="jefeTrabajador"
@@ -271,7 +279,7 @@
                         Text="Datos del Supervisor / Jefe"/>
 
                     <Label
-                        Grid.Row="13"
+                        Grid.Row="14"
                         Grid.Column="0"
                         x:Name="nombjefeTrabajador"
                         TextColor="White"
@@ -279,7 +287,7 @@
                         FontAttributes="Bold"
                         Text="Nombre"/>
                     <Entry 
-                        Grid.Row="13"
+                        Grid.Row="14"
                         Grid.Column="1"
                         Grid.ColumnSpan="2"
                         x:Name="enombjefetrabajador"
@@ -289,7 +297,7 @@
                         Placeholder="Nombre completo"/>
 
                     <Label
-                        Grid.Row="14"
+                        Grid.Row="15"
                         Grid.Column="0"
                         x:Name="teljefeTrabajador"
                         TextColor="White"
@@ -297,7 +305,7 @@
                         FontAttributes="Bold"
                         Text="Teléfono"/>
                     <Entry 
-                        Grid.Row="14"
+                        Grid.Row="15"
                         Grid.Column="1"
                         Grid.ColumnSpan="2"
                         x:Name="eteljefetrabajador"
@@ -308,7 +316,7 @@
                         Placeholder="Teléfono de Oficina"/>
 
                     <Label
-                        Grid.Row="15"
+                        Grid.Row="16"
                         Grid.Column="0"
                         x:Name="telextjefeTrabajador"
                         TextColor="White"
@@ -316,7 +324,7 @@
                         FontAttributes="Bold"
                         Text="Extensión"/>
                     <Entry 
-                        Grid.Row="15"
+                        Grid.Row="16"
                         Grid.Column="1"
                         Grid.ColumnSpan="2"
                         x:Name="etelextjefetrabajador"
@@ -327,7 +335,7 @@
                         Placeholder="Ext."/>
 
                     <Label
-                        Grid.Row="16"
+                        Grid.Row="17"
                         Grid.Column="0"
                         x:Name="corrjefeTrabajador"
                         TextColor="White"
@@ -335,7 +343,7 @@
                         FontAttributes="Bold"
                         Text="E-Mail"/>
                     <Entry 
-                        Grid.Row="16"
+                        Grid.Row="17"
                         Grid.Column="1"
                         Grid.ColumnSpan="2"
                         x:Name="ecorrjefetrabajador"
@@ -350,7 +358,7 @@
                     <!-- ********************************************************** -->
 
                     <Label
-                        Grid.Row="17"
+                        Grid.Row="18"
                         Grid.Column="0"
                         Grid.ColumnSpan="3"
                         x:Name="espaciTrabajador"
@@ -360,7 +368,7 @@
                         FontAttributes="Bold"
                         Text=""/>
                     <Label
-                        Grid.Row="18"
+                        Grid.Row="19"
                         Grid.Column="0"
                         Grid.ColumnSpan="3"
                         x:Name="domparTrabajador"
@@ -371,7 +379,7 @@
                         Text="Datos Domicilio del Trabajador"/>
 
                     <Label
-                        Grid.Row="19"
+                        Grid.Row="20"
                         Grid.Column="0"
                         x:Name="calleTrabajador"
                         TextColor="White"
@@ -379,7 +387,7 @@
                         FontAttributes="Bold"
                         Text="Calle"/>
                     <Entry 
-                        Grid.Row="19"
+                        Grid.Row="20"
                         Grid.Column="1"
                         Grid.ColumnSpan="2"
                         x:Name="ecalletrabajador"
@@ -389,7 +397,7 @@
                         Placeholder="Calle"/>
 
                     <Label
-                        Grid.Row="20"
+                        Grid.Row="21"
                         Grid.Column="0"
                         x:Name="neTrabajador"
                         TextColor="White"
@@ -397,7 +405,7 @@
                         FontAttributes="Bold"
                         Text="Número"/>
                     <Entry 
-                        Grid.Row="20"
+                        Grid.Row="21"
                         Grid.Column="1"
                         Grid.ColumnSpan="2"
                         x:Name="enetrabajador"
@@ -408,7 +416,7 @@
                         Placeholder="Número Exterior"/>
 
                     <Label
-                        Grid.Row="21"
+                        Grid.Row="22"
                         Grid.Column="0"
                         x:Name="niTrabajador"
                         TextColor="White"
@@ -416,7 +424,7 @@
                         FontAttributes="Bold"
                         Text="Número"/>
                     <Entry 
-                        Grid.Row="21"
+                        Grid.Row="22"
                         Grid.Column="1"
                         Grid.ColumnSpan="2"
                         x:Name="enitrabajador"
@@ -427,7 +435,7 @@
                         Placeholder="Número Interior"/>
 
                     <Label
-                        Grid.Row="22"
+                        Grid.Row="23"
                         Grid.Column="0"
                         x:Name="colTrabajador"
                         TextColor="White"
@@ -435,7 +443,7 @@
                         FontAttributes="Bold"
                         Text="Colonia"/>
                     <Entry 
-                        Grid.Row="22"
+                        Grid.Row="23"
                         Grid.Column="1"
                         Grid.ColumnSpan="2"
                         x:Name="ecoltrabajador"
@@ -445,7 +453,7 @@
                         Placeholder="Colonia"/>
 
                     <Label
-                        Grid.Row="23"
+                        Grid.Row="24"
                         Grid.Column="0"
                         x:Name="cpTrabajador"
                         TextColor="White"
@@ -453,7 +461,7 @@
                         FontAttributes="Bold"
                         Text="Código"/>
                     <Entry 
-                        Grid.Row="23"
+                        Grid.Row="24"
                         Grid.Column="1"
                         Grid.ColumnSpan="2"
                         x:Name="ecptrabajador"
@@ -464,7 +472,7 @@
                         Placeholder="Codigo Postal"/>
 
                     <Label
-                        Grid.Row="24"
+                        Grid.Row="25"
                         Grid.Column="0"
                         x:Name="dmTrabajador"
                         TextColor="White"
@@ -472,7 +480,7 @@
                         FontAttributes="Bold"
                         Text="Delegación"/>
                     <Entry 
-                        Grid.Row="24"
+                        Grid.Row="25"
                         Grid.Column="1"
                         Grid.ColumnSpan="2"
                         x:Name="edmtrabajador"
@@ -482,7 +490,7 @@
                         Placeholder="Delegación / Municipio"/>
 
                     <Label
-                        Grid.Row="25"
+                        Grid.Row="26"
                         Grid.Column="0"
                         x:Name="epTrabajador"
                         TextColor="White"
@@ -490,7 +498,7 @@
                         FontAttributes="Bold"
                         Text="Estado"/>
                     <Entry 
-                        Grid.Row="25"
+                        Grid.Row="26"
                         Grid.Column="1"
                         Grid.ColumnSpan="2"
                         x:Name="eptrabajador"
@@ -504,7 +512,7 @@
                     <!-- ********************************************************** -->
 
                     <Label
-                        Grid.Row="26"
+                        Grid.Row="27"
                         Grid.Column="0"
                         Grid.ColumnSpan="3"
                         x:Name="espacTrabajador"
@@ -514,7 +522,7 @@
                         FontAttributes="Bold"
                         Text=""/>
                     <Label
-                        Grid.Row="27"
+                        Grid.Row="28"
                         Grid.Column="0"
                         Grid.ColumnSpan="3"
                         x:Name="contactoTrabajador"
@@ -525,7 +533,7 @@
                         Text="Datos del Contacto / Emergencia"/>
 
                     <Label
-                        Grid.Row="28"
+                        Grid.Row="29"
                         Grid.Column="0"
                         x:Name="nomcontacTrabajador"
                         TextColor="White"
@@ -533,7 +541,7 @@
                         FontAttributes="Bold"
                         Text="Nombre"/>
                     <Entry 
-                        Grid.Row="28"
+                        Grid.Row="29"
                         Grid.Column="1"
                         Grid.ColumnSpan="2"
                         x:Name="enomcontactrabajador"
@@ -543,7 +551,7 @@
                         Placeholder="Nombre Completo"/>
 
                     <Label
-                        Grid.Row="29"
+                        Grid.Row="30"
                         Grid.Column="0"
                         x:Name="parecontacTrabajador"
                         TextColor="White"
@@ -551,7 +559,7 @@
                         FontAttributes="Bold"
                         Text="Parentesco"/>
                     <Entry 
-                        Grid.Row="29"
+                        Grid.Row="30"
                         Grid.Column="1"
                         Grid.ColumnSpan="2"
                         x:Name="eparecontactrabajador"
@@ -561,7 +569,7 @@
                         Placeholder="Parentesco"/>
                     
                     <Label
-                        Grid.Row="30"
+                        Grid.Row="31"
                         Grid.Column="0"
                         x:Name="telcontacTrabajador"
                         TextColor="White"
@@ -569,7 +577,7 @@
                         FontAttributes="Bold"
                         Text="Teléfono"/>
                     <Entry 
-                        Grid.Row="30"
+                        Grid.Row="31"
                         Grid.Column="1"
                         Grid.ColumnSpan="2"
                         x:Name="etelcontactrabajador"
@@ -580,7 +588,7 @@
                         Placeholder="Teléfono"/>
 
                     <Label
-                        Grid.Row="31"
+                        Grid.Row="32"
                         Grid.Column="0"
                         x:Name="celcontacTrabajador"
                         TextColor="White"
@@ -588,7 +596,7 @@
                         FontAttributes="Bold"
                         Text="Celular"/>
                     <Entry 
-                        Grid.Row="31"
+                        Grid.Row="32"
                         Grid.Column="1"
                         Grid.ColumnSpan="2"
                         x:Name="ecelcontactrabajador"
@@ -604,7 +612,7 @@
                     <!-- ********************************************************** -->
 
                        <Label
-                          Grid.Row="32"
+                          Grid.Row="33"
                           Grid.Column="0"
                           Grid.ColumnSpan="3"
                           x:Name="espacioTrabajador"
@@ -615,19 +623,19 @@
                           Text=""/>
 
                        <Button
-                           Grid.Row="33"
+                           Grid.Row="34"
                            Grid.Column="0"
                            x:Name="agregtrabajador"
                            BackgroundColor="DarkGreen"
                            BorderRadius="23"
-                           Command="{Binding Agregar}"
+                           Command="{Binding Agregar, Limpiar}"
                            HeightRequest="46"
                            Image="iconoagregar"
                            IsEnabled="True">
                        </Button>
 
                        <Button
-                           Grid.Row="33"
+                           Grid.Row="34"
                            Grid.Column="1"
                            x:Name="limptrabajador"
                            BackgroundColor="DarkGreen"
@@ -639,19 +647,19 @@
                        </Button>
 
                        <Button
-                            Grid.Row="33"
+                            Grid.Row="34"
                             Grid.Column="2"
                             x:Name="busctrabajador"
                             BackgroundColor="DarkGreen"
                             BorderRadius="23"
-                            
+                            Command="{Binding Consultar}"
                             HeightRequest="46"
                             Image="iconobuscar"
                             IsEnabled="True">
                        </Button>
 
                        <Button
-                           Grid.Row="34"
+                           Grid.Row="35"
                            Grid.Column="0"
                            x:Name="listtrabajador"
                            BackgroundColor="DarkGreen"
@@ -662,24 +670,24 @@
                        </Button>
 
                        <Button
-                            Grid.Row="34"
+                            Grid.Row="35"
                             Grid.Column="1"
                             x:Name="actutrabajador"
                             BackgroundColor="DarkGreen"
                             BorderRadius="23"
-                            Command="{Binding Actualizar}"
+                            Command="{Binding Actualizar, Limpiar}"
                             HeightRequest="46"
                             Image="iconoactualizar"
                             IsEnabled="True">
                        </Button>
 
                        <Button
-                           Grid.Row="34"
+                           Grid.Row="35"
                            Grid.Column="2"
                            x:Name="elimtrabajador"
                            BackgroundColor="DarkGreen"
                            BorderRadius="23"
-                           Command="{Binding Eliminar}"
+                           Command="{Binding Eliminar, Limpiar}"
                            HeightRequest="46"
                            Image="iconoeliminar"
                            IsEnabled="True">
