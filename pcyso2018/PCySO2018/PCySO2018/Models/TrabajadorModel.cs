@@ -456,11 +456,11 @@ namespace PCySO2018.Models
             {
                 if (epTrabajador != value)
                 {
-                    dmTrabajador = value;
+                    epTrabajador = value;
                     OnPropertyChanged("epTrabajador");
                     PropertyChanged?.Invoke(
                         this,
-                        new PropertyChangedEventArgs(nameof(DmTrabajador)));
+                        new PropertyChangedEventArgs(nameof(epTrabajador)));
                 }
             }
         }

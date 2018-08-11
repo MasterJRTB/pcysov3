@@ -46,14 +46,26 @@
                     <!--        sección datos generales del trabajador              -->
                     <!-- ********************************************************** -->
 
-                    <Label
+                    <!--<Entry 
                         Grid.Row="0"
-                        Grid.Column="0"
-                        x:Name="idTrabajador"
+                        Grid.Column="1"
+                        Grid.ColumnSpan="2" 
+                        x:Name="eidtrabajador"
+                        Text="{Binding IdTrabajador}"
                         TextColor="White"
-                        FontSize="Large"
-                        FontAttributes="Bold"    
-                        Text="{Binding IdTrabajador}"/>
+                        PlaceholderColor="WhiteSmoke"
+                        Placeholder="ID"/>
+                     <Button
+                        
+                        x:Name="ebusctrabajador"
+                        BackgroundColor="DarkGreen"
+                        BorderRadius="23"
+                        Command="{Binding Consultar}"
+                        HeightRequest="46"
+                        IsEnabled="True"
+                        TextColor="White" 
+                        Text="Buscar"/>-->
+
                     <Label
                         Grid.Row="1"
                         Grid.Column="0"
@@ -628,7 +640,7 @@
                            x:Name="agregtrabajador"
                            BackgroundColor="DarkGreen"
                            BorderRadius="23"
-                           Command="{Binding Agregar, Limpiar}"
+                           Command="{Binding Agregar}"
                            HeightRequest="46"
                            Image="iconoagregar"
                            IsEnabled="True">
@@ -646,7 +658,7 @@
                            IsEnabled="True">
                        </Button>
 
-                       <Button
+                       <!--<Button
                             Grid.Row="34"
                             Grid.Column="2"
                             x:Name="busctrabajador"
@@ -656,11 +668,11 @@
                             HeightRequest="46"
                             Image="iconobuscar"
                             IsEnabled="True">
-                       </Button>
+                       </Button>-->
 
                        <Button
-                           Grid.Row="35"
-                           Grid.Column="0"
+                           Grid.Row="34"
+                           Grid.Column="2"
                            x:Name="listtrabajador"
                            BackgroundColor="DarkGreen"
                            BorderRadius="23"
@@ -671,11 +683,11 @@
 
                        <Button
                             Grid.Row="35"
-                            Grid.Column="1"
+                            Grid.Column="0"
                             x:Name="actutrabajador"
                             BackgroundColor="DarkGreen"
                             BorderRadius="23"
-                            Command="{Binding Actualizar, Limpiar}"
+                            Command="{Binding Actualizar}"
                             HeightRequest="46"
                             Image="iconoactualizar"
                             IsEnabled="True">
@@ -687,7 +699,7 @@
                            x:Name="elimtrabajador"
                            BackgroundColor="DarkGreen"
                            BorderRadius="23"
-                           Command="{Binding Eliminar, Limpiar}"
+                           Command="{Binding Eliminar}"
                            HeightRequest="46"
                            Image="iconoeliminar"
                            IsEnabled="True">
