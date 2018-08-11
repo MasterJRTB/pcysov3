@@ -8,6 +8,7 @@ namespace PCySO2018.ViewModels
     public class TrabajadorListadoViewModel : TrabajadorModel
     {
         private ObservableCollection<TrabajadorModel> ListadoTrabajador;
+        
 
         public TrabajadorListadoViewModel()
           {
@@ -27,6 +28,8 @@ namespace PCySO2018.ViewModels
                 ListadoTrabajador = value;
             }
         }
+
+        
 
         public void llenarTrabajador()
         {

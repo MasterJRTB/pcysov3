@@ -10,7 +10,7 @@
         public ICommand Agregar { get; private set; }
         public ICommand Actualizar { get; private set; }
         public ICommand Eliminar { get; private set; }
-        public ICommand Limpiar { get; private set; }
+        public ICommand Limpiar { get; set; }
         
 
         #region Constructores
@@ -144,34 +144,34 @@
             Limpiar = new Command(() =>
             {
 
-                NombreTrabajador = string.Empty;
-                TipoTrabajador = string.Empty;
-                CtTrabajador = string.Empty;
-                DepaTrabajador = string.Empty;
-                PueTrabajador = string.Empty;
-                HorTrabajador = string.Empty;
-                TelofiTrabajador = string.Empty;
-                ExttelTrabajador = string.Empty;
-                EmailTrabajador = string.Empty;
-                FaTrabajador = DateTime.Now;
-                NssTrabajador = string.Empty;
+                this.NombreTrabajador = string.Empty;
+                this.TipoTrabajador = string.Empty;
+                this.CtTrabajador = string.Empty;
+                this.DepaTrabajador = string.Empty;
+                this.PueTrabajador = string.Empty;
+                this.HorTrabajador = string.Empty;
+                this.TelofiTrabajador = string.Empty;
+                this.ExttelTrabajador = string.Empty;
+                this.EmailTrabajador = string.Empty;
+                this.FaTrabajador = DateTime.Now;
+                this.NssTrabajador = string.Empty;
 
-                NjTrabajador = string.Empty;
-                TjTrabajador = string.Empty;
-                EtjTrabajador = string.Empty;
-                EmjTrabajador = string.Empty;
+                this.NjTrabajador = string.Empty;
+                this.TjTrabajador = string.Empty;
+                this.EtjTrabajador = string.Empty;
+                this.EmjTrabajador = string.Empty;
 
-                CalTrabajador = string.Empty;
-                NeTrabajador = string.Empty;
-                NiTrabajador = string.Empty;
-                ColTrabajador = string.Empty;
-                CpTrabajador = string.Empty;
-                DmTrabajador = string.Empty;
+                this.CalTrabajador = string.Empty;
+                this.NeTrabajador = string.Empty;
+                this.NiTrabajador = string.Empty;
+                this.ColTrabajador = string.Empty;
+                this.CpTrabajador = string.Empty;
+                this.DmTrabajador = string.Empty;
 
-                NceTrabajador = string.Empty;
-                PareTrabajador = string.Empty;
-                TceTrabajador = string.Empty;
-                CelceTrabajador = string.Empty;
+                this.NceTrabajador = string.Empty;
+                this.PareTrabajador = string.Empty;
+                this.TceTrabajador = string.Empty;
+                this.CelceTrabajador = string.Empty;
 
 
                 NombreTrabajador = "";

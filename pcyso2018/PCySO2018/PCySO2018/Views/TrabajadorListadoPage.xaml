@@ -5,11 +5,7 @@
              x:Class="PCySO2018.Views.TrabajadorListadoPage">
     <ContentPage.Content>
         <StackLayout>
-            <!--<StackLayout.BindingContext>
-                xmlns:vm1="clr-namespace:PCySO2018.ViewModels"
-                <vm1:TrabajadorViewModel/>
-            </StackLayout.BindingContext>-->
-            <Grid>
+           <Grid>
                 <Image Source="cuadrofondo2018" Aspect="AspectFill"/>
                 <StackLayout
                    Padding="10"
@@ -34,79 +30,67 @@
                 </StackLayout>
                 <BoxView Color="ForestGreen" Opacity="0.18"/>
                 <ListView
-                    ItemsSource="{Binding ListadoTrabajador1}">
+                    HasUnevenRows="True"
+                    ItemsSource="{Binding ListadoTrabajador1}"
+                    Margin="10,75">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
-                                <StackLayout>
+                               <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    
                                     <Label
+                                       Grid.Row="0"
+                                       Grid.Column="0" 
+                                       Grid.RowSpan="2" 
                                        x:Name="lnTrabajador"
                                        TextColor="WhiteSmoke"
                                        FontSize="Medium"
-                                       Text="{Binding NombreTrabajador}"/>
+                                       Text="{Binding NombreTrabajador} "/>
+                                    
                                     <Label
+                                       Grid.Row="1"
+                                       Grid.Column="0"
                                        x:Name="lctTrabajador"
                                        TextColor="WhiteSmoke"
-                                       FontSize="Medium"
-                                       Text="{Binding CtTrabajador}"/>
+                                       Text="{Binding CtTrabajador} "/>
                                     <Label
-                                       x:Name="ldTrabajador"
-                                       TextColor="WhiteSmoke"
-                                       FontSize="Medium"
-                                       Text="{Binding DepaTrabajador}"/>
-                                    <Label
+                                       Grid.Row="1"
+                                       Grid.Column="1"
                                        x:Name="lhorTrabajador"
                                        TextColor="WhiteSmoke"
-                                       FontSize="Medium"
-                                       Text="{Binding HorTrabajador}"/>
+                                       Text="{Binding HorTrabajador} "/>
+                                    
                                     <Label
+                                       Grid.Row="2"
+                                       Grid.Column="0"
                                        x:Name="ltoTrabajador"
                                        TextColor="WhiteSmoke"
-                                       FontSize="Medium"
-                                       Text="{Binding TelofiTrabajador}"/>
+                                       Text="{Binding TelofiTrabajador} "/>
                                     <Label
+                                       Grid.Row="2"
+                                       Grid.Column="1"
                                        x:Name="leoTrabajador"
                                        TextColor="WhiteSmoke"
-                                       FontSize="Medium"
                                        Text="{Binding ExttelTrabajador}"/>
 
-                                    <!-- ********************************************************** -->
-                                    <!--          sección datos del supervisor / jefe               -->
-                                    <!-- ********************************************************** -->
-
                                     <Label
-                                       x:Name="lespaTrabajador"
-                                       TextColor="White"
-                                       FontSize="Large"
-                                       HorizontalOptions="Center"
-                                       FontAttributes="Bold"
-                                       Text=""/>
-                                    <Label
-                                       x:Name="ljefeTrabajador"
-                                       TextColor="White"
-                                       FontSize="Large"
-                                       HorizontalOptions="Center"
-                                       FontAttributes="Bold"
-                                       Text="Datos del Supervisor / Jefe"/>
-
-                                    <Label
+                                       Grid.Row="3"
+                                       Grid.Column="0"
                                        x:Name="lnjTrabajador"
                                        TextColor="WhiteSmoke"
-                                       FontSize="Medium"
                                        Text="{Binding NjTrabajador}"/>
-
                                     <Label
+                                       Grid.Row="3"
+                                       Grid.Column="1"
                                        x:Name="ltjTrabajador"
                                        TextColor="WhiteSmoke"
-                                       FontSize="Medium"
                                        Text="{Binding TjTrabajador}"/>
-                                    <Label
-                                       x:Name="ltejTrabajador"
-                                       TextColor="WhiteSmoke"
-                                       FontSize="Medium"
-                                       Text="{Binding EtjTrabajador}"/>
-                                </StackLayout>
-                            </ViewCell>
+                                </Grid>
+                           </ViewCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>

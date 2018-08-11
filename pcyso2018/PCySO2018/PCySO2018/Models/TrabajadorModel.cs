@@ -48,7 +48,7 @@ namespace PCySO2018.Models
             }
         }
 
-        [PrimaryKey,AutoIncrement]
+        [PrimaryKey, AutoIncrement]
         public int IdTrabajador
         {
             get
@@ -66,6 +66,7 @@ namespace PCySO2018.Models
             }
         }
 
+        
         public string NombreTrabajador
         {
             get
