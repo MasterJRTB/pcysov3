@@ -34,6 +34,7 @@ namespace PCySO2018.Models
         private string colTrabajador;
         private string cpTrabajador;
         private string dmTrabajador;
+        private string epTrabajador;
 
         private string nceTrabajador;
         private string pareTrabajador;
@@ -439,6 +440,24 @@ namespace PCySO2018.Models
                 {
                     dmTrabajador = value;
                     OnPropertyChanged("dmTrabajador");
+                    PropertyChanged?.Invoke(
+                        this,
+                        new PropertyChangedEventArgs(nameof(DmTrabajador)));
+                }
+            }
+        }
+        public string EpTrabajador
+        {
+            get
+            {
+                return epTrabajador;
+            }
+            set
+            {
+                if (epTrabajador != value)
+                {
+                    dmTrabajador = value;
+                    OnPropertyChanged("epTrabajador");
                     PropertyChanged?.Invoke(
                         this,
                         new PropertyChangedEventArgs(nameof(DmTrabajador)));

@@ -481,13 +481,30 @@
                         PlaceholderColor="WhiteSmoke"
                         Placeholder="Delegación / Municipio"/>
 
+                    <Label
+                        Grid.Row="25"
+                        Grid.Column="0"
+                        x:Name="epTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Text="Estado"/>
+                    <Entry 
+                        Grid.Row="25"
+                        Grid.Column="1"
+                        Grid.ColumnSpan="2"
+                        x:Name="eptrabajador"
+                        Text="{Binding EpTrabajador}"
+                        TextColor="White"
+                        PlaceholderColor="WhiteSmoke"
+                        Placeholder="Estado / Provincia"/>
 
-                    <!-- ********************************************************** -->
+                        <!-- ********************************************************** -->
                     <!--        sección datos de emergencia y de contacto           -->
                     <!-- ********************************************************** -->
 
                     <Label
-                        Grid.Row="25"
+                        Grid.Row="26"
                         Grid.Column="0"
                         Grid.ColumnSpan="3"
                         x:Name="espacTrabajador"
@@ -497,7 +514,7 @@
                         FontAttributes="Bold"
                         Text=""/>
                     <Label
-                        Grid.Row="26"
+                        Grid.Row="27"
                         Grid.Column="0"
                         Grid.ColumnSpan="3"
                         x:Name="contactoTrabajador"
@@ -508,7 +525,7 @@
                         Text="Datos del Contacto / Emergencia"/>
 
                     <Label
-                        Grid.Row="27"
+                        Grid.Row="28"
                         Grid.Column="0"
                         x:Name="nomcontacTrabajador"
                         TextColor="White"
@@ -516,7 +533,7 @@
                         FontAttributes="Bold"
                         Text="Nombre"/>
                     <Entry 
-                        Grid.Row="27"
+                        Grid.Row="28"
                         Grid.Column="1"
                         Grid.ColumnSpan="2"
                         x:Name="enomcontactrabajador"
@@ -526,7 +543,7 @@
                         Placeholder="Nombre Completo"/>
 
                     <Label
-                        Grid.Row="28"
+                        Grid.Row="29"
                         Grid.Column="0"
                         x:Name="parecontacTrabajador"
                         TextColor="White"
@@ -534,7 +551,7 @@
                         FontAttributes="Bold"
                         Text="Parentesco"/>
                     <Entry 
-                        Grid.Row="28"
+                        Grid.Row="29"
                         Grid.Column="1"
                         Grid.ColumnSpan="2"
                         x:Name="eparecontactrabajador"
@@ -544,7 +561,7 @@
                         Placeholder="Parentesco"/>
                     
                     <Label
-                        Grid.Row="29"
+                        Grid.Row="30"
                         Grid.Column="0"
                         x:Name="telcontacTrabajador"
                         TextColor="White"
@@ -552,7 +569,7 @@
                         FontAttributes="Bold"
                         Text="Teléfono"/>
                     <Entry 
-                        Grid.Row="29"
+                        Grid.Row="30"
                         Grid.Column="1"
                         Grid.ColumnSpan="2"
                         x:Name="etelcontactrabajador"
@@ -563,7 +580,7 @@
                         Placeholder="Teléfono"/>
 
                     <Label
-                        Grid.Row="30"
+                        Grid.Row="31"
                         Grid.Column="0"
                         x:Name="celcontacTrabajador"
                         TextColor="White"
@@ -571,7 +588,7 @@
                         FontAttributes="Bold"
                         Text="Celular"/>
                     <Entry 
-                        Grid.Row="30"
+                        Grid.Row="31"
                         Grid.Column="1"
                         Grid.ColumnSpan="2"
                         x:Name="ecelcontactrabajador"
@@ -587,7 +604,7 @@
                     <!-- ********************************************************** -->
 
                        <Label
-                          Grid.Row="31"
+                          Grid.Row="32"
                           Grid.Column="0"
                           Grid.ColumnSpan="3"
                           x:Name="espacioTrabajador"
@@ -598,7 +615,7 @@
                           Text=""/>
 
                        <Button
-                           Grid.Row="32"
+                           Grid.Row="33"
                            Grid.Column="0"
                            x:Name="agregtrabajador"
                            BackgroundColor="DarkGreen"
@@ -610,7 +627,7 @@
                        </Button>
 
                        <Button
-                           Grid.Row="32"
+                           Grid.Row="33"
                            Grid.Column="1"
                            x:Name="limptrabajador"
                            BackgroundColor="DarkGreen"
@@ -622,7 +639,7 @@
                        </Button>
 
                        <Button
-                            Grid.Row="32"
+                            Grid.Row="33"
                             Grid.Column="2"
                             x:Name="busctrabajador"
                             BackgroundColor="DarkGreen"
@@ -634,7 +651,7 @@
                        </Button>
 
                        <Button
-                           Grid.Row="33"
+                           Grid.Row="34"
                            Grid.Column="0"
                            x:Name="listtrabajador"
                            BackgroundColor="DarkGreen"
@@ -645,7 +662,7 @@
                        </Button>
 
                        <Button
-                            Grid.Row="33"
+                            Grid.Row="34"
                             Grid.Column="1"
                             x:Name="actutrabajador"
                             BackgroundColor="DarkGreen"
@@ -657,7 +674,7 @@
                        </Button>
 
                        <Button
-                           Grid.Row="33"
+                           Grid.Row="34"
                            Grid.Column="2"
                            x:Name="elimtrabajador"
                            BackgroundColor="DarkGreen"

@@ -45,6 +45,7 @@
                     ColTrabajador = ColTrabajador,
                     CpTrabajador = CpTrabajador,
                     DmTrabajador = DmTrabajador,
+                    EpTrabajador = EpTrabajador,
 
                     NceTrabajador = NceTrabajador,
                     PareTrabajador = PareTrabajador,
@@ -87,6 +88,7 @@
                     ColTrabajador = ColTrabajador,
                     CpTrabajador = CpTrabajador,
                     DmTrabajador = DmTrabajador,
+                    EpTrabajador = EpTrabajador,
 
                     NceTrabajador = NceTrabajador,
                     PareTrabajador = PareTrabajador,
@@ -129,6 +131,7 @@
                     ColTrabajador = ColTrabajador,
                     CpTrabajador = CpTrabajador,
                     DmTrabajador = DmTrabajador,
+                    EpTrabajador = EpTrabajador,
 
                     NceTrabajador = NceTrabajador,
                     PareTrabajador = PareTrabajador,
@@ -169,6 +172,7 @@
                 this.ColTrabajador = string.Empty;
                 this.CpTrabajador = string.Empty;
                 this.DmTrabajador = string.Empty;
+                this.EpTrabajador = string.Empty;
 
                 this.NceTrabajador = string.Empty;
                 this.PareTrabajador = string.Empty;
