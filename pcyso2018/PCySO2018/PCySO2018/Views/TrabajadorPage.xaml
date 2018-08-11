@@ -639,7 +639,6 @@
                            x:Name="listtrabajador"
                            BackgroundColor="DarkGreen"
                            BorderRadius="23"
-                           
                            HeightRequest="46"
                            Image="iconolistar"
                            IsEnabled="True">

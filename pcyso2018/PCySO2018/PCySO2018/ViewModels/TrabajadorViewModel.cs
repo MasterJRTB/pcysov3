@@ -6,7 +6,9 @@
     using Xamarin.Forms;
 
     public class TrabajadorViewModel : TrabajadorModel
+    
     {
+        
         public ICommand Agregar { get; private set; }
         public ICommand Actualizar { get; private set; }
         public ICommand Eliminar { get; private set; }
@@ -172,42 +174,14 @@
                 this.PareTrabajador = string.Empty;
                 this.TceTrabajador = string.Empty;
                 this.CelceTrabajador = string.Empty;
-
-
-                NombreTrabajador = "";
-                TipoTrabajador = "";
-                CtTrabajador = "";
-                DepaTrabajador = "";
-                PueTrabajador = "";
-                HorTrabajador = "";
-                TelofiTrabajador = "";
-                ExttelTrabajador = "";
-                EmailTrabajador = "";
-                FaTrabajador = DateTime.Now;
-                NssTrabajador = "";
-
-                NjTrabajador = "";
-                TjTrabajador = "";
-                EtjTrabajador = "";
-                EmjTrabajador = "";
-
-                CalTrabajador = "";
-                NeTrabajador = "";
-                NiTrabajador = "";
-                ColTrabajador = "";
-                CpTrabajador = "";
-                DmTrabajador = "";
-
-                NceTrabajador = "";
-                PareTrabajador = "";
-                TceTrabajador = "";
-                CelceTrabajador = "";
             }
           );
         }
-       
+
         
 
-    #endregion
-}
+
+
+        #endregion
+    }
 }

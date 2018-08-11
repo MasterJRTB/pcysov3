@@ -48,6 +48,7 @@ namespace PCySO2018.Models
             }
         }
 
+        #region Propiedades
         [PrimaryKey, AutoIncrement]
         public int IdTrabajador
         {
@@ -65,7 +66,6 @@ namespace PCySO2018.Models
                 
             }
         }
-
         
         public string NombreTrabajador
         {
@@ -79,6 +79,9 @@ namespace PCySO2018.Models
                 {
                     nombreTrabajador = value;
                     OnPropertyChanged("nombreTrabajador");
+                    PropertyChanged?.Invoke(
+                        this,
+                        new PropertyChangedEventArgs(nameof(NombreTrabajador)));
                 }
             }
         }
@@ -94,6 +97,9 @@ namespace PCySO2018.Models
                 {
                     tipoTrabajador = value;
                     OnPropertyChanged("tipoTrabajador");
+                    PropertyChanged?.Invoke(
+                        this,
+                        new PropertyChangedEventArgs(nameof(TipoTrabajador)));
                 }
             }
         }
@@ -109,6 +115,9 @@ namespace PCySO2018.Models
                 {
                     ctTrabajador = value;
                     OnPropertyChanged("ctTrabajador");
+                    PropertyChanged?.Invoke(
+                        this,
+                        new PropertyChangedEventArgs(nameof(CtTrabajador)));
                 }
             }
         }
@@ -124,6 +133,9 @@ namespace PCySO2018.Models
                 {
                     depaTrabajador = value;
                     OnPropertyChanged("depaTrabajador");
+                    PropertyChanged?.Invoke(
+                        this,
+                        new PropertyChangedEventArgs(nameof(DepaTrabajador)));
                 }
             }
         }
@@ -139,6 +151,9 @@ namespace PCySO2018.Models
                 {
                     pueTrabajador = value;
                     OnPropertyChanged("puTrabajador");
+                    PropertyChanged?.Invoke(
+                        this,
+                        new PropertyChangedEventArgs(nameof(PueTrabajador)));
                 }
             }
         }
@@ -154,6 +169,9 @@ namespace PCySO2018.Models
                 {
                     horTrabajador = value;
                     OnPropertyChanged("horTrabajador");
+                    PropertyChanged?.Invoke(
+                        this,
+                        new PropertyChangedEventArgs(nameof(HorTrabajador)));
                 }
             }
         }
@@ -169,6 +187,9 @@ namespace PCySO2018.Models
                 {
                     telofiTrabajador = value;
                     OnPropertyChanged("telofiTrabajador");
+                    PropertyChanged?.Invoke(
+                        this,
+                        new PropertyChangedEventArgs(nameof(TelofiTrabajador)));
                 }
             }
         }
@@ -184,6 +205,9 @@ namespace PCySO2018.Models
                 {
                     exttelTrabajador = value;
                     OnPropertyChanged("exttelTrabajador");
+                    PropertyChanged?.Invoke(
+                        this,
+                        new PropertyChangedEventArgs(nameof(ExttelTrabajador)));
                 }
             }
         }
@@ -198,7 +222,10 @@ namespace PCySO2018.Models
                   {
                     emailTrabajador = value;
                     OnPropertyChanged("emailTrabajador");
-                  }
+                    PropertyChanged?.Invoke(
+                        this,
+                        new PropertyChangedEventArgs(nameof(EmailTrabajador)));
+                }
                 }
             }
         public DateTime FaTrabajador
@@ -213,6 +240,9 @@ namespace PCySO2018.Models
                 {
                     faTrabajador = value;
                     OnPropertyChanged("faTrabajador");
+                    PropertyChanged?.Invoke(
+                        this,
+                        new PropertyChangedEventArgs(nameof(FaTrabajador)));
                 }
             }
         }
@@ -228,10 +258,12 @@ namespace PCySO2018.Models
                 {
                     nssTrabajador = value;
                     OnPropertyChanged("nssTrabajador");
+                    PropertyChanged?.Invoke(
+                        this,
+                        new PropertyChangedEventArgs(nameof(NssTrabajador)));
                 }
             }
         }
-
 
         public string NjTrabajador
         {
@@ -245,6 +277,9 @@ namespace PCySO2018.Models
                 {
                     njTrabajador = value;
                     OnPropertyChanged("njTrabajador");
+                    PropertyChanged?.Invoke(
+                        this,
+                        new PropertyChangedEventArgs(nameof(NjTrabajador)));
                 }
             }
         }
@@ -260,8 +295,10 @@ namespace PCySO2018.Models
                 {
                     tjTrabajador = value;
                     OnPropertyChanged("tjTrabajador");
+                    PropertyChanged?.Invoke(
+                        this,
+                        new PropertyChangedEventArgs(nameof(TjTrabajador)));
                 }
-                tjTrabajador = value;
             }
         }
         public string EtjTrabajador
@@ -276,6 +313,9 @@ namespace PCySO2018.Models
                 {
                     etjTrabajador = value;
                     OnPropertyChanged("etjTrabajador");
+                    PropertyChanged?.Invoke(
+                        this,
+                        new PropertyChangedEventArgs(nameof(EtjTrabajador)));
                 }
            }
         }
@@ -291,10 +331,12 @@ namespace PCySO2018.Models
                 {
                     emjTrabajador = value;
                     OnPropertyChanged("emjTrabajador");
+                    PropertyChanged?.Invoke(
+                        this,
+                        new PropertyChangedEventArgs(nameof(EmjTrabajador)));
                 }
             }
         }
-
 
         public string CalTrabajador {
                 get
@@ -307,7 +349,10 @@ namespace PCySO2018.Models
                   {
                     calTrabajador = value;
                     OnPropertyChanged("calTrabajador");
-                  }
+                    PropertyChanged?.Invoke(
+                        this,
+                        new PropertyChangedEventArgs(nameof(CalTrabajador)));
+                }
                 }
             }
         public string NeTrabajador
@@ -322,8 +367,10 @@ namespace PCySO2018.Models
                 {
                     neTrabajador = value;
                     OnPropertyChanged("neTrabajador");
+                    PropertyChanged?.Invoke(
+                        this,
+                        new PropertyChangedEventArgs(nameof(NeTrabajador)));
                 }
-                neTrabajador = value;
             }
         }
         public string NiTrabajador
@@ -338,6 +385,9 @@ namespace PCySO2018.Models
                 {
                     niTrabajador = value;
                     OnPropertyChanged("niTrabajador");
+                    PropertyChanged?.Invoke(
+                        this,
+                        new PropertyChangedEventArgs(nameof(NiTrabajador)));
                 }
             }
         }
@@ -353,6 +403,9 @@ namespace PCySO2018.Models
                 {
                     colTrabajador = value;
                     OnPropertyChanged("colTrabajador");
+                    PropertyChanged?.Invoke(
+                        this,
+                        new PropertyChangedEventArgs(nameof(ColTrabajador)));
                 }
             }
         }
@@ -368,6 +421,9 @@ namespace PCySO2018.Models
                 {
                     cpTrabajador = value;
                     OnPropertyChanged("cpTrabajador");
+                    PropertyChanged?.Invoke(
+                        this,
+                        new PropertyChangedEventArgs(nameof(CpTrabajador)));
                 }
             }
         }
@@ -383,10 +439,12 @@ namespace PCySO2018.Models
                 {
                     dmTrabajador = value;
                     OnPropertyChanged("dmTrabajador");
+                    PropertyChanged?.Invoke(
+                        this,
+                        new PropertyChangedEventArgs(nameof(DmTrabajador)));
                 }
             }
         }
-
 
         public string NceTrabajador
         {
@@ -400,6 +458,9 @@ namespace PCySO2018.Models
                 {
                     nceTrabajador = value;
                     OnPropertyChanged("nceTrabajador");
+                    PropertyChanged?.Invoke(
+                        this,
+                        new PropertyChangedEventArgs(nameof(NceTrabajador)));
                 }
             }
         }
@@ -415,6 +476,9 @@ namespace PCySO2018.Models
                 {
                     pareTrabajador = value;
                     OnPropertyChanged("pareTrabajador");
+                    PropertyChanged?.Invoke(
+                        this,
+                        new PropertyChangedEventArgs(nameof(PareTrabajador)));
                 }
             }
         }
@@ -430,6 +494,9 @@ namespace PCySO2018.Models
                 {
                     tceTrabajador = value;
                     OnPropertyChanged("tceTrabajador");
+                    PropertyChanged?.Invoke(
+                        this,
+                        new PropertyChangedEventArgs(nameof(TceTrabajador)));
                 }
             }
         }
@@ -445,9 +512,12 @@ namespace PCySO2018.Models
                 {
                     celceTrabajador = value;
                     OnPropertyChanged("celceTrabajador");
+                    PropertyChanged?.Invoke(
+                        this,
+                        new PropertyChangedEventArgs(nameof(CelceTrabajador)));
                 }
             }
         }
-
+        #endregion
     }
 }
