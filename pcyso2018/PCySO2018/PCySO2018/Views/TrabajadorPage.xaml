@@ -9,7 +9,7 @@
             
         <Grid>
             <Image Source="cuadrofondo2018" Aspect="AspectFill"/>
-            <StackLayout
+            <!--<StackLayout
                    Padding="10"
                    HorizontalOptions="Center"
                    Orientation="Horizontal"
@@ -18,8 +18,8 @@
                      Source="textorhtrabjador"
                      WidthRequest="200">
                 </Image>
-            </StackLayout>
-            <StackLayout
+            </StackLayout>-->
+            <!--<StackLayout
                     Padding="0,2,0,2"
                     HorizontalOptions="Center"
                     Orientation="Horizontal"
@@ -29,7 +29,7 @@
                     Source="luartexto"
                     WidthRequest="235">
                     </Image>
-                </StackLayout>
+                </StackLayout>-->
                 <BoxView Color="ForestGreen" Opacity="0.18"/>
 
                 <ScrollView>
@@ -46,25 +46,16 @@
                     <!--        sección datos generales del trabajador              -->
                     <!-- ********************************************************** -->
 
-                    <!--<Entry 
+                    <Label 
                         Grid.Row="0"
-                        Grid.Column="1"
-                        Grid.ColumnSpan="2" 
-                        x:Name="eidtrabajador"
-                        Text="{Binding IdTrabajador}"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="3" 
+                        x:Name="dgtrabajador"
+                        HorizontalOptions="Center"
                         TextColor="White"
-                        PlaceholderColor="WhiteSmoke"
-                        Placeholder="ID"/>
-                     <Button
-                        
-                        x:Name="ebusctrabajador"
-                        BackgroundColor="DarkGreen"
-                        BorderRadius="23"
-                        Command="{Binding Consultar}"
-                        HeightRequest="46"
-                        IsEnabled="True"
-                        TextColor="White" 
-                        Text="Buscar"/>-->
+                        FontAttributes="Bold"
+                        FontSize="Large"
+                        Text="Datos Generales del Trabajador"/>
 
                     <Label
                         Grid.Row="1"
@@ -82,7 +73,7 @@
                         Text="{Binding NombreTrabajador}"
                         TextColor="White"
                         PlaceholderColor="WhiteSmoke"
-                        Placeholder="Nombre"/>
+                        Placeholder="A. Paterno, A. Materno, Nombre"/>
 
                     <Label
                         Grid.Row="2"
