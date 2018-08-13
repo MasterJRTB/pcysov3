@@ -18,17 +18,7 @@
         #region Constructores
         public TrabajadorViewModel()
         {
-            if (string.IsNullOrEmpty(this.NombreTrabajador))
-            {
-                Application.Current.MainPage.DisplayAlert(
-                    "Falta Dato",
-                    "Debe ingresar el nombre del trabajador, iniciando con el apellido paterno",
-                    "Aceptar");
-                return;
-            }
-            else
-            {
-                Agregar = new Command(() =>
+             Agregar = new Command(() =>
                 {
                     TrabajadorModel trabajadorModel = new TrabajadorModel()
                     {
@@ -69,7 +59,7 @@
                     }
                 }
                 );
-             }
+           
 
             Actualizar = new Command(() =>
             {

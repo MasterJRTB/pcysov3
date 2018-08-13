@@ -630,14 +630,92 @@
                            Grid.Column="0"
                            x:Name="agregtrabajador"
                            BackgroundColor="DarkGreen"
+                           BorderRadius="28"
+                           Command="{Binding Agregar}"
+                           HeightRequest="56"
+                           IsEnabled="True"
+                           FontSize="Medium"
+                           FontAttributes="Bold"
+                           TextColor="WhiteSmoke"
+                           Text="Agregar">
+                       </Button>
+
+                      <Button
+                            Grid.Row="34"
+                            Grid.Column="2"
+                            x:Name="actutrabajador"
+                            BackgroundColor="DarkGreen"
+                            BorderRadius="28"
+                            Command="{Binding Actualizar}"
+                            HeightRequest="56"
+                            IsEnabled="True"
+                            FontSize="Medium"
+                            FontAttributes="Bold"
+                            TextColor="WhiteSmoke"
+                            Text="Actualizar">
+                        </Button>
+
+                        <Button
+                           Grid.Row="35"
+                           Grid.Column="0"
+                           x:Name="listtrabajador"
+                           BackgroundColor="DarkGreen"
+                           BorderRadius="28"
+                           HeightRequest="56"
+                           IsEnabled="True"
+                           FontSize="Medium"
+                           FontAttributes="Bold"
+                           TextColor="WhiteSmoke"
+                           Text="Ver Lista">
+                       </Button>
+
+                       <!--<Button
+                           Grid.Row="35"
+                           Grid.Column="1"
+                           x:Name="elimtrabajador"
+                           BackgroundColor="DarkGreen"
+                           BorderRadius="18"
+                           Command="{Binding Eliminar}"
+                           HeightRequest="36"
+                           IsVisible="False"
+                           IsEnabled="True"
+                           FontSize="Medium"
+                           FontAttributes="Bold"
+                           TextColor="WhiteSmoke"
+                           Text="Eliminar">
+                       </Button>-->
+
+                        <Button
+                           Grid.Row="35"
+                           Grid.Column="2"
+                           x:Name="limptrabajador"
+                           BackgroundColor="DarkGreen"
+                           BorderRadius="28"
+                           Command="{Binding Limpiar}"
+                           HeightRequest="56"
+                           IsEnabled="True"
+                           FontSize="Medium"
+                           FontAttributes="Bold"
+                           TextColor="WhiteSmoke"
+                           Text="Limpiar">
+                        </Button>
+                    </Grid>
+                </ScrollView>
+        </Grid>
+
+            <!--<Button
+                           Grid.Row="34"
+                           Grid.Column="0"
+                           x:Name="agregtrabajador"
+                           BackgroundColor="DarkGreen"
                            BorderRadius="23"
-                           Command="{Binding Agregar, Limpiar}"
+                           Command="{Binding Agregar}"
                            HeightRequest="46"
                            Image="iconoagregar"
                            IsEnabled="True">
-                       </Button>
+            </Button>
 
-                       <Button
+            <Button
                            Grid.Row="34"
                            Grid.Column="1"
                            x:Name="limptrabajador"
@@ -647,9 +725,9 @@
                            HeightRequest="60"
                            Image="iconolimpiarcampos"
                            IsEnabled="True">
-                       </Button>
+            </Button>
 
-                       <!--<Button
+            --><!--<Button
                             Grid.Row="34"
                             Grid.Column="2"
                             x:Name="busctrabajador"
@@ -659,9 +737,9 @@
                             HeightRequest="46"
                             Image="iconobuscar"
                             IsEnabled="True">
-                       </Button>-->
+                       </Button>--><!--
 
-                       <Button
+            <Button
                            Grid.Row="34"
                            Grid.Column="2"
                            x:Name="listtrabajador"
@@ -670,9 +748,9 @@
                            HeightRequest="46"
                            Image="iconolistar"
                            IsEnabled="True">
-                       </Button>
+            </Button>
 
-                       <Button
+            <Button
                             Grid.Row="35"
                             Grid.Column="0"
                             x:Name="actutrabajador"
@@ -682,9 +760,9 @@
                             HeightRequest="46"
                             Image="iconoactualizar"
                             IsEnabled="True">
-                       </Button>
+            </Button>
 
-                       <Button
+            <Button
                            Grid.Row="35"
                            Grid.Column="2"
                            x:Name="elimtrabajador"
@@ -694,10 +772,7 @@
                            HeightRequest="46"
                            Image="iconoeliminar"
                            IsEnabled="True">
-                       </Button>
-                    </Grid>
-                </ScrollView>
-        </Grid>
+            </Button>-->
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

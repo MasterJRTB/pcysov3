@@ -1,4 +1,5 @@
 ﻿using PCySO2018.Models;
+using System;
 using System.Collections.ObjectModel;
 
 namespace PCySO2018.ViewModels
@@ -29,7 +30,7 @@ namespace PCySO2018.ViewModels
             }
         }
 
-        
+       
 
         public void llenarTrabajador()
         {

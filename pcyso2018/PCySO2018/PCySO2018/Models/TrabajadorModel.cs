@@ -537,6 +537,8 @@ namespace PCySO2018.Models
                 }
             }
         }
+
+        public string IsVisible { get; internal set; }
         #endregion
     }
 }

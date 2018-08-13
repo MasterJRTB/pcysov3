@@ -57,7 +57,13 @@
                                        TextColor="WhiteSmoke"
                                        FontSize="Medium"
                                        Text="{Binding NombreTrabajador} "/>
-                                    
+                                    <Label
+                                       Grid.Row="0"
+                                       Grid.Column="2"
+                                       x:Name="ltoTrabajador"
+                                       TextColor="WhiteSmoke"
+                                       Text="{Binding TelofiTrabajador} "/>
+
                                     <Label
                                        Grid.Row="1"
                                        Grid.Column="0"
@@ -71,31 +77,60 @@
                                        TextColor="WhiteSmoke"
                                        Text="{Binding HorTrabajador} "/>
                                     
+                                    
                                     <Label
-                                       Grid.Row="2"
-                                       Grid.Column="0"
-                                       x:Name="ltoTrabajador"
-                                       TextColor="WhiteSmoke"
-                                       Text="{Binding TelofiTrabajador} "/>
-                                    <Label
-                                       Grid.Row="2"
-                                       Grid.Column="1"
+                                       Grid.Row="1"
+                                       Grid.Column="2"
                                        x:Name="leoTrabajador"
                                        TextColor="WhiteSmoke"
                                        Text="{Binding ExttelTrabajador}"/>
 
                                     <Label
-                                       Grid.Row="3"
+                                       Grid.Row="2"
                                        Grid.Column="0"
                                        x:Name="lnjTrabajador"
                                        TextColor="WhiteSmoke"
                                        Text="{Binding NjTrabajador}"/>
                                     <Label
-                                       Grid.Row="3"
+                                       Grid.Row="2"
                                        Grid.Column="1"
                                        x:Name="ltjTrabajador"
                                        TextColor="WhiteSmoke"
                                        Text="{Binding TjTrabajador}"/>
+
+                                    <Button
+                                       Grid.Row="3"
+                                       Grid.Column="0"
+                                       x:Name="lbtnDetalles"
+                                       IsVisible="True"
+                                       BackgroundColor="Navy" 
+                                       BorderRadius="19"
+                                       HeightRequest="38"
+                                       Command="{Binding Consultar}" 
+                                       TextColor="White"
+                                       Text="Detalles" />
+                                    <Button
+                                       Grid.Row="3"
+                                       Grid.Column="1"
+                                       x:Name="lbtnActualizar"
+                                       IsVisible="True"
+                                       BackgroundColor="Navy" 
+                                       BorderRadius="19"
+                                       HeightRequest="38" 
+                                       Command="{Binding Actualizar}" 
+                                       TextColor="White"
+                                       Text="Editar" />
+                                    <Button
+                                       Grid.Row="3"
+                                       Grid.Column="2"
+                                       x:Name="lbtnEliminar"
+                                       IsVisible="True"
+                                       BackgroundColor="Navy" 
+                                       BorderRadius="19"
+                                       HeightRequest="38" 
+                                       Command="{Binding Eliminar}" 
+                                       TextColor="White"
+                                       Text="Eliminar" />
                                 </Grid>
                            </ViewCell>
                         </DataTemplate>
