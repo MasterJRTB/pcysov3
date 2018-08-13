@@ -631,7 +631,7 @@
                            x:Name="agregtrabajador"
                            BackgroundColor="DarkGreen"
                            BorderRadius="23"
-                           Command="{Binding Agregar}"
+                           Command="{Binding Agregar, Limpiar}"
                            HeightRequest="46"
                            Image="iconoagregar"
                            IsEnabled="True">

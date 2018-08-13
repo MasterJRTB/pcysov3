@@ -18,47 +18,58 @@
         #region Constructores
         public TrabajadorViewModel()
         {
-            Agregar = new Command(() =>
+            if (string.IsNullOrEmpty(this.NombreTrabajador))
             {
-                TrabajadorModel trabajadorModel = new TrabajadorModel()
-                {
-                    NombreTrabajador = NombreTrabajador,
-                    TipoTrabajador = TipoTrabajador,
-                    CtTrabajador = CtTrabajador,
-                    DepaTrabajador = DepaTrabajador,
-                    PueTrabajador = PueTrabajador,
-                    HorTrabajador = HorTrabajador,
-                    TelofiTrabajador = TelofiTrabajador,
-                    ExttelTrabajador = ExttelTrabajador,
-                    EmailTrabajador = EmailTrabajador,
-                    FaTrabajador = FaTrabajador,
-                    NssTrabajador = NssTrabajador,
-
-                    NjTrabajador = NjTrabajador,
-                    TjTrabajador = TjTrabajador,
-                    EtjTrabajador = EtjTrabajador,
-                    EmjTrabajador = EmjTrabajador,
-
-                    CalTrabajador = CalTrabajador,
-                    NeTrabajador = NeTrabajador,
-                    NiTrabajador = NiTrabajador,
-                    ColTrabajador = ColTrabajador,
-                    CpTrabajador = CpTrabajador,
-                    DmTrabajador = DmTrabajador,
-                    EpTrabajador = EpTrabajador,
-
-                    NceTrabajador = NceTrabajador,
-                    PareTrabajador = PareTrabajador,
-                    TceTrabajador = TceTrabajador,
-                    CelceTrabajador = CelceTrabajador
-                };
-
-                using (var contexto = new DataContext())
-                {
-                    contexto.InsertarTrabajador(trabajadorModel);
-                }
+                Application.Current.MainPage.DisplayAlert(
+                    "Falta Dato",
+                    "Debe ingresar el nombre del trabajador, iniciando con el apellido paterno",
+                    "Aceptar");
+                return;
             }
-            );
+            else
+            {
+                Agregar = new Command(() =>
+                {
+                    TrabajadorModel trabajadorModel = new TrabajadorModel()
+                    {
+                        NombreTrabajador = NombreTrabajador,
+                        TipoTrabajador = TipoTrabajador,
+                        CtTrabajador = CtTrabajador,
+                        DepaTrabajador = DepaTrabajador,
+                        PueTrabajador = PueTrabajador,
+                        HorTrabajador = HorTrabajador,
+                        TelofiTrabajador = TelofiTrabajador,
+                        ExttelTrabajador = ExttelTrabajador,
+                        EmailTrabajador = EmailTrabajador,
+                        FaTrabajador = FaTrabajador,
+                        NssTrabajador = NssTrabajador,
+
+                        NjTrabajador = NjTrabajador,
+                        TjTrabajador = TjTrabajador,
+                        EtjTrabajador = EtjTrabajador,
+                        EmjTrabajador = EmjTrabajador,
+
+                        CalTrabajador = CalTrabajador,
+                        NeTrabajador = NeTrabajador,
+                        NiTrabajador = NiTrabajador,
+                        ColTrabajador = ColTrabajador,
+                        CpTrabajador = CpTrabajador,
+                        DmTrabajador = DmTrabajador,
+                        EpTrabajador = EpTrabajador,
+
+                        NceTrabajador = NceTrabajador,
+                        PareTrabajador = PareTrabajador,
+                        TceTrabajador = TceTrabajador,
+                        CelceTrabajador = CelceTrabajador
+                    };
+
+                    using (var contexto = new DataContext())
+                    {
+                        contexto.InsertarTrabajador(trabajadorModel);
+                    }
+                }
+                );
+             }
 
             Actualizar = new Command(() =>
             {
