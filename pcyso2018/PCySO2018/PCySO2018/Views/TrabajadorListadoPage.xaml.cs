@@ -15,7 +15,6 @@ namespace PCySO2018.Views
         {
             InitializeComponent();
             this.BindingContext = new TrabajadorListadoViewModel();
-            //this.BindingContext = new DataContext();
         }
     }
 }
