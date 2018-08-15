@@ -106,7 +106,7 @@
                                        BackgroundColor="Navy" 
                                        BorderRadius="19"
                                        HeightRequest="38"
-                                       Command="{Binding Consultar}" 
+                                       Command="{Binding ConsultarTrabajador}" 
                                        TextColor="White"
                                        Text="Detalles" />
                                     <Button
@@ -117,7 +117,7 @@
                                        BackgroundColor="Navy" 
                                        BorderRadius="19"
                                        HeightRequest="38" 
-                                       Command="{Binding Actualizar}" 
+                                       Command="{Binding ActualizarTrabajador}" 
                                        TextColor="White"
                                        Text="Editar" />
                                     <Button
@@ -128,7 +128,7 @@
                                        BackgroundColor="Navy" 
                                        BorderRadius="19"
                                        HeightRequest="38" 
-                                       Command="{Binding Eliminar}" 
+                                       Command="{Binding EliminarTrabajador}" 
                                        TextColor="White"
                                        Text="Eliminar" />
                                 </Grid>
