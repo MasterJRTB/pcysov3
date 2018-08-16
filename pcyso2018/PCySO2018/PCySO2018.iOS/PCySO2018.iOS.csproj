@@ -265,4 +265,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\iconolimpiarcampos.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\checkronminiblanco2a.png" />
+  </ItemGroup>
 </Project>

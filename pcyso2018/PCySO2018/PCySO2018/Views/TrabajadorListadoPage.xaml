@@ -5,17 +5,23 @@
              x:Class="PCySO2018.Views.TrabajadorListadoPage">
     <ContentPage.Content>
         <StackLayout>
-           <Grid>
+            <Grid>
                 <Image Source="cuadrofondo2018" Aspect="AspectFill"/>
                 <StackLayout
-                   Padding="10"
                    HorizontalOptions="Center"
                    Orientation="Horizontal"
-                   VerticalOptions="Start">
-                    <Image
+                   VerticalOptions="Start"
+                   Padding="20">
+                    <Label
+                        VerticalTextAlignment="Center"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        TextColor="White"
+                        Text="Lista de Trabajadores"/>
+                    <!--<Image
                      Source="textorhtrabjador"
                      WidthRequest="200">
-                    </Image>
+                    </Image>-->
                 </StackLayout>
                 <StackLayout
                     Padding="0,2,0,2"
@@ -29,56 +35,76 @@
                     </Image>
                 </StackLayout>
                 <BoxView Color="ForestGreen" Opacity="0.18"/>
+                <!--<StackLayout
+                    Padding="75">
+                <SearchBar
+                    BackgroundColor="Silver"
+                    PlaceholderColor="Black"
+                    Placeholder="Buscar A. Paterno  A. Materno  Nombre(s)"
+                    SearchCommand="{Binding Consultar}"/>
+                </StackLayout>-->
                 <ListView
                     HasUnevenRows="True"
                     ItemsSource="{Binding ListadoTrabajador1}"
-                    Margin="10,75">
+                    Margin="10,145"
+                    SeparatorVisibility="None">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
-                               <Grid>
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="*"/>
-                                        <ColumnDefinition Width="*"/>
-                                    </Grid.ColumnDefinitions>
-                                    <Label
-                                       Grid.Row="0"
-                                       Grid.Column="0" 
-                                       Grid.RowSpan="2" 
-                                       x:Name="lidTrabajador"
-                                       TextColor="WhiteSmoke"
-                                       FontSize="Medium"
-                                       Text="{Binding IdTrabajador} "/>
-                                    <Label
-                                       Grid.Row="0"
-                                       Grid.Column="1" 
-                                       Grid.RowSpan="2" 
-                                       x:Name="lnTrabajador"
-                                       TextColor="WhiteSmoke"
-                                       FontSize="Medium"
-                                       Text="{Binding NombreTrabajador} "/>
-                                    <Label
-                                       Grid.Row="0"
-                                       Grid.Column="2"
-                                       x:Name="ltoTrabajador"
-                                       TextColor="WhiteSmoke"
-                                       Text="{Binding TelofiTrabajador} "/>
+                                <Frame
+                                    Margin="5"
+                                    BackgroundColor="WhiteSmoke"
+                                    CornerRadius="20"
+                                    HasShadow="True">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label
+                                          Grid.Row="0"
+                                          Grid.Column="0" 
+                                          x:Name="lidTrabajador"
+                                          TextColor="Black"
+                                          FontSize="Medium"
+                                          VerticalTextAlignment="Center" 
+                                          Text="{Binding IdTrabajador} "/>
+                                        <Label
+                                          Grid.Row="0"
+                                          Grid.Column="1" 
+                                          x:Name="lnTrabajador"
+                                          TextColor="Black"
+                                          FontSize="Medium"
+                                          VerticalTextAlignment="Center" 
+                                          Text="{Binding NombreTrabajador} "/>
+                                        <Button
+                                          x:Name="btnregistro"
+                                          Grid.Row="0"
+                                          Grid.Column="2"
+                                          Grid.RowSpan="2" 
+                                          BackgroundColor="DarkBlue"
+                                          Image="checkronminiblanco2a"
+                                          BorderRadius="23"
+                                          VerticalOptions="CenterAndExpand"/>
 
-                                    <Label
-                                       Grid.Row="1"
-                                       Grid.Column="0"
-                                       x:Name="lctTrabajador"
-                                       TextColor="WhiteSmoke"
-                                       Text="{Binding CtTrabajador} "/>
-                                    <Label
-                                       Grid.Row="1"
-                                       Grid.Column="1"
-                                       x:Name="lhorTrabajador"
-                                       TextColor="WhiteSmoke"
-                                       Text="{Binding HorTrabajador} "/>
-                                    
-                                    
-                                    <Label
+                                        <Label
+                                          Grid.Row="1"
+                                          Grid.Column="0"
+                                          x:Name="lctTrabajador"
+                                          TextColor="Black"
+                                          VerticalTextAlignment="Center" 
+                                          Text="{Binding CtTrabajador} "/>
+                                        <Label
+                                          Grid.Row="1"
+                                          Grid.Column="1"
+                                          x:Name="lhorTrabajador"
+                                          TextColor="Black"
+                                          VerticalTextAlignment="Center" 
+                                          Text="{Binding HorTrabajador} "/>
+ 
+
+                                        <!--<Label
                                        Grid.Row="1"
                                        Grid.Column="2"
                                        x:Name="leoTrabajador"
@@ -96,9 +122,9 @@
                                        Grid.Column="1"
                                        x:Name="ltjTrabajador"
                                        TextColor="WhiteSmoke"
-                                       Text="{Binding TjTrabajador}"/>
+                                       Text="{Binding TjTrabajador}"/>-->
 
-                                    <Button
+                                        <!--<Button
                                        Grid.Row="3"
                                        Grid.Column="0"
                                        x:Name="lbtnDetalles"
@@ -130,9 +156,12 @@
                                        HeightRequest="38" 
                                        Command="{Binding EliminarTrabajador}" 
                                        TextColor="White"
-                                       Text="Eliminar" />
-                                </Grid>
-                           </ViewCell>
+                                       Text="Eliminar" />-->
+                                    </Grid>
+
+                                </Frame>
+
+                            </ViewCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>

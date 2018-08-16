@@ -11,10 +11,13 @@ namespace PCySO2018.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class TrabajadorListadoPage : ContentPage
     {
+        
         public TrabajadorListadoPage()
         {
             InitializeComponent();
             this.BindingContext = new TrabajadorListadoViewModel();
         }
+
+        
     }
 }

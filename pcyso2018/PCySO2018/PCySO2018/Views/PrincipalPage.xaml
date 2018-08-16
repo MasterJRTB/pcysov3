@@ -29,7 +29,7 @@
                     VerticalOptions="Start">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="2*"/>
-                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
                     </Grid.ColumnDefinitions>
                     
                         
@@ -48,10 +48,9 @@
                         x:Name="btnrh"
                         Grid.Row="0"
                         Grid.Column="1"
-                        BackgroundColor="ForestGreen"
-                        Image="checkronmini4"
+                        BackgroundColor="Black"
+                        Image="checkronminiblanco2a"
                         BorderRadius="23"
-                        WidthRequest="4"
                         VerticalOptions="CenterAndExpand"/>
                    
                     <Label
@@ -67,10 +66,9 @@
                         x:Name="btnrm"
                         Grid.Row="1"
                         Grid.Column="1"
-                        BackgroundColor="ForestGreen"
-                        Image="checkronmini4"
+                        BackgroundColor="Black"
+                        Image="checkronminiblanco2a"
                         BorderRadius="23"
-                        WidthRequest="4"
                         VerticalOptions="CenterAndExpand"/>
 
                     <Label
@@ -86,11 +84,10 @@
                         x:Name="btnum"
                         Grid.Row="2"
                         Grid.Column="1"
-                        BackgroundColor="ForestGreen"
-                        Image="checkronmini4"
+                        BackgroundColor="Black"
+                        Image="checkronminiblanco2a"
                         BorderRadius="23"
-                        WidthRequest="4"
-                        VerticalOptions="CenterAndExpand"/>
+                       VerticalOptions="CenterAndExpand"/>
 
                     <Label
                             Grid.Row="3"
@@ -105,11 +102,10 @@
                         x:Name="btnayu"
                         Grid.Row="3"
                         Grid.Column="1"
-                        BackgroundColor="ForestGreen"
-                        Image="checkronmini4"
+                        BackgroundColor="Black"
+                        Image="checkronminiblanco2a"
                         BorderRadius="23"
-                        WidthRequest="4"
-                        VerticalOptions="CenterAndExpand"/>
+                       VerticalOptions="CenterAndExpand"/>
                     <!--<Image
                              Grid.Row="3"
                              Grid.Column="1"
