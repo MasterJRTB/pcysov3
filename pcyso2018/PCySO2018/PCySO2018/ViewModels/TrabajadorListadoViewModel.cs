@@ -44,44 +44,44 @@ namespace PCySO2018.ViewModels
             }
         }
 
-        public string Filter
-        {
-            get { return this.filter; }
-            set
-            {
-                SetValue(ref this.filter, value);
-                this.Search();
-            }
-        }
+        //public string Filter
+        //{
+        //    get { return this.filter; }
+        //    set
+        //    {
+        //        SetValue(ref this.filter, value);
+        //        this.Search();
+        //    }
+        //}
 
-        private void SetValue(ref string filter, string value)
-        {
-            throw new NotImplementedException();
-        }
+        //private void SetValue(ref string filter, string value)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
-        public ICommand SearchCommand
-        {
-            get
-            {
-                return new RelayCommand(Search);
-            }
-        }
+        //public ICommand SearchCommand
+        //{
+        //    get
+        //    {
+        //        return new RelayCommand(Search);
+        //    }
+        //}
 
-        private void Search()
-        {
-            if (string.IsNullOrEmpty(this.Filter))
-            {
-                this.ListadoTrabajador1 = new ObservableCollection<TrabajadorModel>(
-                    this.ToTrabajadorModel());
-            }
-            else
-            {
-                this.ListadoTrabajador1 = new ObservableCollection<TrabajadorItemViewModel>(
-                    this.ToLandItemViewModel().Where(
-                        l => l.Id.ToLower().Contains(this.Filter.ToLower()) ||
-                             l.NombreTrabajador.ToLower().Contains(this.Filter.ToLower())));
-            }
-        }
+        //private void Search()
+        //{
+        //    if (string.IsNullOrEmpty(this.Filter))
+        //    {
+        //        this.ListadoTrabajador1 = new ObservableCollection<TrabajadorModel>(
+        //            this.ToTrabajadoresModel());
+        //    }
+        //    else
+        //    {
+        //        this.ListadoTrabajador1 = new ObservableCollection<TrabajadorItemViewModel>(
+        //            this.ToTrabajadorItemViewModel().Where(
+        //                l => l.Id.ToLower().Contains(this.Filter.ToLower()) ||
+        //                     l.NombreTrabajador.ToLower().Contains(this.Filter.ToLower())));
+        //    }
+        //}
 
         
     }

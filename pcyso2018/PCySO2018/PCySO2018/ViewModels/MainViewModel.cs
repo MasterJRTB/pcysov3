@@ -16,6 +16,8 @@ namespace PCySO2018.ViewModels
             get;
             set;
         }
+
+        
         #endregion
 
         #region Contructores

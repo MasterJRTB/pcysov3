@@ -61,6 +61,9 @@
                                     BackgroundColor="WhiteSmoke"
                                     CornerRadius="20"
                                     HasShadow="True">
+                                    <!--<Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding SelectTrabajadorCommand}"/>
+                                    </Frame.GestureRecognizers>-->
                                     <Grid>
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="*"/>
@@ -90,7 +93,7 @@
                                           BackgroundColor="DarkBlue"
                                           Image="checkronminiblanco2b"
                                           BorderRadius="23"
-                                          VerticalOptions="CenterAndExpand"/>
+                                          VerticalOptions="Center"/>
                                         <!--<Button
                                           x:Name="lbtnEliminar"  
                                           Grid.Row="1"

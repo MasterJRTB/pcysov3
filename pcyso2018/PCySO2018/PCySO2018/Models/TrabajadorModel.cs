@@ -68,6 +68,7 @@ namespace PCySO2018.Models
             }
         }
         
+        [PrimaryKey]
         public string NombreTrabajador
         {
             get
