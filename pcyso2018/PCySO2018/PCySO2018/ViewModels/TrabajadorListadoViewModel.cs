@@ -74,18 +74,15 @@ namespace PCySO2018.ViewModels
                 this.ListadoTrabajador1 = new ObservableCollection<TrabajadorModel>(
                     this.ToTrabajadorModel());
             }
-        //    else
-        //    {
-        //        this.ListadoTrabajador1 = new ObservableCollection<LandItemViewModel>(
-        //            this.ToLandItemViewModel().Where(
-        //                l => l.Id.ToLower().Contains(this.Filter.ToLower()) ||
-        //                     l.NombreTrabajador.ToLower().Contains(this.Filter.ToLower())));
-        //    }
+            else
+            {
+                this.ListadoTrabajador1 = new ObservableCollection<TrabajadorItemViewModel>(
+                    this.ToLandItemViewModel().Where(
+                        l => l.Id.ToLower().Contains(this.Filter.ToLower()) ||
+                             l.NombreTrabajador.ToLower().Contains(this.Filter.ToLower())));
+            }
         }
 
-        private IEnumerable<TrabajadorModel> ToTrabajadorModel()
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }
