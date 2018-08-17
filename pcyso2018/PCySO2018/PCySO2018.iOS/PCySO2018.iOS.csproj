@@ -257,15 +257,21 @@
     <BundleResource Include="Resources\iconobuscar.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\iconoeliminar.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\iconolistar.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\iconolimpiarcampos.png" />
   </ItemGroup>
   <ItemGroup>
+    <BundleResource Include="Resources\iconoeliminar2b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\checkronminiblanco2b.png" />
+  </ItemGroup>
+  <ItemGroup>
     <BundleResource Include="Resources\checkronminiblanco2a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\iconoeliminar.png" />
   </ItemGroup>
 </Project>

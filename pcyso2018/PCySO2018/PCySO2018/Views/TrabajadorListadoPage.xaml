@@ -43,12 +43,17 @@
                     Placeholder="Buscar A. Paterno  A. Materno  Nombre(s)"
                     SearchCommand="{Binding Consultar}"/>
                 </StackLayout>-->
-                <ListView
+                <!--<ListView
                     HasUnevenRows="True"
                     ItemsSource="{Binding ListadoTrabajador1}"
                     Margin="10,145"
+                    SeparatorVisibility="None">-->
+                 <ListView
+                    HasUnevenRows="True"
+                    ItemsSource="{Binding ListadoTrabajador1}"
+                    Margin="10,75"
                     SeparatorVisibility="None">
-                    <ListView.ItemTemplate>
+                        <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
                                 <Frame
@@ -79,14 +84,22 @@
                                           VerticalTextAlignment="Center" 
                                           Text="{Binding NombreTrabajador} "/>
                                         <Button
-                                          x:Name="btnregistro"
+                                          x:Name="lbtnregistro"
                                           Grid.Row="0"
                                           Grid.Column="2"
-                                          Grid.RowSpan="2" 
                                           BackgroundColor="DarkBlue"
-                                          Image="checkronminiblanco2a"
+                                          Image="checkronminiblanco2b"
                                           BorderRadius="23"
                                           VerticalOptions="CenterAndExpand"/>
+                                        <!--<Button
+                                          x:Name="lbtnEliminar"  
+                                          Grid.Row="1"
+                                          Grid.Column="2"
+                                          BackgroundColor="DarkBlue"
+                                          Image="iconoeliminar2b"
+                                          BorderRadius="23"
+                                          Command="{Binding Eliminar}"  
+                                          VerticalOptions="CenterAndExpand" />-->
 
                                         <Label
                                           Grid.Row="1"
