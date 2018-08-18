@@ -1,0 +1,527 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PCySO2018.Views.TrabajadorDatosPage">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Grid>
+                <Image Source="cuadrofondo2018" Aspect="AspectFill"/>
+                
+                <BoxView Color="ForestGreen" Opacity="0.18"/>
+
+                <ScrollView>
+                    <Grid
+                    Margin="10,70"
+                    VerticalOptions="Start">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+
+                        <!-- ********************************************************** -->
+                        <!--        sección datos generales del trabajador              -->
+                        <!-- ********************************************************** -->
+
+                        <Label 
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="3" 
+                        x:Name="tddgtrabajador"
+                        HorizontalOptions="Center"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        FontSize="Large"
+                        Text="Datos Generales del Trabajador"/>
+
+                     <Label
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        x:Name="tdlnomTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"    
+                        Text="Nombre"/>
+                     <Label
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        x:Name="tdnomTrabajador"
+                        TextColor="White"
+                        Text="{Binding NombreTrabajador}"/>
+
+                     <Label
+                        Grid.Row="2"
+                        Grid.Column="0"
+                        x:Name="tdltipTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"    
+                        Text="Tipo de Contrato"/>
+                     <Label
+                        Grid.Row="2"
+                        Grid.Column="1"
+                        x:Name="tdtipTrabajador"
+                        TextColor="White"
+                        Text="{Binding TipoTrabajador}"/>
+
+                     <Label
+                        Grid.Row="3"
+                        Grid.Column="0"
+                        x:Name="tdlCtTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"    
+                        Text="Centro de Trabajo"/>
+                     <Label
+                        Grid.Row="3"
+                        Grid.Column="1"
+                        x:Name="tdctTrabajador"
+                        TextColor="White"
+                        Text="{Binding CtTrabajador}"/>
+
+                     <Label
+                        Grid.Row="4"
+                        Grid.Column="0"
+                        x:Name="dtldepTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"  
+                        Text="Tipo de Contrato"/>
+                     <Label
+                        Grid.Row="4"
+                        Grid.Column="1"
+                        x:Name="dtdepTrabajador"
+                        TextColor="White"
+                        Text="{Binding DepaTrabajador}"/>
+                     
+                     <Label
+                        Grid.Row="5"
+                        Grid.Column="0"
+                        x:Name="dtlpueTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Text="Puesto"/>
+                     <Label
+                        Grid.Row="5"
+                        Grid.Column="1"
+                        x:Name="dtpueTrabajador"
+                        TextColor="White"
+                        Text="{Binding PueTrabajador}"/>
+                        
+                     <Label
+                        Grid.Row="6"
+                        Grid.Column="0"
+                        x:Name="dtlhorTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Text="{Binding HorTrabajador}"/>
+                     <Label
+                        Grid.Row="6"
+                        Grid.Column="1"
+                        x:Name="dthorTrabajador"
+                        TextColor="White"
+                        Text="Horario"/>
+                       
+                     <Label
+                        Grid.Row="7"
+                        Grid.Column="0"
+                        x:Name="dtltelofiTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Text="Teléfono"/>
+                     <Label
+                        Grid.Row="7"
+                        Grid.Column="1"
+                        x:Name="dttelofiTrabajador"
+                        TextColor="White"
+                        Text="{Binding TelofiTrabajador}"/>
+                     
+                     <Label
+                        Grid.Row="8"
+                        Grid.Column="0"
+                        x:Name="dtlextofiTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Text="Extensión"/>
+                     <Label
+                        Grid.Row="8"
+                        Grid.Column="1"
+                        x:Name="dtextofiTrabajador"
+                        TextColor="White"
+                        Text="{Binding ExttelTrabajador}"/>
+                      
+                     <Label
+                        Grid.Row="9"
+                        Grid.Column="0"
+                        x:Name="dtlcorreoTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Text="E-Mail"/>
+                     <Label
+                        Grid.Row="9"
+                        Grid.Column="1"
+                        x:Name="dtcorreoTrabajador"
+                        TextColor="White"
+                        Text="{Binding EmailTrabajador}"/>
+                        
+                     <Label
+                        Grid.Row="10"
+                        Grid.Column="0"
+                        x:Name="dtlfaTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Text="Fecha de Ingreso"/>
+                     <Label
+                        Grid.Row="10"
+                        Grid.Column="1"
+                        x:Name="dtfaTrabajador"
+                        TextColor="White"
+                        Text="{Binding FaTrabajador}"/>
+                      
+                     <Label
+                        Grid.Row="11"
+                        Grid.Column="0"
+                        x:Name="dtlnssTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Text="Seguro Social"/>
+                     <Label
+                        Grid.Row="11"
+                        Grid.Column="1"
+                        x:Name="dtnssTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Text="{Binding NssTrabajador}"/>
+                      
+
+                        <!-- ********************************************************** -->
+                        <!--          sección datos del supervisor / jefe               -->
+                        <!-- ********************************************************** -->
+
+                     <Label
+                        Grid.Row="12"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="3"
+                        x:Name="dtespaTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        HorizontalOptions="Center"
+                        FontAttributes="Bold"
+                        Text=""/>
+                     <Label
+                        Grid.Row="13"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="3"
+                        x:Name="dtjefeTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        HorizontalOptions="Center"
+                        FontAttributes="Bold"
+                        Text="Datos del Supervisor / Jefe"/>
+
+                     <Label
+                        Grid.Row="14"
+                        Grid.Column="0"
+                        x:Name="dtlnombjefeTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Text="Nombre"/>
+                     <Label
+                        Grid.Row="14"
+                        Grid.Column="1"
+                        x:Name="dtnombjefeTrabajador"
+                        TextColor="White"
+                        Text="{Binding NjTrabajador}"/>
+                        
+                     <Label
+                        Grid.Row="15"
+                        Grid.Column="0"
+                        x:Name="dtlteljefeTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Text="Teléfono"/>
+                     <Label 
+                        Grid.Row="15"
+                        Grid.Column="1"
+                        Grid.ColumnSpan="2"
+                        x:Name="dteteljefetrabajador"
+                        TextColor="White"    
+                        Text="{Binding TjTrabajador}"/>
+
+                     <Label
+                        Grid.Row="16"
+                        Grid.Column="0"
+                        x:Name="dtltelextjefeTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Text="Extensión"/>
+                     <Label 
+                        Grid.Row="16"
+                        Grid.Column="1"
+                        Grid.ColumnSpan="2"
+                        x:Name="dtetelextjefetrabajador"
+                        Text="{Binding EtjTrabajador}"
+                        TextColor="White"/>
+
+                     <Label
+                        Grid.Row="17"
+                        Grid.Column="0"
+                        x:Name="dtlcorrjefeTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Text="E-Mail"/>
+                     <Label 
+                        Grid.Row="17"
+                        Grid.Column="1"
+                        Grid.ColumnSpan="2"
+                        x:Name="dtecorrjefetrabajador"
+                        Text="{Binding EmjTrabajador}"
+                        TextColor="White"/>
+
+
+                        <!-- ********************************************************** -->
+                        <!--       sección domicilio particular del trabajador          -->
+                        <!-- ********************************************************** -->
+
+                     <Label
+                        Grid.Row="18"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="3"
+                        x:Name="dtespaciTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        HorizontalOptions="Center"
+                        FontAttributes="Bold"
+                        Text=""/>
+                     <Label
+                        Grid.Row="19"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="3"
+                        x:Name="dtdomparTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        HorizontalOptions="Center"
+                        FontAttributes="Bold"
+                        Text="Datos Domicilio del Trabajador"/>
+
+                     <Label
+                        Grid.Row="20"
+                        Grid.Column="0"
+                        x:Name="dtlcalleTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Text="Calle"/>
+                     <Label 
+                        Grid.Row="20"
+                        Grid.Column="1"
+                        Grid.ColumnSpan="2"
+                        x:Name="dtecalletrabajador"
+                        Text="{Binding CalTrabajador}"
+                        TextColor="White"/>
+
+                     <Label
+                        Grid.Row="21"
+                        Grid.Column="0"
+                        x:Name="dtlneTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Text="Número Exterior"/>
+                     <Label 
+                        Grid.Row="21"
+                        Grid.Column="1"
+                        Grid.ColumnSpan="2"
+                        x:Name="dtenetrabajador"
+                        Text="{Binding NeTrabajador}"
+                        TextColor="White"/>
+
+                     <Label
+                        Grid.Row="22"
+                        Grid.Column="0"
+                        x:Name="dtlniTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Text="Número Interior"/>
+                     <Label 
+                        Grid.Row="22"
+                        Grid.Column="1"
+                        Grid.ColumnSpan="2"
+                        x:Name="dtenitrabajador"
+                        Text="{Binding NiTrabajador}"
+                        TextColor="White"/>
+
+                     <Label
+                        Grid.Row="23"
+                        Grid.Column="0"
+                        x:Name="dtlcolTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Text="Colonia"/>
+                     <Label 
+                        Grid.Row="23"
+                        Grid.Column="1"
+                        Grid.ColumnSpan="2"
+                        x:Name="dtecoltrabajador"
+                        Text="{Binding ColTrabajador}"
+                        TextColor="White"/>
+
+                     <Label
+                        Grid.Row="24"
+                        Grid.Column="0"
+                        x:Name="dtlcpTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Text="Código Postal"/>
+                     <Label 
+                        Grid.Row="24"
+                        Grid.Column="1"
+                        Grid.ColumnSpan="2"
+                        x:Name="dtecptrabajador"
+                        Text="{Binding CpTrabajador}"
+                        TextColor="White"/>
+
+                     <Label
+                        Grid.Row="25"
+                        Grid.Column="0"
+                        x:Name="dtldmTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Text="Delegación / Municipio"/>
+                     <Label 
+                        Grid.Row="25"
+                        Grid.Column="1"
+                        Grid.ColumnSpan="2"
+                        x:Name="dtedmtrabajador"
+                        Text="{Binding DmTrabajador}"
+                        TextColor="White"/>
+
+                     <Label
+                        Grid.Row="26"
+                        Grid.Column="0"
+                        x:Name="dtlepTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Text="Estado / Provincia"/>
+                     <Label 
+                        Grid.Row="26"
+                        Grid.Column="1"
+                        Grid.ColumnSpan="2"
+                        x:Name="dteptrabajador"
+                        Text="{Binding EpTrabajador}"
+                        TextColor="White"/>
+
+                        <!-- ********************************************************** -->
+                        <!--        sección datos de emergencia y de contacto           -->
+                        <!-- ********************************************************** -->
+
+                     <Label
+                        Grid.Row="27"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="3"
+                        x:Name="dtespacTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        HorizontalOptions="Center"
+                        FontAttributes="Bold"
+                        Text=""/>
+                     <Label
+                        Grid.Row="28"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="3"
+                        x:Name="dtcontactoTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        HorizontalOptions="Center"
+                        FontAttributes="Bold"
+                        Text="Datos del Contacto / Emergencia"/>
+
+                     <Label
+                        Grid.Row="29"
+                        Grid.Column="0"
+                        x:Name="dtlnomcontacTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Text="Nombre"/>
+                     <Label 
+                        Grid.Row="29"
+                        Grid.Column="1"
+                        Grid.ColumnSpan="2"
+                        x:Name="dtenomcontactrabajador"
+                        Text="{Binding NceTrabajador}"
+                        TextColor="White"/>
+
+                     <Label
+                        Grid.Row="30"
+                        Grid.Column="0"
+                        x:Name="dtlparecontacTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Text="Parentesco"/>
+                     <Label 
+                        Grid.Row="30"
+                        Grid.Column="1"
+                        Grid.ColumnSpan="2"
+                        x:Name="dteparecontactrabajador"
+                        Text="{Binding PareTrabajador}"
+                        TextColor="White"/>
+
+                     <Label
+                        Grid.Row="31"
+                        Grid.Column="0"
+                        x:Name="dtltelcontacTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Text="Teléfono"/>
+                     <Label 
+                        Grid.Row="31"
+                        Grid.Column="1"
+                        Grid.ColumnSpan="2"
+                        x:Name="dtetelcontactrabajador"
+                        Text="{Binding TceTrabajador}"
+                        TextColor="White"/>
+
+                     <Label
+                        Grid.Row="32"
+                        Grid.Column="0"
+                        x:Name="dtlcelcontacTrabajador"
+                        TextColor="White"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        Text="Celular"/>
+                     <Label 
+                        Grid.Row="32"
+                        Grid.Column="1"
+                        Grid.ColumnSpan="2"
+                        x:Name="dtecelcontactrabajador"
+                        Text="{Binding CelceTrabajador}"
+                        TextColor="White"/>
+
+                    </Grid>
+                </ScrollView>
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
