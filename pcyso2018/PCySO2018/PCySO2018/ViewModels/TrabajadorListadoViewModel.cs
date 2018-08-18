@@ -1,10 +1,12 @@
 ﻿using GalaSoft.MvvmLight.Command;
 using PCySO2018.Models;
 using PCySO2018.Services;
+using PCySO2018.Views;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
+using Xamarin.Forms;
 
 namespace PCySO2018.ViewModels
 {
@@ -59,12 +61,18 @@ namespace PCySO2018.ViewModels
         //    throw new NotImplementedException();
         //}
 
-        //public ICommand SearchCommand
+        //public ICommand SelectTrabajadorCommand
         //{
         //    get
         //    {
-        //        return new RelayCommand(Search);
+        //        return new RelayCommand(SelectTrabajador);
         //    }
+        //}
+
+        //private async void SelectTrabajador()
+        //{
+        //    //MainViewModel.GetInstance().TrabajadorModel = new TrabajadorDatosViewModel(this);
+        //    await Application.Current.MainPage.Navigation.PushAsync(new TrabajadorDatosPage());
         //}
 
         //private void Search()
@@ -83,6 +91,6 @@ namespace PCySO2018.ViewModels
         //    }
         //}
 
-        
+
     }
 }

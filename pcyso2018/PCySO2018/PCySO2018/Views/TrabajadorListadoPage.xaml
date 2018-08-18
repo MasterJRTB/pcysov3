@@ -62,9 +62,9 @@
                                     BackgroundColor="WhiteSmoke"
                                     CornerRadius="20"
                                     HasShadow="True">
-                                    <!--<Frame.GestureRecognizers>
+                                    <Frame.GestureRecognizers>
                                         <TapGestureRecognizer Command="{Binding SelectTrabajadorCommand}"/>
-                                    </Frame.GestureRecognizers>-->
+                                    </Frame.GestureRecognizers>
                                     <Grid>
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="*"/>

@@ -17,7 +17,7 @@
                     WidthRequest="235">
                 </Image>
             </StackLayout>
-            <BoxView Color="ForestGreen" Opacity="0.18"/>
+            <BoxView Color="Green" Opacity="0.18"/>
             <StackLayout
                    Padding="10">
                 <Image
@@ -74,7 +74,7 @@
                     <Label
                             Grid.Row="2"
                             Grid.Column="0"
-                            TextColor="Black"
+                            TextColor="White"
                             FontAttributes="Bold"  
                             FontSize="20" 
                             Text="Unidad Médica"
@@ -92,7 +92,7 @@
                     <Label
                             Grid.Row="3"
                             Grid.Column="0"
-                            TextColor="Black"
+                            TextColor="White"
                             FontAttributes="Bold"  
                             FontSize="20" 
                             Text="Ayuda"
@@ -106,6 +106,13 @@
                         Image="checkronminiblanco2a"
                         BorderRadius="23"
                        VerticalOptions="CenterAndExpand"/>
+                    
+                    
+                    <!--  *********************************************
+                          *********************************************
+                          *********************************************
+                    -->
+                    
                     <!--<Image
                              Grid.Row="3"
                              Grid.Column="1"
