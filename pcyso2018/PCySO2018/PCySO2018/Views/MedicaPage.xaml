@@ -6,7 +6,7 @@
     
     <ContentPage.Content>
         <Grid>
-            <Image Source="checkronmini" Aspect="AspectFill"/>
+            <Image Source="cuadrofondo2018" Aspect="AspectFill"/>
             <StackLayout
                     Padding="0,2"
                     HorizontalOptions="Center"
@@ -21,23 +21,27 @@
             <BoxView Color="Green" Opacity="0.18"/>
 
             <StackLayout
-                   Padding="10">
-                <Image
-                     Source="textounidadmedica"
+                   Padding="25">
+                <Label
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    TextColor="White"
+                    Text="Unidad Médica"/>
+                <!--<Image
+                     Source="textopaginaprincipal"
                      WidthRequest="200">
-                </Image>
+                </Image>-->
                 <Grid
                     Margin="10,50"
                     VerticalOptions="Start">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="2*"/>
-                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
                     </Grid.ColumnDefinitions>
                     <Label
                             Grid.Row="0"
                             Grid.Column="0"
                             TextColor="White"
-                            FontAttributes="Bold"  
                             FontSize="20" 
                             Text="Antecedentes Médicos"
                             VerticalOptions="CenterAndExpand"
@@ -47,17 +51,15 @@
                         x:Name="btnantecedentes"
                         Grid.Row="0"
                         Grid.Column="1"
-                        BackgroundColor="ForestGreen"
-                        Image="checkronmini4"
+                        BackgroundColor="Black"
+                        Image="checkronminiblanco2a"
                         BorderRadius="23"
-                        WidthRequest="4"
                         VerticalOptions="CenterAndExpand"/>
 
                     <Label
                             Grid.Row="1"
                             Grid.Column="0"
                             TextColor="White"
-                            FontAttributes="Bold"  
                             FontSize="20" 
                             Text="Atención Médica"
                             VerticalOptions="CenterAndExpand">
@@ -66,17 +68,15 @@
                         x:Name="btnatencion"
                         Grid.Row="1"
                         Grid.Column="1"
-                        BackgroundColor="ForestGreen"
-                        Image="checkronmini4"
+                        BackgroundColor="Black"
+                        Image="checkronminiblanco2a"
                         BorderRadius="23"
-                        WidthRequest="4"
                         VerticalOptions="CenterAndExpand"/>
 
                     <Label
                             Grid.Row="2"
                             Grid.Column="0"
-                            TextColor="Black"
-                            FontAttributes="Bold"  
+                            TextColor="White"
                             FontSize="20" 
                             Text="Incapacidad"
                             VerticalOptions="CenterAndExpand">
@@ -85,10 +85,9 @@
                         x:Name="btnincapacidad"
                         Grid.Row="2"
                         Grid.Column="1"
-                        BackgroundColor="ForestGreen"
-                        Image="checkronmini4"
+                        BackgroundColor="Black"
+                        Image="checkronminiblanco2a"
                         BorderRadius="23"
-                        WidthRequest="4"
                         VerticalOptions="CenterAndExpand"/>
                 </Grid>
             </StackLayout>

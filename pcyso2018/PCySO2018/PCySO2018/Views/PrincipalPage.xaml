@@ -5,7 +5,7 @@
              Title="- - - - - PCySO - - - - -">
     <ContentPage.Content>
         <Grid>
-            <Image Source="checkronmini" Aspect="AspectFill"/>
+            <Image Source="cuadrofondo2018" Aspect="AspectFill"/>
             <StackLayout
                     Padding="0,2"
                     HorizontalOptions="Center"
@@ -19,11 +19,16 @@
             </StackLayout>
             <BoxView Color="Green" Opacity="0.18"/>
             <StackLayout
-                   Padding="10">
-                <Image
+                   Padding="25">
+                <Label
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    TextColor="White"
+                    Text="Página Principal"/>
+                <!--<Image
                      Source="textopaginaprincipal"
                      WidthRequest="200">
-                </Image>
+                </Image>-->
                 <Grid
                     Margin="10,50"
                     VerticalOptions="Start">
@@ -38,7 +43,6 @@
                             Grid.Row="0"
                             Grid.Column="0"
                             TextColor="White"
-                            FontAttributes="Bold"  
                             FontSize="20" 
                             Text="Recursos Humanos"
                             VerticalOptions="CenterAndExpand"
@@ -57,7 +61,6 @@
                             Grid.Row="1"
                             Grid.Column="0"
                             TextColor="White"
-                            FontAttributes="Bold"  
                             FontSize="20" 
                             Text="Recursos Materiales"
                             VerticalOptions="CenterAndExpand">
@@ -75,7 +78,6 @@
                             Grid.Row="2"
                             Grid.Column="0"
                             TextColor="White"
-                            FontAttributes="Bold"  
                             FontSize="20" 
                             Text="Unidad Médica"
                             VerticalOptions="CenterAndExpand">
@@ -93,7 +95,6 @@
                             Grid.Row="3"
                             Grid.Column="0"
                             TextColor="White"
-                            FontAttributes="Bold"  
                             FontSize="20" 
                             Text="Ayuda"
                             VerticalOptions="CenterAndExpand">

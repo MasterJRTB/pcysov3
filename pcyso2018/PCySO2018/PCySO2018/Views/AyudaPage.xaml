@@ -5,7 +5,7 @@
              Title="- - - - - PCySO - - - - -">
     <ContentPage.Content>
         <Grid>
-            <Image Source="checkronmini" Aspect="AspectFill"/>
+            <Image Source="cuadrofondo2018" Aspect="AspectFill"/>
             <StackLayout
                     Padding="0,2"
                     HorizontalOptions="Center"
@@ -19,11 +19,16 @@
             </StackLayout>
             <BoxView Color="ForestGreen" Opacity="0.18"/>
             <StackLayout
-                   Padding="10">
-                <Image
-                     Source="textoayuda"
+                   Padding="25">
+                <Label
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    TextColor="White"
+                    Text="Ayuda"/>
+                <!--<Image
+                     Source="textopaginaprincipal"
                      WidthRequest="200">
-                </Image>
+                </Image>-->
             </StackLayout>
         </Grid>
     </ContentPage.Content>

@@ -9,28 +9,7 @@
             
         <Grid>
             <Image Source="cuadrofondo2018" Aspect="AspectFill"/>
-            <!--<StackLayout
-                   Padding="10"
-                   HorizontalOptions="Center"
-                   Orientation="Horizontal"
-                   VerticalOptions="Start">
-                <Image
-                     Source="textorhtrabjador"
-                     WidthRequest="200">
-                </Image>
-            </StackLayout>-->
-            <!--<StackLayout
-                    Padding="0,2,0,2"
-                    HorizontalOptions="Center"
-                    Orientation="Horizontal"
-                    VerticalOptions="End">
-
-                    <Image 
-                    Source="luartexto"
-                    WidthRequest="235">
-                    </Image>
-                </StackLayout>-->
-                <BoxView Color="ForestGreen" Opacity="0.18"/>
+            <BoxView Color="ForestGreen" Opacity="0.18"/>
 
                 <ScrollView>
                     <Grid
@@ -640,7 +619,7 @@
                            Text="Agregar">
                        </Button>
 
-                      <Button
+                      <!--<Button
                             Grid.Row="34"
                             Grid.Column="2"
                             x:Name="actutrabajador"
@@ -653,11 +632,11 @@
                             FontAttributes="Bold"
                             TextColor="WhiteSmoke"
                             Text="Actualizar">
-                        </Button>
+                        </Button>-->
 
                         <Button
-                           Grid.Row="35"
-                           Grid.Column="0"
+                           Grid.Row="34"
+                           Grid.Column="2"
                            x:Name="listtrabajador"
                            BackgroundColor="DarkGreen"
                            BorderRadius="28"
@@ -686,8 +665,8 @@
                        </Button>-->
 
                         <Button
-                           Grid.Row="35"
-                           Grid.Column="2"
+                           Grid.Row="34"
+                           Grid.Column="1"
                            x:Name="limptrabajador"
                            BackgroundColor="DarkGreen"
                            BorderRadius="28"

@@ -6,19 +6,19 @@
     
     <ContentPage.Content>
         <Grid>
-            <Image Source="checkronmini" Aspect="AspectFill"/>
+            <Image Source="cuadrofondo2018" Aspect="AspectFill"/>
             <StackLayout
                     Padding="0,2"
                     HorizontalOptions="Center"
                     Orientation="Horizontal"
                     VerticalOptions="End">
 
-                <Image 
+                <!--<Image 
                     Source="luartexto"
                     WidthRequest="235">
-                </Image>
+                </Image>-->
             </StackLayout>
-            <BoxView Color="ForestGreen" Opacity="0.18"/>
+            <BoxView Color="Green" Opacity="0.18"/>
             <StackLayout
                    Padding="10">
                 <Image

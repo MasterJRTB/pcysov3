@@ -61,7 +61,8 @@
                                     Margin="5"
                                     BackgroundColor="WhiteSmoke"
                                     CornerRadius="20"
-                                    HasShadow="True">
+                                    HasShadow="True"
+                                    Opacity="0.45">
                                     <Frame.GestureRecognizers>
                                         <TapGestureRecognizer Command="{Binding SelectTrabajadorCommand}"/>
                                     </Frame.GestureRecognizers>
@@ -96,7 +97,7 @@
                                           BorderRadius="23"
                                           VerticalOptions="Center"/>
                                         
-                                        <Label
+                                        <!--<Label
                                           Grid.Row="1"
                                           Grid.Column="0"
                                           x:Name="lctTrabajador"
@@ -109,7 +110,7 @@
                                           x:Name="lhorTrabajador"
                                           TextColor="Black"
                                           VerticalTextAlignment="Center" 
-                                          Text="{Binding HorTrabajador} "/>
+                                          Text="{Binding HorTrabajador} "/>-->
                                     </Grid>
                                 </Frame>
                             </ViewCell>

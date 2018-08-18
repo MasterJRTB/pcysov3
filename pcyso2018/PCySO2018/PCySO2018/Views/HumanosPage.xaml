@@ -6,26 +6,31 @@
     
     <ContentPage.Content>
         <Grid>
-            <Image Source="checkronmini" Aspect="AspectFill"/>
+            <Image Source="cuadrofondo2018" Aspect="AspectFill"/>
             <StackLayout
                     Padding="0,2"
                     HorizontalOptions="Center"
                     Orientation="Horizontal"
                     VerticalOptions="End">
 
-                <Image 
+                <!--<Image 
                     Source="luartexto"
                     WidthRequest="235">
-                </Image>
+                </Image>-->
             </StackLayout>
             <BoxView Color="Green" Opacity="0.18"/>
 
             <StackLayout
-                   Padding="10">
-                <Image
-                     Source="textorecursoshumanos"
+                  Padding="25">
+                <Label
+                    FontSize="Large"
+                    FontAttributes="Bold"
+                    TextColor="White"
+                    Text="Recursos Humanos"/>
+                <!--<Image
+                     Source="textopaginaprincipal"
                      WidthRequest="200">
-                </Image>
+                </Image>-->
                 <Grid
                     Margin="10,50"
                     VerticalOptions="Start">
@@ -37,7 +42,6 @@
                             Grid.Row="0"
                             Grid.Column="0"
                             TextColor="White"
-                            FontAttributes="Bold"  
                             FontSize="20" 
                             Text="Trabajador"
                             VerticalOptions="CenterAndExpand"
@@ -56,7 +60,6 @@
                             Grid.Row="1"
                             Grid.Column="0"
                             TextColor="White"
-                            FontAttributes="Bold"  
                             FontSize="20" 
                             Text="Contratista"
                             VerticalOptions="CenterAndExpand">
@@ -73,8 +76,7 @@
                     <Label
                             Grid.Row="2"
                             Grid.Column="0"
-                            TextColor="Black"
-                            FontAttributes="Bold"  
+                            TextColor="White"
                             FontSize="20" 
                             Text="Proveedor"
                             VerticalOptions="CenterAndExpand">

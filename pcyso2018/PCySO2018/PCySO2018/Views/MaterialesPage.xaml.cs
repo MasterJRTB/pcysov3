@@ -16,7 +16,6 @@ namespace PCySO2018.Views
 		{
 			InitializeComponent ();
             //btnextintor.Clicked += Btnextintor_Clicked;
-            //btnbitacora.Clicked += Btnbitacora_Clicked;
             //btninmueble.Clicked += Btninmueble_Clicked;
 		}
 
@@ -24,11 +23,6 @@ namespace PCySO2018.Views
         //{
         //    //throw new NotImplementedException();
         //    ((NavigationPage)this.Parent).PushAsync(new ExtintorPage());
-        //}
-        //private void Btnbitacora_Clicked(object sender, EventArgs e)
-        //{
-        //    //throw new NotImplementedException();
-        //    ((NavigationPage)this.Parent).PushAsync(new ExtintorBitacoraPage());
         //}
         //private void Btninmueble_Clicked(object sender, EventArgs e)
         //{
